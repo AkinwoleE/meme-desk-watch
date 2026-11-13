@@ -5,7 +5,7 @@ name: desk-watch
 on:
   schedule:
     - cron: '*/10 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 # Queue, don't cancel: a cancelled run could drop an alert.
 concurrency:
@@ -30,7 +30,7 @@ jobs:
         env:
           DESK_WEBHOOK_URL: ${{ secrets.DESK_WEBHOOK_URL }}
           DESK_WEBHOOK_KEY: ${{ secrets.DESK_WEBHOOK_KEY }}
-          DESK_WEBHOOK_HEADER: ${{ vars.DESK_WEBHOOK_HEADER || 'Authorization: Bearer' }}
+          DESK_WEBHOOK_HEADER: "${{ vars.DESK_WEBHOOK_HEADER || 'Authorization: Bearer' }}"
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: node src/check.mjs
 
