@@ -1,4 +1,16 @@
 {
   "version": 1,
-  "incidents": {}
+  "incidents": {
+    "missed_stop:36": {
+      "key": "missed_stop:36:0.55",
+      "alertedAt": "2026-11-13T16:07:05.413Z",
+      "type": "missed_stop"
+    },
+    "stale_heartbeat": {
+      "key": "stale_heartbeat:2026-11-13T10:18:13.413Z",
+      "alertedAt": "2026-11-13T16:07:05.413Z",
+      "type": "stale_heartbeat"
+    }
+  },
+  "updatedAt": "2026-11-13T16:07:05.413Z"
 }
