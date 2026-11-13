@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-11-13T08:22:24.974Z",
+  "exportedAt": "2026-11-13T10:18:16.039Z",
   "gc": {
     "symbol": "GC",
     "name": "GlobalCoin",
@@ -47,5 +47,5 @@
   ],
   "lastReportedExitAt": "2026-11-11T20:21:07.718Z",
   "latestJournalSellAt": "2026-11-11T20:21:07.709Z",
-  "monitorHeartbeatAt": "2026-11-13T08:22:24.354Z"
+  "monitorHeartbeatAt": "2026-11-13T10:18:13.413Z"
 }
