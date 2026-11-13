@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "exportedAt": "2026-11-13T07:56:49.928Z",
+  "gc": {
+    "symbol": "GC",
+    "name": "GlobalCoin",
+    "chain": "robinhood",
+    "contract": "0x7815475f3A4860fF5384055BD0E81E55901B8ad7",
+    "priceSource": {
+      "provider": "dexscreener",
+      "pool": "GC/META",
+      "pairAddress": "0x494d695498ddac073a66cc81eb72f1ec7ef408bfb1579d0cd13cf59c589ce127",
+      "quoteSymbol": "META",
+      "quoteAddress": "0xc0D6457C16Cc70d6790Dd43521C899C87ce02f35"
+    },
+    "lastBuyMcap": 236000,
+    "nextTriggerMcap": 177000,
+    "totalSpent": 46.31,
+    "remaining": 53.69,
+    "ladderCap": 100
+  },
+  "openPositions": [
+    {
+      "id": 36,
+      "symbol": "ZER0",
+      "name": "ZER0",
+      "mint": "DZkm8gDaowS64uAR5XAZnmu92fRNHRVLn2rtb8VfLoat",
+      "chain": "solana",
+      "mode": "live",
+      "entryMcap": 42119.52941773327,
+      "entryPrice": 0.00004239922544969554,
+      "stopMultiple": 0.55,
+      "profile": "launchpad"
+    },
+    {
+      "id": 37,
+      "symbol": "Rings",
+      "name": "Rings",
+      "mint": "65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring",
+      "chain": "solana",
+      "mode": "live",
+      "entryMcap": 317301.37621257314,
+      "entryPrice": 0.0003240710359003408,
+      "stopMultiple": 0.55,
+      "profile": "launchpad"
+    }
+  ],
+  "lastReportedExitAt": "2026-11-11T20:21:07.718Z",
+  "latestJournalSellAt": "2026-11-11T20:21:07.709Z",
+  "monitorHeartbeatAt": "2026-11-13T07:56:49.265Z"
+}

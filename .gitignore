@@ -1,0 +1,39 @@
+# Secrets and credentials — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*keypair*
+*secret*
+*private*key*
+*mnemonic*
+*seed*phrase*
+SOLANA_PRIVATE_KEY*
+*.wallet
+*.json.gz
+
+# Desk material that must never land here
+state/
+node_modules/
+*.db
+*.db-wal
+*.db-shm
+data/
+logs/
+*.bak
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
