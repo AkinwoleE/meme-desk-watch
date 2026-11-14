@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-11-14T19:55:48.735Z",
+  "exportedAt": "2026-11-14T20:07:09.721Z",
   "gc": {
     "symbol": "GC",
     "name": "GlobalCoin",
@@ -33,7 +33,7 @@
       "profile": "launchpad"
     }
   ],
-  "lastReportedExitAt": "2026-11-11T20:21:07.718Z",
+  "lastReportedExitAt": "2026-11-13T13:49:36.641Z",
   "latestJournalSellAt": "2026-11-13T13:49:36.634Z",
-  "monitorHeartbeatAt": "2026-11-14T19:55:47.104Z"
+  "monitorHeartbeatAt": "2026-11-14T20:07:08.443Z"
 }
