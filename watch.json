@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-11-13T10:18:16.039Z",
+  "exportedAt": "2026-11-14T19:55:48.735Z",
   "gc": {
     "symbol": "GC",
     "name": "GlobalCoin",
@@ -21,18 +21,6 @@
   },
   "openPositions": [
     {
-      "id": 36,
-      "symbol": "ZER0",
-      "name": "ZER0",
-      "mint": "DZkm8gDaowS64uAR5XAZnmu92fRNHRVLn2rtb8VfLoat",
-      "chain": "solana",
-      "mode": "live",
-      "entryMcap": 42119.52941773327,
-      "entryPrice": 0.00004239922544969554,
-      "stopMultiple": 0.55,
-      "profile": "launchpad"
-    },
-    {
       "id": 37,
       "symbol": "Rings",
       "name": "Rings",
@@ -46,6 +34,6 @@
     }
   ],
   "lastReportedExitAt": "2026-11-11T20:21:07.718Z",
-  "latestJournalSellAt": "2026-11-11T20:21:07.709Z",
-  "monitorHeartbeatAt": "2026-11-13T10:18:13.413Z"
+  "latestJournalSellAt": "2026-11-13T13:49:36.634Z",
+  "monitorHeartbeatAt": "2026-11-14T19:55:47.104Z"
 }
