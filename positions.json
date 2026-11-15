@@ -6,7 +6,7 @@
   "opened_at": "2026-11-15T17:46:44+01:00",
   "entry_price": 0.00011857223285721676,
   "qty_orig": 16867.355466,
-  "qty": 16867.355466,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/Turbodev1x/status/2121631748844835028",
   "score": {
@@ -71,20 +71,35 @@
     "price": 0.00011857223285721676,
     "route": "jupiter-ultra",
     "sig": "qPUSi5wSN2dPAJkMLFDx6p6iapYZLERrntRHxYfeN8asUAgTNMLdzg5rHajkGg5oxgTqRQpMJUjL522eHcw1n59"
+   },
+   {
+    "ts": "2026-11-15T19:13:51+01:00",
+    "side": "sell",
+    "qty": 16867.355466,
+    "usd": 1.3305849999999992,
+    "price": 7.888521722815983e-05,
+    "route": "jupiter-ultra",
+    "sig": "3rakRixSvbJ4aCxnYcfcRK27SJAn1R4Jcf4Z6yKTX8reUULSbJbEeBYLzUk46SJi8WgEaKAHrMZaq4CpF5zoqgLw",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.00015277754452890603,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.3305849999999992,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 23337.062296839853,
   "entry_dev_pct": null,
   "graduated": true,
   "last_price": 8.00580564879404e-05,
   "last_check": "2026-11-15T19:13:43+01:00",
-  "sell_failures": 0
+  "sell_failures": 0,
+  "closed_at": "2026-11-15T19:13:51+01:00",
+  "exit_reason": "stop 0.7x (now 0.68x)",
+  "pnl_usd": -0.6694150000000008,
+  "pnl_x": 0.6652924999999996
  },
  "14d2cfb828": {
   "id": "14d2cfb828",
