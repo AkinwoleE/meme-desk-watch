@@ -1,82 +1,146 @@
 # meme-desk-watch
 
-Read-only alerts for Plankton's Solana meme-desk. This repository holds a sanitized snapshot (`watch.json`) and a GitHub Actions workflow that compares it to public prices. **Nothing in this repo signs, sends, or builds a transaction. Never put a wallet key, seed, `.env`, RPC key, or GitHub PAT in this repository or in Actions secrets other than the two webhook secrets below.**
+Exit monitor for the live Solana memecoin desk. GitHub Actions evaluates the same exit rules as the box (`trader/exits.py`) and sells through the same route (`trader/execution.py`: Jupiter Ultra, then Jupiter Swap API + Jito, then PumpPortal). The box keeps scanning and buying. It does not sell while this runner's heartbeat is fresh.
+
+The runner never buys. It never sells an excluded mint (including CJ `F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q`) and never sells a token that is not an open position this system bought. Sell size comes from the on-chain balance, read again immediately before the swap. Slippage is capped at 15% (`sell_max` 1500 bps). The 0.01 SOL fee reserve is preserved because this runner never buys; a sell is not blocked when SOL is already under that reserve (the same as the box), but the run alerts.
 
 ## What runs where
 
 | Where | What | Cadence |
 | --- | --- | --- |
-| The box (`/workspace/meme-desk`) | `export-watch.mjs` reads GC thresholds, open positions, the last-reported-exit marker, the latest live journal sell, and the monitor heartbeat. `github-sync.sh` writes `watch.json` and pushes it here. | A nohup supervisor (`./github-sync.sh start`), same pattern as the trading monitor. Every ~10 minutes, and whenever the snapshot changes. The box has no `crontab`. |
-| This repo, GitHub Actions | `.github/workflows/desk-watch.yml` runs `src/check.mjs`. It fetches public DexScreener (GC/META pool) and DexScreener/GeckoTerminal (open Solana positions) prices. | `schedule: '*/10 * * * *'` (GitHub cron is often 5–20 minutes late and can skip) **and** `workflow_dispatch` so an external cron can fire it on time. |
+| The box | Scans and buys. Pushes each new position to the `state` branch. Sells only when this runner's heartbeat is older than 10 minutes and the box is awake. | Buy on the existing scan. Monitor loop still every ~15s, but it only records while GitHub holds the lease. |
+| This repo, `.github/workflows/exit-monitor.yml` | Loads `positions.json` from branch `state`, prices (Jupiter, then DexScreener), runs `exits.evaluate`, sells, writes peak / take-profit / closed state back. Also checks the box heartbeat and unexpected outgoing transfers. | One run loops for ~2.5 minutes, checking every ~15s. cron-job.org starts a run every 3 minutes. GitHub `schedule` every 5 minutes is only a backup. |
 
-Exits themselves still belong to the always-on box monitor. This workflow only **wakes an agent** when something already looks wrong.
+`concurrency` is `exit-monitor` with `cancel-in-progress: false`. A second trigger waits. GitHub keeps one running job and one pending job, so triggers do not pile up and a run is not cancelled mid-sell.
 
-## Alerts
+The old `desk-watch` workflow has been removed. `src/check.mjs` and `watch.json` are the previous read-only watcher; nothing in the exit path reads them.
 
-The workflow POSTs JSON `{ "type", "details" }` and nothing else, and only when a **new** incident appears. Repeated runs of the same incident are suppressed via `.alert-state.json` (committed when it changes). After the condition clears, a later occurrence can alert again.
+## 1. Repo secrets
 
-| `type` | When |
+Repo → Settings → Secrets and variables → Actions → New repository secret.
+
+| Name | Required | Value |
+| --- | --- | --- |
+| `SOLANA_TRADING_PRIVATE_KEY` | Yes | Base58 secret key of the trading wallet. Never put this in the repo, in a log, or in cron-job.org. |
+| `SOLANA_RPC_URL` | No | HTTPS RPC (Helius or similar). If empty, the public mainnet RPC is used. |
+| `TELEGRAM_BOT_TOKEN` | Yes, for alerts | From @BotFather. |
+| `TELEGRAM_CHAT_ID` | Yes, for alerts | Chat id that should receive alerts. |
+
+Alerts: each sell (symbol, multiple, PnL, tx), a sell that is still failing on attempts 3, 10, and every 40, box heartbeat older than 30 minutes, box heartbeat missing, a health flag on the heartbeat going false, a new box alert carried in the heartbeat, and an outgoing SOL or token transfer that does not touch a known DEX program.
+
+Workflow permissions: Settings → Actions → General → Workflow permissions → **Read and write permissions**. The job uses `github.token` to commit the `state` branch. The trading key is not that token.
+
+## 2. Fine-grained token for cron-job.org
+
+GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+
+- Resource owner: `AkinwoleE`
+- Repository access: **Only select repositories** → `meme-desk-watch`
+- Permissions:
+  - **Actions: Read and write** (this is what dispatch needs)
+  - **Contents: Read and write** (so the same token can also be the box's `GITHUB_STATUS_TOKEN` if you want one token for both)
+- No account permissions. No other repositories.
+
+Put this token only in cron-job.org (and, if you reuse it, in the box env). Do not commit it and do not paste it into an Actions secret.
+
+The box can keep its existing `GITHUB_STATUS_TOKEN` if that token already has Contents: Read and write on this repo. It does not need Actions access.
+
+## 3. Enable the workflow
+
+Merge this change to `main` first. `workflow_dispatch` is only offered for a workflow file on the default branch.
+
+1. Actions tab → if GitHub asks, enable Actions for the repository ("I understand my workflows, go ahead and enable them").
+2. Open **exit-monitor**. If it shows a disabled banner, enable that workflow.
+3. Run it once by hand (Run workflow → branch `main`) after the secrets above are set. The first run creates branch `state` if it does not exist.
+
+## 4. cron-job.org, every 3 minutes
+
+Create a job:
+
+- Method: **POST**
+- URL: `https://api.github.com/repos/AkinwoleE/meme-desk-watch/actions/workflows/exit-monitor.yml/dispatches`
+- Schedule: every 3 minutes
+- Request body (JSON): `{"ref":"main"}`
+- Headers:
+
+| Header | Value |
 | --- | --- |
-| `gc_trigger` | GC market cap on the main **GC/META** DexScreener pool is at or below `nextTriggerMcap`, and the $100 dump-buy ladder still has room (`remaining > 0`). |
-| `missed_stop` | An open position's live price is at or below `entryPrice * stopMultiple` (the box monitor should have sold). |
-| `unreported_sell` | The latest live journal sell timestamp is newer than `lastReportedExitAt`. |
-| `stale_heartbeat` | `monitorHeartbeatAt` in `watch.json` is older than 30 minutes (box suspended, sync or monitor down). Brief pauses under 30 minutes are ignored. |
+| `Accept` | `application/vnd.github+json` |
+| `Authorization` | `Bearer <the fine-grained token>` |
+| `X-GitHub-Api-Version` | `2022-11-28` |
+| `Content-Type` | `application/json` |
 
-If `DESK_WEBHOOK_URL` or `DESK_WEBHOOK_KEY` is not set, the job **logs the alert and exits successfully**. It does not fail the run and it does not POST anywhere else.
-
-## Secrets and variables you still need to set
-
-In the repo **Settings → Secrets and variables → Actions**:
-
-| Name | Kind | Required | Purpose |
-| --- | --- | --- | --- |
-| `DESK_WEBHOOK_URL` | Secret | Yes, for delivery | Absolute URL that will receive `POST {type, details}`. |
-| `DESK_WEBHOOK_KEY` | Secret | Yes, for delivery | Value sent in the auth header. |
-| `DESK_WEBHOOK_HEADER` | Variable | No | Header name (and optional scheme) used with the key. **Default: `Authorization: Bearer`**, which sends `Authorization: Bearer <DESK_WEBHOOK_KEY>`. For a custom header, set this to e.g. `X-Api-Key` (the raw key is the header value) or `X-Api-Key: Bearer`. |
-
-Do **not** store `SOLANA_PRIVATE_KEY`, a seed, or an RPC URL here.
-
-## Triggering from an external cron (cron-job.org, etc.)
-
-GitHub's own schedule is a backup. For on-time checks, POST to the `workflow_dispatch` API:
+A successful dispatch returns **204** with an empty body. 401 means the token is wrong or expired. 404 means the workflow file is not on `main` yet, or the token cannot see this private repo. 422 means `ref` is not a branch GitHub can run.
 
 ```bash
-curl -X POST \
+curl -sS -o /dev/null -w "%{http_code}\n" -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $TOKEN" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
-  https://api.github.com/repos/AkinwoleE/meme-desk-watch/actions/workflows/desk-watch.yml/dispatches \
+  -H "Content-Type: application/json" \
+  https://api.github.com/repos/AkinwoleE/meme-desk-watch/actions/workflows/exit-monitor.yml/dispatches \
   -d '{"ref":"main"}'
 ```
 
-`$TOKEN` should be a **fine-grained personal access token** with access to **this repository only**, and:
+GitHub's own `schedule` (`*/5 * * * *` in the workflow) keeps running as a backup when cron-job.org is down. It is often late. Do not rely on it as the only trigger.
 
-- **Actions: Read and write** (required to dispatch)
-- **Contents: Read** (so the workflow can check out `watch.json`)
+## 5. Box-side apply
 
-Do not reuse a classic PAT with broad `repo` or org scopes for this. Create the token at GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens, expire it reasonably, and paste it only into the cron service.
-
-You can also run it by hand:
+The box is not a checkout of this repo. From a copy of this repo (or the `box/` directory), on the machine, with the trader source as the current directory (the folder that contains `monitor.py` and `trader/`):
 
 ```bash
-gh workflow run desk-watch.yml --repo AkinwoleE/meme-desk-watch
+cp /path/to/meme-desk-watch/trader/lease.py trader/lease.py
+cp /path/to/meme-desk-watch/trader/mergepos.py trader/mergepos.py
+cp /path/to/meme-desk-watch/box/state_sync.py state_sync.py
+patch -p1 < /path/to/meme-desk-watch/box/monitor.patch
+patch -p1 < /path/to/meme-desk-watch/box/scan.patch
 ```
 
-## Box-side commands
+`patch` applies against the monitor and scan that were current when this was built. If either patch rejects, do not force it: the lease hooks are marked in `monitor.py` in this repo (`lease_execute`, the `execute` flag on `act_on`) and the scan hook is the block in `box/scan.patch`. Copy those by hand onto your copies.
 
-From `/workspace/meme-desk`:
+Env for the trader processes (the same place `GITHUB_STATUS_TOKEN` already lives, sourced before `start.sh`):
 
 ```bash
-./github-sync.sh once      # export + push watch.json if it changed
-./github-sync.sh start     # supervisor loop (every 10 min)
-./github-sync.sh status
-./github-sync.sh stop
+# existing token is enough when it has Contents: Read and write on AkinwoleE/meme-desk-watch
+GITHUB_STATUS_TOKEN=...
+GITHUB_STATUS_REPO=AkinwoleE/meme-desk-watch
+# optional rename if you would rather not share the status token
+# GITHUB_STATE_TOKEN=...
 ```
 
-The supervisor is a nohup loop (PID in `data/github-sync.supervisor.pid`, log in `logs/github-sync.log`). It survives process crashes the same way `monitor.sh` does; after a full box reboot, start it again the same way you start the monitor: `./github-sync.sh start`.
+Restart the monitor (and the scan scheduler) so they load the patch. The next live buy calls `state_sync.push_position` and `state_sync.push_rules`. The monitor also pushes an open position the branch does not have yet, so a failed push is retried on the next 15s tick.
 
-The clone of this repo lives at `/workspace/meme-desk-watch`. The sync script will only ever `git add watch.json`.
+### Lease
 
-## `watch.json` shape
+Shared file: `exit_lease.json` on branch `state`.
 
-Sanitized, allow-listed fields only: GC contract and thresholds, the GC/META pair address, each open position's `id`, `mint`, entry mcap/price, stop multiple and profile, `lastReportedExitAt`, `latestJournalSellAt`, and `monitorHeartbeatAt`. No balances, signatures, theses, or keys.
+- Runner heartbeat younger than 6 minutes: the box **does not sell**. It still updates its local peak and writes its own heartbeat.
+- Runner heartbeat between 6 and 10 minutes: the box still does not sell (this gap stops the two sides flipping every cron miss).
+- Runner heartbeat older than 10 minutes and the box monitor is in its loop: the box sells, using the same `act_on` path as before, and pushes the book back.
+- No GitHub token on the box: the box sells, as it does today.
+
+Both sides size a sell from the live balance and re-read that balance before sending. A full exit that already landed comes back as "no balance" and the position is closed instead of being sold twice. A sell claim on the lease (`sell_claims`, 90s) makes the other side skip that mint for one tick.
+
+### State branch files
+
+| File | Who writes it |
+| --- | --- |
+| `positions.json` | Box on buy (and on failover sells). Runner after every exit tick (peak, `tp_done`, fills, closed). |
+| `exit_lease.json` | Both. Each side updates only its own heartbeat; a merge keeps the other side. |
+| `rules.json` | Box, on buy. Excluded mints are a union, so a mint excluded on either side stays excluded. |
+| `watch_state.json` | Runner. Last signature cursor and which heartbeat alerts already fired. |
+
+The box heartbeat the runner watches is unchanged: branch `status`, file `status/heartbeat.json`, field `unix`. Stale means older than 30 minutes.
+
+## Tests
+
+```bash
+pip install -r requirements.txt
+python -m unittest discover -s tests -v
+```
+
+CI is `.github/workflows/ci.yml`. It does not sell. `exit-monitor.yml` does not run on push or pull request.
+
+## Not covered by tests
+
+Live signing against Jupiter, Jito, and PumpPortal; a real RPC; Telegram delivery; cron-job.org; creating the `state` branch on GitHub; applying the patch to a `monitor.py` that has drifted from the copy these patches were made from. Those paths are mocked or left for the first manual workflow run. The sell route order, the 15% cap, and the on-chain sizing are the existing unit tests, still mocked.

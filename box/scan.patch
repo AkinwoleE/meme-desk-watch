@@ -1,0 +1,23 @@
+--- a/scan.py	2026-11-15 17:31:38.249267546 +0000
++++ b/scan.py	2026-11-15 17:31:38.265267186 +0000
+@@ -108,6 +108,20 @@
+                         bk = journal.load(False); bk[pos["id"]]["qty"] = bk[pos["id"]]["qty_orig"] = q
+                         bk[pos["id"]]["entry_price"] = bk[pos["id"]]["peak_price"] = fill["usd"] / q; journal.save(bk, False)
+             except Exception as e: log("scan", "qty correction failed", err=str(e))
++        if live:
++            try:
++                try:
++                    import state_sync
++                except ImportError:
++                    from box import state_sync
++                with journal.locked():
++                    fresh = journal.load(False).get(pos["id"], pos)
++                pushed = state_sync.push_position(fresh)
++                state_sync.push_rules()
++                if pushed == "no token":
++                    log("scan", "state push skipped: set GITHUB_STATUS_TOKEN or GITHUB_STATE_TOKEN")
++            except Exception as e:
++                log("scan", "state push failed (GitHub exit runner will not see this buy until the next monitor tick)", err=str(e)[:200])
+         opened.append(pos["id"]); open_n += 1
+         log("scan", ("LIVE BUY" if live else "DRY-RUN BUY (paper)"), mint=r["mint"], symbol=r["symbol"], score=r["score"]["score"], profile=r["profile"],
+             tx=fill.get("sig"), route=fill.get("route"), usd=fill["usd"], qty=fill["qty"])

@@ -1,0 +1,57 @@
+# Exit monitor for the meme desk. Sells only. Never buys.
+# Primary trigger: cron-job.org POSTs workflow_dispatch every 3 minutes.
+# GitHub's own schedule is a backup; it often runs late or skips.
+name: exit-monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+# One run at a time. A new trigger waits; it does not cancel the run that is mid-sell.
+concurrency:
+  group: exit-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  exits:
+    name: Watch exits
+    if: github.repository == 'AkinwoleE/meme-desk-watch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Arm live gate
+        run: echo I_APPROVE_LIVE_TRADING > LIVE
+
+      - name: Run exit loop
+        env:
+          TRADER_LIVE: '1'
+          EXIT_RUNNER: '1'
+          EXIT_LOOP_SECONDS: '150'
+          EXIT_INTERVAL_SECONDS: '15'
+          SOLANA_TRADING_PRIVATE_KEY: ${{ secrets.SOLANA_TRADING_PRIVATE_KEY }}
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          STATE_BRANCH: state
+          HEARTBEAT_BRANCH: status
+          HEARTBEAT_PATH: status/heartbeat.json
+          HEARTBEAT_MAX_AGE_MIN: '30'
+          PYTHONUNBUFFERED: '1'
+        run: python -m runner.exit_runner
