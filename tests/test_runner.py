@@ -247,6 +247,16 @@ class Runner(unittest.TestCase):
         self.assertEqual(lease["github_heartbeat_unix"], 1_000_000 + 150)
         self.assertEqual(lease["owner"], "github")
 
+    def test_missing_trading_key_does_not_start_the_loop(self):
+        os.environ.pop("SOLANA_TRADING_PRIVATE_KEY", None)
+        with mock.patch.object(exit_runner, "telegram_alert") as alert, \
+             mock.patch.object(exit_runner, "run") as run:
+            with self.assertRaises(SystemExit) as caught:
+                exit_runner.main()
+        self.assertEqual(caught.exception.code, 1)
+        run.assert_not_called()
+        self.assertIn("not taking the lease", alert.call_args[0][0])
+
     def test_refuses_to_start_when_not_live(self):
         os.environ.pop("TRADER_LIVE", None)
         with self.assertRaises(SystemExit):

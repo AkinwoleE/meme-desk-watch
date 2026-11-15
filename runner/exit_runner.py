@@ -367,7 +367,9 @@ def _env_float(name, default):
 def main():
     os.environ["EXIT_RUNNER"] = "1"
     if not os.environ.get("SOLANA_TRADING_PRIVATE_KEY"):
-        telegram_alert("SOLANA_TRADING_PRIVATE_KEY is not set; sells cannot be signed")
+        # Fail the run (visible in the Actions API) and do NOT stamp the lease: the box keeps selling.
+        telegram_alert("SOLANA_TRADING_PRIVATE_KEY is not set; sells cannot be signed; exit runner not taking the lease")
+        raise SystemExit(1)
     client = state_sync.default_client()
     if client is None:
         telegram_alert("GH_TOKEN missing; cannot read the shared position book")

@@ -23,10 +23,10 @@ Repo → Settings → Secrets and variables → Actions → New repository secre
 | --- | --- | --- |
 | `SOLANA_TRADING_PRIVATE_KEY` | Yes | Base58 secret key of the trading wallet. Never put this in the repo, in a log, or in cron-job.org. |
 | `SOLANA_RPC_URL` | No | HTTPS RPC (Helius or similar). If empty, the public mainnet RPC is used. |
-| `TELEGRAM_BOT_TOKEN` | Yes, for alerts | From @BotFather. |
-| `TELEGRAM_CHAT_ID` | Yes, for alerts | Chat id that should receive alerts. |
+| `TELEGRAM_BOT_TOKEN` | No | From @BotFather. Used only when both Telegram secrets are set. A missing token does not fail the run. |
+| `TELEGRAM_CHAT_ID` | No | Chat id. Same rule: both secrets, or neither. |
 
-Alerts: each sell (symbol, multiple, PnL, tx), a sell that is still failing on attempts 3, 10, and every 40, box heartbeat older than 30 minutes, box heartbeat missing, a health flag on the heartbeat going false, a new box alert carried in the heartbeat, and an outgoing SOL or token transfer that does not touch a known DEX program.
+Alerts are printed in the Actions log and appended to `alerts.jsonl` on the `state` branch. Telegram is sent only when both secrets are set. A missing `SOLANA_TRADING_PRIVATE_KEY` fails the run before any lease heartbeat is written, so the box keeps selling. Alert cases: each sell (symbol, multiple, PnL, tx), a sell that is still failing on attempts 3, 10, and every 40, box heartbeat older than 30 minutes, box heartbeat missing, a health flag on the heartbeat going false, a new box alert carried in the heartbeat, and an outgoing SOL or token transfer that does not touch a known DEX program.
 
 Workflow permissions: Settings → Actions → General → Workflow permissions → **Read and write permissions**. The job uses `github.token` to commit the `state` branch. The trading key is not that token.
 
@@ -129,6 +129,7 @@ Both sides size a sell from the live balance and re-read that balance before sen
 | `exit_lease.json` | Both. Each side updates only its own heartbeat; a merge keeps the other side. |
 | `rules.json` | Box, on buy. Excluded mints are a union, so a mint excluded on either side stays excluded. |
 | `watch_state.json` | Runner. Last signature cursor and which heartbeat alerts already fired. |
+| `alerts.jsonl` | Runner. One JSON line per alert. Written even when Telegram is not configured. |
 
 The box heartbeat the runner watches is unchanged: branch `status`, file `status/heartbeat.json`, field `unix`. Stale means older than 30 minutes.
 

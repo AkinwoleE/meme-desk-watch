@@ -54,34 +54,90 @@ def _confirm(sig, timeout=60):
 
 class Unknown(Exception): pass
 
+def _our_sigs(signed_b64):
+    """All non-empty signatures in a signed tx (ours; for gasless Ultra the fee-payer slot is filled later by Jupiter)."""
+    from solders.transaction import VersionedTransaction as _VT
+    sigs = [str(x) for x in _VT.from_bytes(base64.b64decode(signed_b64)).signatures]
+    return [x for x in sigs if x != "1" * 64 and set(x) != {"1"}]
+
+def _bal(mint):
+    if mint in (SOL,): return None
+    try: return onchain_raw(mint)
+    except Exception: return None
+
+def _recover(attempted, side, inp, out, pre_in, pre_out, wait=45):
+    """After a submit error/timeout: did any of our signed txs land? Checks signature statuses and the token balance;
+    if the balance moved, finds the landed tx in recent wallet history. Returns the landed signature or None."""
+    from .history import get_tx
+    txids = [s for s in attempted if s]
+    t0 = time.time()
+    while time.time() - t0 < wait:
+        if txids:
+            st = (rpc("getSignatureStatuses", [txids, {"searchTransactionHistory": True}]) or {}).get("value") or []
+            for sig, x in zip(txids, st):
+                if x and x.get("err") is None and x.get("confirmationStatus") in ("confirmed", "finalized"): return sig
+        moved = False
+        if side == "buy" and pre_out is not None:
+            b = _bal(out); moved = b is not None and b > pre_out
+        if side == "sell" and pre_in is not None:
+            b = _bal(inp); moved = b is not None and b < pre_in
+        if moved:
+            mint = out if side == "buy" else inp
+            for s in rpc("getSignaturesForAddress", [WALLET, {"limit": 15}]) or []:
+                if s.get("err"): continue
+                tx = get_tx(s["signature"])
+                if not tx: continue
+                if set(tx["transaction"]["signatures"]) & set(attempted): return s["signature"]
+                from .history import deltas
+                d = deltas(tx)
+                if (side == "buy" and d.get(mint, 0) > 0) or (side == "sell" and d.get(mint, 0) < 0): return s["signature"]
+        time.sleep(3)
+    return None
+
+def _landed_fill(route, sig, amount):
+    d = actual_deltas(sig) or {}
+    return {"route": route, "sig": sig, "in": amount, "out": None, "deltas": d}
+
 def _live_swap(inp, out, amount, slippage_bps, curve_mint=None, side="buy", full_sell=False, dec=6):
-    kp = _keypair()
-    # 1. Ultra
+    kp = _keypair(); attempted = []
+    pre_in, pre_out = _bal(inp), _bal(out)
+    # 1. Ultra (Jupiter lands it, MEV-protected)
     try:
         o = requests.get(f"{JUP}/ultra/v1/order", params={"inputMint": inp, "outputMint": out, "amount": int(amount), "taker": WALLET,
                          "slippageBps": int(slippage_bps)}, timeout=20).json()
         if o.get("transaction"):
             signed = _sign_b64(o["transaction"], kp)
-            from solders.transaction import VersionedTransaction as _VT
-            record_our_sig(str(_VT.from_bytes(base64.b64decode(signed)).signatures[0]), f"ultra {side} {inp[:6]}->{out[:6]}")
-            ex = requests.post(f"{JUP}/ultra/v1/execute", json={"signedTransaction": signed, "requestId": o["requestId"]}, timeout=60).json()
+            for sg in _our_sigs(signed): record_our_sig(sg, f"ultra {side} {inp[:6]}->{out[:6]}"); attempted.append(sg)
+            try:
+                ex = requests.post(f"{JUP}/ultra/v1/execute", json={"signedTransaction": signed, "requestId": o["requestId"]}, timeout=60).json()
+            except Exception as e:
+                log("exec", "ultra submit error; checking chain before fallback", err=str(e)[:200])
+                sig = _recover(attempted, side, inp, out, pre_in, pre_out)
+                if sig: record_our_sig(sig, f"ultra {side} (recovered)"); log("exec", "ultra tx landed despite error", sig=sig); return _landed_fill("jupiter-ultra (recovered)", sig, amount)
+                raise
             if ex.get("status") == "Success":
+                if ex.get("signature"): record_our_sig(ex["signature"], f"ultra {side} txid")
                 return {"route": "jupiter-ultra", "sig": ex.get("signature"), "in": int(ex.get("inputAmountResult") or amount), "out": int(ex.get("outputAmountResult") or o.get("outAmount"))}
             log("exec", "ultra failed", resp={k: ex.get(k) for k in ("status", "error", "code")})
-    except Exception as e: log("exec", "ultra error", err=str(e))
-    # 2. Swap API + Jito tip
+            if ex.get("signature"): record_our_sig(ex["signature"], f"ultra {side} failed txid")
+    except Exception as e: log("exec", "ultra error", err=str(e)[:300])
+    # 2. Swap API + Jito tip (txid known before sending)
     try:
         q = data.jup_quote(inp, out, amount, slippage_bps)
         sw = requests.post(f"{JUP}/swap/v1/swap", json={"quoteResponse": q, "userPublicKey": WALLET, "wrapAndUnwrapSol": True,
                            "dynamicComputeUnitLimit": True, "dynamicSlippage": False,
                            "prioritizationFeeLamports": {"jitoTipLamports": 100000}}, timeout=20).json()
         raw = _sign_b64(sw["swapTransaction"], kp)
-        sig = _send_jito(raw); record_our_sig(sig, f"swap {side}")
-        c = _confirm(sig) if sig else False
-        if c is None and side == "buy": raise Unknown(f"swap {sig} unconfirmed; not falling back (avoid double buy)")
-        if c: return {"route": "jupiter-swap+jito", "sig": sig, "in": int(q["inAmount"]), "out": int(q["outAmount"])}
+        txid = _our_sigs(raw)[0]; record_our_sig(txid, f"swap {side}"); attempted.append(txid)
+        try: _send_jito(raw)
+        except Exception as e: log("exec", "jito send error; checking chain", err=str(e)[:200])
+        c = _confirm(txid, timeout=45)
+        if c: return {"route": "jupiter-swap+jito", "sig": txid, "in": int(q["inAmount"]), "out": int(q["outAmount"])}
+        sig = _recover(attempted, side, inp, out, pre_in, pre_out, wait=15)
+        if sig: log("exec", "swap tx landed (recovered)", sig=sig); return _landed_fill("jupiter-swap+jito (recovered)", sig, amount)
+        if c is None and side == "buy": raise Unknown(f"swap {txid} unconfirmed; not falling back (avoid double buy)")
     except Unknown: raise
-    except Exception as e: log("exec", "swap api error", err=str(e))
+    except Exception as e: log("exec", "swap api error", err=str(e)[:300])
     # 3. PumpPortal (bonding curve, or any pump.fun/PumpSwap coin for sells; pool=auto)
     if curve_mint:
         try:
@@ -91,11 +147,19 @@ def _live_swap(inp, out, amount, slippage_bps, curve_mint=None, side="buy", full
             from solders.transaction import VersionedTransaction
             tx = VersionedTransaction.from_bytes(r.content)
             raw = base64.b64encode(bytes(VersionedTransaction(tx.message, [kp]))).decode()
-            sig = _send_jito(raw); record_our_sig(sig, f"pumpportal {side}")
-            c = _confirm(sig) if sig else False
-            if c is None and side == "buy": raise Unknown(f"pumpportal {sig} unconfirmed")
-            if c: return {"route": "pumpportal+jito", "sig": sig, "in": amount, "out": None}
-        except Exception as e: log("exec", "pumpportal error", err=str(e))
+            txid = _our_sigs(raw)[0]; record_our_sig(txid, f"pumpportal {side}"); attempted.append(txid)
+            try: _send_jito(raw)
+            except Exception as e: log("exec", "jito send error; checking chain", err=str(e)[:200])
+            c = _confirm(txid, timeout=45)
+            if c: return {"route": "pumpportal+jito", "sig": txid, "in": amount, "out": None}
+            sig = _recover(attempted, side, inp, out, pre_in, pre_out, wait=15)
+            if sig: return _landed_fill("pumpportal+jito (recovered)", sig, amount)
+            if c is None and side == "buy": raise Unknown(f"pumpportal {txid} unconfirmed")
+        except Unknown: raise
+        except Exception as e: log("exec", "pumpportal error", err=str(e)[:300])
+    # final check: nothing landed?
+    sig = _recover(attempted, side, inp, out, pre_in, pre_out, wait=10) if attempted else None
+    if sig: return _landed_fill("recovered", sig, amount)
     raise RuntimeError("all live routes failed")
 
 def buy(t, usd, slippage_bps, paper_quote=None, paper=None):

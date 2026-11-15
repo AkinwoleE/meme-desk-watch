@@ -48,7 +48,8 @@ class Sell(unittest.TestCase):
         def get(url, **k): seq.append("ultra-order"); return R({"transaction": None})
         def post(url, **k):
             seq.append("pumpportal" if "pumpportal" in url else "swap"); raise RuntimeError("down")
-        with mock.patch.object(ex, "_keypair", return_value=object()), mock.patch.object(ex.requests, "get", side_effect=get), \
+        with mock.patch.object(ex, "_keypair", return_value=object()), mock.patch.object(ex, "_bal", return_value=None), \
+             mock.patch.object(ex.requests, "get", side_effect=get), \
              mock.patch.object(ex.requests, "post", side_effect=post), mock.patch.object(ex.data, "jup_quote", return_value={"inAmount": "1", "outAmount": "1"}), \
              mock.patch.object(ex, "log"):
             with self.assertRaises(RuntimeError): ex._live_swap(M, USDC, 10, 1500, M, side="sell", full_sell=True)
