@@ -176,7 +176,7 @@
     "sig": "eNsRAojwUNVCsrBVTrvejpw5RzsPmbZbMKvRumQuFyBP1bqBRBSDmE7CwZA5MDcDHw1q9JyxnF7RkzXXtyddArC"
    }
   ],
-  "peak_price": 0.00013566338904072743,
+  "peak_price": 0.00013893728294494813,
   "tp_done": [],
   "realized_usd": 0.0,
   "paper": false,
@@ -185,8 +185,8 @@
   "entry_liq": 14571.885321510088,
   "entry_dev_pct": null,
   "graduated": true,
-  "last_price": 0.00013061873622043842,
-  "last_check": "2026-11-15T19:19:53+01:00",
+  "last_price": 0.00013893728294494813,
+  "last_check": "2026-11-15T19:20:09+01:00",
   "sell_failures": 0
  }
 }
