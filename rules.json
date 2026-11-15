@@ -1,0 +1,300 @@
+{
+ "version": 58,
+ "size_usd": 2.0,
+ "max_size_usd": 2.0,
+ "pay_with": [
+  "USDC",
+  "SOL"
+ ],
+ "min_sol_reserve": 0.01,
+ "max_open_positions": 20,
+ "slippage_bps": {
+  "curve": 1000,
+  "grad_lt_25k": 800,
+  "grad_25k_150k": 500,
+  "grad_gt_150k": 300,
+  "sell_max": 1500
+ },
+ "max_price_impact_pct": 8.0,
+ "max_roundtrip_loss_pct": 12.0,
+ "scan_hours_wat": [
+  16,
+  4
+ ],
+ "monitor_interval_s": 15,
+ "guard_interval_s": 300,
+ "review_interval_h": 6,
+ "min_score": 68,
+ "hard": {
+  "min_age_min": 10,
+  "max_age_days": 7,
+  "min_mcap": 8000,
+  "max_mcap": 50000000,
+  "min_holders": 75,
+  "min_grad_liq": 10000,
+  "top10_max_pct": 35,
+  "single_wallet_max_pct": 12,
+  "dev_max_pct": 8,
+  "insider_max_pct": 15,
+  "phantom_liq": 1000,
+  "fake_mcap": {
+   "mcap_over": 1000000,
+   "vol1h_pct_under": 0.5,
+   "mcap_per_holder_over": 20000
+  },
+  "wash": {
+   "vol24_over_mcap_x": 10
+  }
+ },
+ "penalties": {
+  "copycat": -10,
+  "late_leg": -15,
+  "chasing": -8,
+  "distribution": -8,
+  "paid_boost": -5
+ },
+ "thresholds": {
+  "late_leg_24h_pct": 1000,
+  "chasing_1h_pct": 150,
+  "distribution_1h_pct": 60
+ },
+ "creator_range": [
+  -8,
+  8
+ ],
+ "caller_bonus_max": 12,
+ "caller_window_min": 20,
+ "temp_bias": {
+  "until": "2026-11-30T23:59:59+01:00",
+  "gta": 8,
+  "gta_animal": 12
+ },
+ "entry": {
+  "late_first_leg_mcap": 250000,
+  "second_run": {
+   "enabled": true,
+   "min_base_h": 2,
+   "max_mcap": 1500000,
+   "max_of_peak": 0.75,
+   "min_organic": 60,
+   "drop_if_first5_avg_under": 0.9
+  },
+  "launchpad": {
+   "min_liq": 12000,
+   "min_organic": 30,
+   "vol24_x_mcap": 0.5,
+   "vol1h_x_mcap": 0.05,
+   "min_vol1h": 5000,
+   "min_buy_sell_ratio": 0.8,
+   "pullback_trigger_1h_pct": 35,
+   "pullback_trigger_launch_x": 5,
+   "pullback_pct": 25
+  },
+  "insider_exception": {
+   "min_wallets": 8,
+   "max_wallets": 100,
+   "min_pct": 5,
+   "max_pct": 20
+  },
+  "big_account_wait_min": 30,
+  "big_account_hold_of_high": 0.8,
+  "news_race_lead_x": 3
+ },
+ "exits": {
+  "curve": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true
+  },
+  "graduated": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true
+  },
+  "launchpad_grad": {
+   "tp": [
+    [
+     2,
+     0.3
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.55,
+   "trail": 0.45,
+   "trail_after_x": 2,
+   "lock_from_x": 2,
+   "lock_floor_x": 1.1,
+   "max_hold_h": 72,
+   "profit_lock": false,
+   "failed_entry": false,
+   "time_stop": false,
+   "emergency": true
+  },
+  "launchpad_curve": {
+   "tp": [
+    [
+     2,
+     0.3
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.5,
+   "trail": 0.45,
+   "trail_after_x": 2,
+   "lock_from_x": 2,
+   "lock_floor_x": 1.1,
+   "max_hold_h": 72,
+   "profit_lock": false,
+   "failed_entry": false,
+   "time_stop": false,
+   "emergency": true
+  },
+  "insider_curve": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.75,
+   "trail": 0.2,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true
+  },
+  "insider_grad": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true
+  },
+  "second_run": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "min_hold_h": 4,
+   "time_stop_x": 1.3,
+   "max_hold_h": 8,
+   "profit_lock": true,
+   "failed_entry": false
+  },
+  "common": {
+   "lock_trigger_x": 1.5,
+   "lock_drop": 0.25,
+   "lock_floor_x": 1.15,
+   "failed_after_min": 20,
+   "failed_never_above_x": 1.2,
+   "failed_at_or_below_x": 0.85,
+   "winner_keep_x": 1.3,
+   "winner_ext_mult": 1.5,
+   "winner_drop": 0.25,
+   "catalyst_extra_h": 12
+  }
+ },
+ "gc_ladder": {
+  "spent_usd": 46.31,
+  "last_buy_mcap": 236000,
+  "next_buy_mcap": 177000,
+  "step_usd": 5,
+  "drop_pct": 25,
+  "cap_usd": 100,
+  "never_sell": true
+ },
+ "excluded_mints": {
+  "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": "CJ - BABA trades manually; never buy/sell/manage",
+  "7oHBLR9WPk8vf8KZ8cK7AM6cNzec5bFotv4vcTBGKsqv": "transferred_in, ignored (spam dust; received by transfer 2026-10-20 22:24 WAT); never touch",
+  "EbNZ1myJ4BfY3PJFskRywX2AcFD7HyQZ5EX9YjYkpump": "DANIELLA - not worth selling, leave alone",
+  "3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump": "transferred_in, ignored (likely scam; never touch) first seen 2026-11-15T17:45:09+01:00"
+ }
+}

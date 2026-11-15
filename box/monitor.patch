@@ -1,0 +1,103 @@
+--- a/monitor.py	2026-11-15 05:47:28.000000000 +0000
++++ b/monitor.py	2026-11-15 17:32:58.119426415 +0000
+@@ -20,9 +20,44 @@
+     if r is None: return None
+     return sum(float(a["account"]["data"]["parsed"]["info"]["tokenAmount"]["uiAmount"] or 0) for a in r.get("value", []))
+ 
+-def act_on(pos, acts, price, paper, source):
++def _sync():
++    """state_sync.py sits next to this file on the box. In this repo it lives under box/."""
++    try:
++        import state_sync
++        return state_sync
++    except ImportError:
++        from box import state_sync
++        return state_sync
++
++def lease_execute():
++    """False when the GitHub exit runner's heartbeat is fresh (<6 min).
++
++    True when that heartbeat is stale (>10 min) and this box is awake, or when
++    state sync is not configured (no token): the box keeps selling, as it does today.
++    """
++    try:
++        sync = _sync()
++    except ImportError:
++        return True, None
++    try:
++        sync.touch_box_heartbeat()
++        remote = sync.fetch_positions()
++        return sync.box_should_sell(), remote
++    except Exception as e:
++        log("monitor", "lease read failed; using cache", err=str(e)[:200])
++        try:
++            return sync.box_should_sell(), None
++        except Exception:
++            return True, None
++
++def act_on(pos, acts, price, paper, source, execute=True):
+     live = is_live()
+     for a in acts:
++        if not execute:
++            # Do not touch signals_logged: that list suppresses a later real sell.
++            log(source, "EXIT RECORDED (GitHub runner owns exits; not sold)", id=pos["id"], symbol=pos.get("symbol"), qty=a["qty"], reason=a["reason"], price=price,
++                est_usd=round(a["qty"] * (price or 0), 4))
++            continue
+         if not paper and not live:
+             key = a["reason"].split(" (")[0]
+             if key in pos.setdefault("signals_logged", []): continue
+@@ -57,9 +92,27 @@
+ 
+ def tick(source="monitor", price_fn=None, emergency=False):
+     t_now = now(); handled = 0
++    execute, remote = True, None
++    if is_live():
++        execute, remote = lease_execute()
++        if not execute:
++            log(source, "GitHub exit runner holds the lease; this tick records only")
+     for paper in ((False,) if is_live() else (False, True)):  # live: paper book ignored
+         with journal.locked():
+             book = journal.load(paper)
++        if remote is not None and not paper:
++            from trader.mergepos import merge_books
++            book = merge_books(book, remote)
++            with journal.locked():
++                journal.save(book, paper)
++            # A buy whose push failed still has to reach the runner. Push ids the branch does not have.
++            try:
++                sync = _sync()
++                for pid, pos in book.items():
++                    if pos.get("status") == "open" and pid not in remote and not excluded(pos["mint"]) and not pos.get("legacy"):
++                        sync.push_position(pos)
++            except Exception as e:
++                log(source, "state push of new position failed", err=str(e)[:200])
+         openp = {k: p for k, p in book.items() if p["status"] == "open" and not excluded(p["mint"]) and not p.get("legacy")}
+         if not openp: continue
+         prices = (price_fn or data.jup_prices)(list({p["mint"] for p in openp.values()}))
+@@ -70,10 +123,10 @@
+                 t = data.jup_token(pos["mint"]); mi = data.mint_info(pos["mint"])
+                 rt = safety.roundtrip_test(t) if t else None
+                 why = exits.emergency(pos, t, mi, rt)
+-                if why: act_on(pos, [{"qty": pos["qty"], "reason": "emergency: " + "; ".join(why)}], px, paper, source)
++                if why: act_on(pos, [{"qty": pos["qty"], "reason": "emergency: " + "; ".join(why)}], px, paper, source, execute=execute if not paper else True)
+             if pos["status"] == "open":
+                 acts = exits.evaluate(pos, px, t_now)
+-                if acts: act_on(pos, acts, px, paper, source)
++                if acts: act_on(pos, acts, px, paper, source, execute=execute if not paper else True)
+             pos["last_price"] = px; pos["last_check"] = ts(); handled += 1
+             with journal.locked():
+                 b = journal.load(paper)
+@@ -81,6 +134,13 @@
+                     for k in ("peak_price", "last_price", "last_check", "signals_logged"):
+                         if k in pos: b[pid][k] = pos[k]
+                     journal.save(b, paper)
++    if is_live() and execute:
++        try:
++            sync = _sync()
++            with journal.locked():
++                sync.push_book(journal.load(False))
++        except Exception as e:
++            log(source, "state push failed", err=str(e)[:200])
+     return handled
+ 
+ def reconcile():
