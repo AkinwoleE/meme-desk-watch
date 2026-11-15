@@ -6,7 +6,7 @@
   "opened_at": "2026-11-15T19:04:12+01:00",
   "entry_price": 0.00011379053428696606,
   "qty_orig": 17576.154401,
-  "qty": 17576.154401,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/omegatrades_sol/status/2122018257255415861?a=vBJLpYz_bsvbX5ERf_w&s=46",
   "score": {
@@ -72,20 +72,35 @@
     "price": 0.00011379053428696606,
     "route": "jupiter-ultra",
     "sig": "eNsRAojwUNVCsrBVTrvejpw5RzsPmbZbMKvRumQuFyBP1bqBRBSDmE7CwZA5MDcDHw1q9JyxnF7RkzXXtyddArC"
+   },
+   {
+    "ts": "2026-11-15T20:48:27+01:00",
+    "side": "sell",
+    "qty": 17576.154401,
+    "usd": 0.07144399999999962,
+    "price": 4.06482546579898e-06,
+    "route": "jupiter-ultra",
+    "sig": "3kx79JeUuo3BmGJPvffHTrdme3c4TFVNQFQrnEWL9G98hSK5Xkdbep43VQTZu5GF1VH2AFGBAPYwgC1UiDDBGKaJ",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.00014576824804780116,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 0.07144399999999962,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 14571.885321510088,
   "entry_dev_pct": null,
   "graduated": true,
   "last_price": 4.511853733925849e-06,
   "last_check": "2026-11-15T20:48:20+01:00",
-  "sell_failures": 0
+  "sell_failures": 0,
+  "closed_at": "2026-11-15T20:48:27+01:00",
+  "exit_reason": "stop 0.7x (now 0.04x)",
+  "pnl_usd": -1.9285560000000004,
+  "pnl_x": 0.03572199999999981
  },
  "1e9f76baa1": {
   "id": "1e9f76baa1",
