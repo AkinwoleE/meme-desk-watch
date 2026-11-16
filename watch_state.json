@@ -70,7 +70,11 @@
   "2026-11-16T18:57:15+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-16T19:01:24+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-16T19:01:31+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-16T19:02:47+01:00GITHUB exit-monitor run failure"
+  "2026-11-16T19:02:47+01:00GITHUB exit-monitor run failure",
+  "2026-11-16T19:03:22+01:00GITHUB exit-monitor run failure",
+  "2026-11-16T19:06:34+01:00GITHUB exit-monitor run failure",
+  "2026-11-16T19:09:22+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-16T19:09:39+01:00BOX FROZEN/SUSPENDED: monitor loop gap"
  ],
  "down_flags": [],
  "stale_alerted": false
