@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-16T10:00:46+01:00",
- "unix": 1794819646,
+ "ts": "2026-11-16T10:11:11+01:00",
+ "unix": 1794820271,
  "live": true,
  "monitor_ok": true,
  "guard_ok": true,
@@ -8,18 +8,6 @@
  "open_positions": 0,
  "last_scan": "2026-11-16T00:47:28+01:00",
  "alerts": [
-  {
-   "ts": "2026-11-16T08:53:10+01:00",
-   "msg": "monitor restarted by guard"
-  },
-  {
-   "ts": "2026-11-16T08:53:42+01:00",
-   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
-  },
-  {
-   "ts": "2026-11-16T09:00:51+01:00",
-   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
-  },
   {
    "ts": "2026-11-16T09:00:58+01:00",
    "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
@@ -46,6 +34,18 @@
   },
   {
    "ts": "2026-11-16T09:45:51+01:00",
+   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
+  },
+  {
+   "ts": "2026-11-16T10:02:24+01:00",
+   "msg": "GITHUB exit-monitor run cancelled"
+  },
+  {
+   "ts": "2026-11-16T10:08:41+01:00",
+   "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
+  },
+  {
+   "ts": "2026-11-16T10:08:42+01:00",
    "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
   }
  ]
