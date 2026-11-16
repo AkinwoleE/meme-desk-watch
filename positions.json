@@ -194,7 +194,7 @@
   "opened_at": "2026-11-16T18:47:27+01:00",
   "entry_price": 1.2667443961650751e-05,
   "qty_orig": 157885.048164,
-  "qty": 157885.048164,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "token of launchpad/app raydium-launchlab",
   "score": {
@@ -258,20 +258,35 @@
     "price": 1.2667443961650751e-05,
     "route": "jupiter-ultra",
     "sig": "5NFnvMVvDbumRNGrSxswowyi8GYwUPirV4hYwfqXzTLUN5u5weEGDr2e7hT2yLRgiDr8XtgnPwUHRsNMiCATbEsN"
+   },
+   {
+    "ts": "2026-11-16T19:23:18+01:00",
+    "side": "sell",
+    "qty": 157885.048164,
+    "usd": 1.6907860000000028,
+    "price": 1.0708968453071831e-05,
+    "route": "jupiter-ultra",
+    "sig": "4eWN8ZcAWJsdVrBk6DtqzkDLg7jDo6VQdPNZ733mZPWB1M2WKoLcX2Z43A8wGWSHN4KCGqcVuQUxakrUuNkHCLGb",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 1.4041329395070425e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.6907860000000028,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 3198.2691570113884,
   "entry_dev_pct": 9.999999999999999e-14,
   "graduated": false,
   "sell_failures": 0,
   "last_check": "2026-11-16T19:23:11+01:00",
-  "last_price": 1.0749679447304788e-05
+  "last_price": 1.0749679447304788e-05,
+  "closed_at": "2026-11-16T19:23:18+01:00",
+  "exit_reason": "failed entry (0.85x after 36m, never >1.2x)",
+  "pnl_usd": -0.3092139999999972,
+  "pnl_x": 0.8453930000000014
  },
  "e5a8663892": {
   "id": "e5a8663892",
