@@ -82,7 +82,9 @@
   "entry_liq": 23090.5710159281,
   "entry_dev_pct": null,
   "graduated": true,
-  "sell_failures": 0
+  "sell_failures": 0,
+  "last_check": "2026-11-17T00:44:39+01:00",
+  "last_price": 6.236605755112838e-05
  },
  "14d2cfb828": {
   "id": "14d2cfb828",
