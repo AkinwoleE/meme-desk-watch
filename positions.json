@@ -311,7 +311,7 @@
   "opened_at": "2026-11-16T19:04:17+01:00",
   "entry_price": 8.015634865807463e-05,
   "qty_orig": 24951.236346,
-  "qty": 24951.236346,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/jirachi0x19/status/2122355355472593203",
   "score": {
@@ -376,20 +376,35 @@
     "price": 8.015634865807463e-05,
     "route": "jupiter-ultra",
     "sig": "48ncy8WBCKKPuxJbErPFgiXmraYbJRrmDBdC1uUtftWRdfKkww8GYYP4XBqDMKymbNwYDXtq5G5FngxSqfBPdTRx"
+   },
+   {
+    "ts": "2026-11-16T19:38:43+01:00",
+    "side": "sell",
+    "qty": 24951.236346,
+    "usd": 1.352203000000003,
+    "price": 5.4193827562247355e-05,
+    "route": "jupiter-ultra",
+    "sig": "2U8dMLRNgZB4eFHox3pWm2LvLYUZNr3tUQJosacLBRXLxK4KcR6NFdENoBNgqgiEsvh6iogmDtdCNKkMhLd7jEqk",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.0001062082080860469,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.352203000000003,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 18988.802982754052,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-16T19:38:37+01:00",
-  "last_price": 5.2380048814583414e-05
+  "last_price": 5.2380048814583414e-05,
+  "closed_at": "2026-11-16T19:38:43+01:00",
+  "exit_reason": "stop 0.7x (now 0.65x)",
+  "pnl_usd": -0.6477969999999971,
+  "pnl_x": 0.6761015000000015
  },
  "50e353bb74": {
   "id": "50e353bb74",
