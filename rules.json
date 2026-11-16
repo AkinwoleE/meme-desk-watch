@@ -295,6 +295,10 @@
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": "CJ - BABA trades manually; never buy/sell/manage",
   "7oHBLR9WPk8vf8KZ8cK7AM6cNzec5bFotv4vcTBGKsqv": "transferred_in, ignored (spam dust; received by transfer 2026-10-20 22:24 WAT); never touch",
   "EbNZ1myJ4BfY3PJFskRywX2AcFD7HyQZ5EX9YjYkpump": "DANIELLA - not worth selling, leave alone",
-  "3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump": "transferred_in, ignored (likely scam; never touch) first seen 2026-11-15T17:45:09+01:00"
+  "3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump": "transferred_in, ignored (likely scam; never touch) first seen 2026-11-15T17:45:09+01:00",
+  "7kjsDhc2TbiyeNLKoMHDfEKB7JxTGLzaCTpbB7GtuUb3": {
+   "symbol": "LEONIDA",
+   "reason": "BABA's own launch via GTA Meme, 2026-11-16; never buy/sell/trade"
+  }
  }
 }
