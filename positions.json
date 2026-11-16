@@ -1211,7 +1211,7 @@
   "opened_at": "2026-11-16T19:03:55+01:00",
   "entry_price": 1.8036983304242167e-05,
   "qty_orig": 110883.287203,
-  "qty": 110883.287203,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "live product claimed at https://trysent.app/ (verify it loads)",
   "score": {
@@ -1275,20 +1275,35 @@
     "price": 1.8036983304242167e-05,
     "route": "jupiter-ultra",
     "sig": "TX3s4C7DVJNHP9aqf4ofkguNPQaQhK3LWYh2iUMSgXoSsdFH1Ct2VrnFQTQ8ceHCvQFgRg8KiRvtxhKuP6LpLKZ"
+   },
+   {
+    "ts": "2026-11-16T19:24:33+01:00",
+    "side": "sell",
+    "qty": 110883.287203,
+    "usd": 1.4116219999999942,
+    "price": 1.2730701222950415e-05,
+    "route": "jupiter-ultra",
+    "sig": "4gADxoXQxjRThBVcBth2ThMTG2ScATexNYPnnV7zBhqF8HKN92ZKaBjjqzRikNpsKcbazFPTSYCNprWiNP2QPBAW",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 1.8779597917117826e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.4116219999999942,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 6253.482652782914,
   "entry_dev_pct": 9.999999999999999e-14,
   "graduated": false,
   "sell_failures": 0,
   "last_check": "2026-11-16T19:24:27+01:00",
-  "last_price": 1.2898034089889326e-05
+  "last_price": 1.2898034089889326e-05,
+  "closed_at": "2026-11-16T19:24:33+01:00",
+  "exit_reason": "failed entry (0.72x after 20m, never >1.2x)",
+  "pnl_usd": -0.5883780000000058,
+  "pnl_x": 0.7058109999999971
  },
  "14d2cfb828": {
   "id": "14d2cfb828",
