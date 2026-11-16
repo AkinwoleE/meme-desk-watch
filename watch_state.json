@@ -92,5 +92,5 @@
   "2026-11-16T22:49:21+01:00GITHUB exit-monitor run cancelled"
  ],
  "down_flags": [],
- "stale_alerted": false
+ "stale_alerted": true
 }
