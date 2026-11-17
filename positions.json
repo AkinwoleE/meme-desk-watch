@@ -1529,7 +1529,7 @@
   "opened_at": "2026-11-17T23:49:36+01:00",
   "entry_price": 1.178705423133331e-05,
   "qty_orig": 169677.678642,
-  "qty": 169677.678642,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/gampsito/status/2122817603668205709?a=7jLQ2lo1SJ0aJ1R1_3A&s=20",
   "score": {
@@ -1593,20 +1593,35 @@
     "price": 1.178705423133331e-05,
     "route": "jupiter-ultra",
     "sig": "4qqEbzQEfb8XLqBxJGhHBxhgVmmf3VQvtByNnZvQGvtD841BDtotgqBcy2V9vQBrzcLciPMRAQARLdytWRPpP4uo"
+   },
+   {
+    "ts": "2026-11-17T23:56:16+01:00",
+    "side": "sell",
+    "qty": 169677.678642,
+    "usd": 1.001819999999995,
+    "price": 5.90425333501714e-06,
+    "route": "jupiter-ultra",
+    "sig": "4aQGwDv4rRN2C22Pt6DTLLnY7WLv89Puhzz2u3XaGVefvjkPtJebE1Gb7F6FNYKjsESxR9w7yTTPDz8wwiWRYaMZ",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 1.178705423133331e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.001819999999995,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 5860.348779022147,
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
   "last_check": "2026-11-17T23:56:04+01:00",
-  "last_price": 5.803305472631112e-06
+  "last_price": 5.803305472631112e-06,
+  "closed_at": "2026-11-17T23:56:16+01:00",
+  "exit_reason": "stop 0.65x (now 0.49x)",
+  "pnl_usd": -0.998180000000005,
+  "pnl_x": 0.5009099999999975
  },
  "b3c3cc3a7c": {
   "id": "b3c3cc3a7c",
