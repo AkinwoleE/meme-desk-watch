@@ -2037,7 +2037,7 @@
   "opened_at": "2026-11-17T21:03:04+01:00",
   "entry_price": 2.4867445166517118e-05,
   "qty_orig": 80426.436516,
-  "qty": 80426.436516,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/xWugi_wara/status/2122693591868768751",
   "score": {
@@ -2102,20 +2102,35 @@
     "price": 2.4867445166517118e-05,
     "route": "jupiter-ultra",
     "sig": "2UjS8NAJTLXxwFJ8jasmy28xUaWfUhqDpKjYKbgcPwpyPLnf8YAKG7tuyssZHDAzzdkXUvQVyjR1W5Hahf59xgo4"
+   },
+   {
+    "ts": "2026-11-17T21:07:18+01:00",
+    "side": "sell",
+    "qty": 80426.436516,
+    "usd": 1.216805000000008,
+    "price": 1.5129415807922028e-05,
+    "route": "jupiter-ultra",
+    "sig": "3Uthqy1zS3rQK8CC3EZTeWqWbELuKQqdcDCLossurbVrCKdUPGt4dLvafzcJZxEiK7WkS3boFs6LJf5zmvHGZFq1",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 2.4867445166517118e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.216805000000008,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 12562.853685833463,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T21:07:12+01:00",
-  "last_price": 1.4996077052817159e-05
+  "last_price": 1.4996077052817159e-05,
+  "closed_at": "2026-11-17T21:07:18+01:00",
+  "exit_reason": "stop 0.7x (now 0.60x)",
+  "pnl_usd": -0.7831949999999921,
+  "pnl_x": 0.608402500000004
  },
  "1e20853a1d": {
   "id": "1e20853a1d",
