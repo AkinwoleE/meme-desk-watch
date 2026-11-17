@@ -130,7 +130,9 @@
   "2026-11-17T15:49:52+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-17T15:50:00+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
   "2026-11-17T16:32:30+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-17T16:32:36+01:00BOX FROZEN/SUSPENDED: guard loop gap"
+  "2026-11-17T16:32:36+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-17T16:48:24+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-17T16:48:32+01:00BOX FROZEN/SUSPENDED: monitor loop gap"
  ],
  "down_flags": [],
  "stale_alerted": false
