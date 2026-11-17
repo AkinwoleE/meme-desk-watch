@@ -1414,7 +1414,7 @@
   "opened_at": "2026-11-17T16:33:32+01:00",
   "entry_price": 4.5209739742396435e-05,
   "qty_orig": 44238.255106,
-  "qty": 44238.255106,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/Polinkaii/status/2122453269591056840",
   "score": {
@@ -1478,20 +1478,35 @@
     "price": 4.5209739742396435e-05,
     "route": "jupiter-ultra",
     "sig": "4i2CXP7Zm4MC3b8eg25uGn5Ythoq3QnvPPUM59Lye7KJFc7tW5BCbEdepekRxfJg64tk1Bu846KHJHmnGXocz5aZ"
+   },
+   {
+    "ts": "2026-11-17T16:53:23+01:00",
+    "side": "sell",
+    "qty": 44238.255106,
+    "usd": 1.4919089999999926,
+    "price": 3.372440880466929e-05,
+    "route": "jupiter-ultra",
+    "sig": "348FKj3AtCxTkSKw2y6m6ihNp6yD3sEz5NpKvn9VqaFt5WrWE8ZD4SpxfXidJE8neWMyeHigmTFnqhjtrJe8jdvS",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 4.561288979688809e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.4919089999999926,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 10199.01998930868,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T16:53:14+01:00",
-  "last_price": 3.419171116387429e-05
+  "last_price": 3.419171116387429e-05,
+  "closed_at": "2026-11-17T16:53:23+01:00",
+  "exit_reason": "stop 0.78x (now 0.76x)",
+  "pnl_usd": -0.5080910000000074,
+  "pnl_x": 0.7459544999999963
  },
  "cf4367db21": {
   "id": "cf4367db21",
