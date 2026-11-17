@@ -515,7 +515,7 @@
   "opened_at": "2026-11-17T23:50:15+01:00",
   "entry_price": 2.013946503834807e-05,
   "qty_orig": 99307.503759,
-  "qty": 99307.503759,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/saam0nchain/status/2122729104982126794",
   "score": {
@@ -579,20 +579,35 @@
     "price": 2.013946503834807e-05,
     "route": "jupiter-ultra",
     "sig": "63KhEtx5FK7WSaS7yhjgaUL5oP4RmDirDeDsSNsXXRkeXPUr9mfS4ZaPAZvqwaccEVr1E3zsUZCmYTAWwqL4Jiem"
+   },
+   {
+    "ts": "2026-11-17T23:57:28+01:00",
+    "side": "sell",
+    "qty": 99307.503759,
+    "usd": 1.3039720000000017,
+    "price": 1.3130649252492422e-05,
+    "route": "jupiter-ultra",
+    "sig": "2dRWjSvfWTJJEubR8vcWHhaM724GXo6JyEhL3py4PJPJe1TwPUq9XTvuaca2gUDFWkr42apfSo6D5CYNrmwEDkJv",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 2.013946503834807e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.3039720000000017,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 11549.786857664247,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T23:57:22+01:00",
-  "last_price": 1.3416424585101403e-05
+  "last_price": 1.3416424585101403e-05,
+  "closed_at": "2026-11-17T23:57:28+01:00",
+  "exit_reason": "stop 0.7x (now 0.67x)",
+  "pnl_usd": -0.6960279999999983,
+  "pnl_x": 0.6519860000000008
  },
  "1e20853a1d": {
   "id": "1e20853a1d",
