@@ -588,8 +588,8 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T20:24:54+01:00",
-  "last_price": 0.0001434552919805268
+  "last_check": "2026-11-17T20:25:09+01:00",
+  "last_price": 0.00013976802027708738
  },
  "e0954a77bd": {
   "id": "e0954a77bd",
@@ -998,107 +998,6 @@
   "pnl_usd": -0.6049459999999982,
   "pnl_x": 0.6975270000000009
  },
- "c38b7374cc": {
-  "id": "c38b7374cc",
-  "mint": "3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
-  "symbol": "tinfoil",
-  "opened_at": "2026-11-17T00:44:36+01:00",
-  "entry_price": 3.160727464138859e-05,
-  "qty_orig": 63276.57233,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
-  "score": {
-   "score": 69.0,
-   "parts": {
-    "momentum": 15.4,
-    "socials": 6,
-    "organic": 11.7,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
-   "creator_note": "creator 3/12 graduated (25%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T00:44:36+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 63276.57233,
-    "price": 3.160727464138859e-05,
-    "route": "jupiter-ultra",
-    "sig": "3t3EbFTToWFRAzQFduXd7tfrZrQF4nCEiHz3AETmcE6AJLPp3v4SMd6HXGDLZpzJMZSxJ5xUbc66hvRZj178uDqm"
-   },
-   {
-    "ts": "2026-11-17T01:05:15+01:00",
-    "side": "sell",
-    "qty": 63276.57233,
-    "usd": 1.6675460000000015,
-    "price": 2.6353292199574514e-05,
-    "route": "jupiter-ultra",
-    "sig": "5DnDAbuDd5xND9QcmrvKwfnWyNxNKeVRqgTNnucZcjpyW7Cu9AkJaBHyFBVBrWxg2kiyzY1BAhKuchUGzsnQa63o",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 3.205781740313821e-05,
-  "tp_done": [],
-  "realized_usd": 1.6675460000000015,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 10675.381376813053,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T01:05:09+01:00",
-  "last_price": 2.6488442516667028e-05,
-  "closed_at": "2026-11-17T01:05:15+01:00",
-  "exit_reason": "failed entry (0.84x after 20m, never >1.2x)",
-  "pnl_usd": -0.3324539999999985,
-  "pnl_x": 0.8337730000000008
- },
  "bf7f096a79": {
   "id": "bf7f096a79",
   "mint": "9a13W5HdqE95g3YE8Dk9wCHPucrCH33h6BTfdFvRpump",
@@ -1200,32 +1099,31 @@
   "pnl_x": 0.7538029999999978,
   "sell_failures": 0
  },
- "b28390f51a": {
-  "id": "b28390f51a",
-  "mint": "3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump",
-  "symbol": "FIX6900",
-  "opened_at": "2026-11-15T16:17:07+01:00",
-  "entry_price": 1.323298491361546e-05,
-  "qty_orig": 151137.48055,
+ "c38b7374cc": {
+  "id": "c38b7374cc",
+  "mint": "3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
+  "symbol": "tinfoil",
+  "opened_at": "2026-11-17T00:44:36+01:00",
+  "entry_price": 3.160727464138859e-05,
+  "qty_orig": 63276.57233,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/a1lon9/status/1762199306059108631?a=5Y_jWHD_O3PyaSlfZzI&s=20; live product claimed at https://payday.direct/l/pB3xUnIq (verify it loads)",
+  "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
   "score": {
-   "score": 76.3,
+   "score": 69.0,
    "parts": {
-    "momentum": 25,
-    "socials": 11,
-    "organic": 7.3,
-    "story": 23,
+    "momentum": 15.4,
+    "socials": 6,
+    "organic": 11.7,
+    "story": 18,
     "base": 10
    },
    "adj": {
-    "chasing": -8,
     "creator": 8
    },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/a1lon9/status/1762199306059108631?a=5Y_jWHD_O3PyaSlfZzI&s=20; live product claimed at https://payday.direct/l/pB3xUnIq (verify it loads)",
-   "creator_note": "creator 1/3 graduated (33%) [peak data unavailable: pump.fun API blocked]"
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
+   "creator_note": "creator 3/12 graduated (25%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -1242,9 +1140,9 @@
      0.15
     ]
    ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
    "profit_lock": true,
@@ -1261,46 +1159,46 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "curve"
+   "profile": "graduated"
   },
   "fills": [
    {
-    "ts": "2026-11-15T16:17:07+01:00",
+    "ts": "2026-11-17T00:44:36+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 151137.48055,
-    "price": 1.323298491361546e-05,
-    "route": "jupiter-swap+jito (Jito response timed out; landed)",
-    "sig": "ropc7NRcMYFFNoYkbFW7jCRTJPDs4ApznrKYArup48Tsn7K78xijv8HzgKXs6LmdGtGLUu8X4Lif7YKgzhWPVA9"
+    "qty": 63276.57233,
+    "price": 3.160727464138859e-05,
+    "route": "jupiter-ultra",
+    "sig": "3t3EbFTToWFRAzQFduXd7tfrZrQF4nCEiHz3AETmcE6AJLPp3v4SMd6HXGDLZpzJMZSxJ5xUbc66hvRZj178uDqm"
    },
    {
-    "ts": "2026-11-15T18:50:32+01:00",
+    "ts": "2026-11-17T01:05:15+01:00",
     "side": "sell",
-    "qty": 151137.48055,
-    "usd": 0.5456839999999943,
-    "price": 3.6105140698006313e-06,
+    "qty": 63276.57233,
+    "usd": 1.6675460000000015,
+    "price": 2.6353292199574514e-05,
     "route": "jupiter-ultra",
-    "sig": "5pErsxfXeCSxevDFZZT1JfPSNNwiu89fG4oV55Ht6PhnLrjJNYSSi9SAvmpqg2kd9z88WtU1MMwRThcsWMV33UHq",
+    "sig": "5DnDAbuDd5xND9QcmrvKwfnWyNxNKeVRqgTNnucZcjpyW7Cu9AkJaBHyFBVBrWxg2kiyzY1BAhKuchUGzsnQa63o",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 1.323298491361546e-05,
+  "peak_price": 3.205781740313821e-05,
   "tp_done": [],
-  "realized_usd": 0.5456839999999943,
+  "realized_usd": 1.6675460000000015,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 5338.461657698468,
-  "graduated": false,
-  "note": "Recovered position: 16:16 Ultra submit aborted, Swap API/Jito tx landed 16:17:07 but Jito HTTP timed out; was mis-flagged transferred_in/excluded. Verified own buy; re-opened manually 2026-11-15 ~18:50 WAT.",
-  "closed_at": "2026-11-15T18:50:32+01:00",
-  "exit_reason": "stop 0.65x (now 0.28x)",
-  "pnl_usd": -1.4543160000000057,
-  "pnl_x": 0.27284199999999714,
-  "last_price": 3.6636963615151443e-06,
-  "last_check": "2026-11-15T18:50:34+01:00",
-  "sell_failures": 0
+  "entry_liq": 10675.381376813053,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T01:05:09+01:00",
+  "last_price": 2.6488442516667028e-05,
+  "closed_at": "2026-11-17T01:05:15+01:00",
+  "exit_reason": "failed entry (0.84x after 20m, never >1.2x)",
+  "pnl_usd": -0.3324539999999985,
+  "pnl_x": 0.8337730000000008
  },
  "e5a8663892": {
   "id": "e5a8663892",
@@ -1403,6 +1301,108 @@
   "exit_reason": "failed entry (0.71x after 89m, never >1.2x)",
   "pnl_usd": -0.5912610000000029,
   "pnl_x": 0.7043694999999985,
+  "sell_failures": 0
+ },
+ "b28390f51a": {
+  "id": "b28390f51a",
+  "mint": "3unDHbPUsLqQtoHgvuCsRSArnuhVjhsn11vRht5Xpump",
+  "symbol": "FIX6900",
+  "opened_at": "2026-11-15T16:17:07+01:00",
+  "entry_price": 1.323298491361546e-05,
+  "qty_orig": 151137.48055,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/a1lon9/status/1762199306059108631?a=5Y_jWHD_O3PyaSlfZzI&s=20; live product claimed at https://payday.direct/l/pB3xUnIq (verify it loads)",
+  "score": {
+   "score": 76.3,
+   "parts": {
+    "momentum": 25,
+    "socials": 11,
+    "organic": 7.3,
+    "story": 23,
+    "base": 10
+   },
+   "adj": {
+    "chasing": -8,
+    "creator": 8
+   },
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/a1lon9/status/1762199306059108631?a=5Y_jWHD_O3PyaSlfZzI&s=20; live product claimed at https://payday.direct/l/pB3xUnIq (verify it loads)",
+   "creator_note": "creator 1/3 graduated (33%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T16:17:07+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 151137.48055,
+    "price": 1.323298491361546e-05,
+    "route": "jupiter-swap+jito (Jito response timed out; landed)",
+    "sig": "ropc7NRcMYFFNoYkbFW7jCRTJPDs4ApznrKYArup48Tsn7K78xijv8HzgKXs6LmdGtGLUu8X4Lif7YKgzhWPVA9"
+   },
+   {
+    "ts": "2026-11-15T18:50:32+01:00",
+    "side": "sell",
+    "qty": 151137.48055,
+    "usd": 0.5456839999999943,
+    "price": 3.6105140698006313e-06,
+    "route": "jupiter-ultra",
+    "sig": "5pErsxfXeCSxevDFZZT1JfPSNNwiu89fG4oV55Ht6PhnLrjJNYSSi9SAvmpqg2kd9z88WtU1MMwRThcsWMV33UHq",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 1.323298491361546e-05,
+  "tp_done": [],
+  "realized_usd": 0.5456839999999943,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 5338.461657698468,
+  "graduated": false,
+  "note": "Recovered position: 16:16 Ultra submit aborted, Swap API/Jito tx landed 16:17:07 but Jito HTTP timed out; was mis-flagged transferred_in/excluded. Verified own buy; re-opened manually 2026-11-15 ~18:50 WAT.",
+  "closed_at": "2026-11-15T18:50:32+01:00",
+  "exit_reason": "stop 0.65x (now 0.28x)",
+  "pnl_usd": -1.4543160000000057,
+  "pnl_x": 0.27284199999999714,
+  "last_price": 3.6636963615151443e-06,
+  "last_check": "2026-11-15T18:50:34+01:00",
   "sell_failures": 0
  },
  "2035081599": {
@@ -1997,8 +1997,8 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T20:24:54+01:00",
-  "last_price": 7.344217778439667e-05
+  "last_check": "2026-11-17T20:25:09+01:00",
+  "last_price": 7.40059204036626e-05
  },
  "2682a3fec9": {
   "id": "2682a3fec9",
