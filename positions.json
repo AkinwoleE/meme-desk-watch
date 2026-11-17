@@ -1732,7 +1732,7 @@
   "opened_at": "2026-11-17T02:49:21+01:00",
   "entry_price": 1.9345088309155624e-05,
   "qty_orig": 103385.415876,
-  "qty": 103385.415876,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/Palunians/status/2122471159073517720",
   "score": {
@@ -1797,20 +1797,35 @@
     "price": 1.9345088309155624e-05,
     "route": "jupiter-ultra",
     "sig": "58frLsfpcVWK8uzo3xgSAF5yU6utU5WTMuTiJ741To2TA4tXGhn1p92jkuNMCMwmASExurnYTutDsdvWEbH9BDhx"
+   },
+   {
+    "ts": "2026-11-17T02:58:32+01:00",
+    "side": "sell",
+    "qty": 103385.415876,
+    "usd": 1.1681389999999965,
+    "price": 1.1298876056184338e-05,
+    "route": "jupiter-ultra",
+    "sig": "2xrHP1gBUHrLbNJboqVu1X4AMGk8aDGTzZCD1WZdm1p1frNeV6wrqRUPKsCeMz2s7i8JXfQawMDSNxCXwq7Dn5Dx",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 1.9345088309155624e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.1681389999999965,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 7735.947517110377,
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
   "last_check": "2026-11-17T02:58:26+01:00",
-  "last_price": 1.1449835115443974e-05
+  "last_price": 1.1449835115443974e-05,
+  "closed_at": "2026-11-17T02:58:32+01:00",
+  "exit_reason": "stop 0.65x (now 0.59x)",
+  "pnl_usd": -0.8318610000000035,
+  "pnl_x": 0.5840694999999982
  },
  "14d2cfb828": {
   "id": "14d2cfb828",
