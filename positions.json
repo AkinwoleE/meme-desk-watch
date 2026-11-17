@@ -1605,7 +1605,7 @@
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-17T23:54:33+01:00",
+  "last_check": "2026-11-17T23:54:49+01:00",
   "last_price": 8.472711397899773e-06
  },
  "b3c3cc3a7c": {
@@ -2504,8 +2504,8 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T23:54:34+01:00",
-  "last_price": 1.6057318267355266e-05
+  "last_check": "2026-11-17T23:54:49+01:00",
+  "last_price": 1.6088154679984098e-05
  },
  "e5a8663892": {
   "id": "e5a8663892",
@@ -2694,8 +2694,8 @@
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-17T23:54:34+01:00",
-  "last_price": 2.4740007460170513e-05
+  "last_check": "2026-11-17T23:54:49+01:00",
+  "last_price": 2.520564734196188e-05
  },
  "2035081599": {
   "id": "2035081599",
@@ -3089,7 +3089,7 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T23:54:34+01:00",
-  "last_price": 0.00047951178900069075
+  "last_check": "2026-11-17T23:54:49+01:00",
+  "last_price": 0.0004945611693107725
  }
 }
