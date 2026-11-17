@@ -1406,8 +1406,8 @@
   "entry_dev_pct": 0.0035944728817996654,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:31:41+01:00",
-  "last_price": 0.00010958249163074261
+  "last_check": "2026-11-17T19:31:56+01:00",
+  "last_price": 0.00011310929626423671
  },
  "46c2baca2a": {
   "id": "46c2baca2a",
@@ -2496,7 +2496,7 @@
     "sig": "2oUP9mDdaxhuVQZjhyWvpNq1HGKM2UV689e6uaBUu1dwBt86ao7e7otME6Bv6xLfSFqFsLxPM5LsKoryt8aaJFRC"
    }
   ],
-  "peak_price": 0.0001723558721164223,
+  "peak_price": 0.00017358261567092272,
   "tp_done": [],
   "realized_usd": 0.0,
   "paper": false,
@@ -2506,7 +2506,7 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:31:41+01:00",
-  "last_price": 0.0001723558721164223
+  "last_check": "2026-11-17T19:31:56+01:00",
+  "last_price": 0.00017358261567092272
  }
 }
