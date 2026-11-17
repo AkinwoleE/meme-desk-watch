@@ -114,5 +114,5 @@
   "2026-11-17T07:56:15+01:00BOX FROZEN/SUSPENDED: monitor loop gap"
  ],
  "down_flags": [],
- "stale_alerted": false
+ "stale_alerted": true
 }
