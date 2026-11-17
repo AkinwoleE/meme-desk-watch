@@ -1705,8 +1705,8 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:29:27+01:00",
-  "last_price": 0.00014348000857638426
+  "last_check": "2026-11-17T19:29:42+01:00",
+  "last_price": 0.00014282913539647007
  },
  "cf4367db21": {
   "id": "cf4367db21",
@@ -2199,7 +2199,7 @@
   "entry_dev_pct": 0.0035944728817996654,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:29:27+01:00",
+  "last_check": "2026-11-17T19:29:42+01:00",
   "last_price": 0.00011626922642748349
  },
  "117c7fc3df": {
