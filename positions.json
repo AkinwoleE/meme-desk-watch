@@ -208,7 +208,7 @@
   "opened_at": "2026-11-17T16:34:06+01:00",
   "entry_price": 0.0001317405472487222,
   "qty_orig": 15181.354881,
-  "qty": 15181.354881,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/Polymarket/status/2122700787511947561",
   "score": {
@@ -272,20 +272,35 @@
     "price": 0.0001317405472487222,
     "route": "jupiter-ultra",
     "sig": "GWNdmV4KabLN1Nn6grA8Qf9TdrNyxopEpmdBYLXizpkXxsZonuWqW1rEY7vepprzEQawgyEwFQMbmRVWfU3S864"
+   },
+   {
+    "ts": "2026-11-17T16:36:47+01:00",
+    "side": "sell",
+    "qty": 15181.354881,
+    "usd": 1.3470259999999996,
+    "price": 8.872897119912861e-05,
+    "route": "jupiter-ultra",
+    "sig": "4ndtu7PhoEmV1SxXAucB99Gkc5KvKYu3qUExh93xfecdhSNaxnxC6u1zUabexTvxu9wU2bVCi5rX9HtTMPiJFSYT",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.0001317405472487222,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.3470259999999996,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 13188.507664629793,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T16:36:39+01:00",
-  "last_price": 9.013091605835549e-05
+  "last_price": 9.013091605835549e-05,
+  "closed_at": "2026-11-17T16:36:47+01:00",
+  "exit_reason": "stop 0.78x (now 0.68x)",
+  "pnl_usd": -0.6529740000000004,
+  "pnl_x": 0.6735129999999998
  },
  "1e9f76baa1": {
   "id": "1e9f76baa1",
