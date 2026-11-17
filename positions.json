@@ -2333,7 +2333,7 @@
   "opened_at": "2026-11-17T17:20:49+01:00",
   "entry_price": 0.00012252723921234908,
   "qty_orig": 16322.901037,
-  "qty": 16322.901037,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/billtobillion/status/2121690189508608362",
   "score": {
@@ -2397,20 +2397,35 @@
     "price": 0.00012252723921234908,
     "route": "jupiter-ultra",
     "sig": "2oUP9mDdaxhuVQZjhyWvpNq1HGKM2UV689e6uaBUu1dwBt86ao7e7otME6Bv6xLfSFqFsLxPM5LsKoryt8aaJFRC"
+   },
+   {
+    "ts": "2026-11-17T21:21:13+01:00",
+    "side": "sell",
+    "qty": 16322.901037,
+    "usd": 2.4685580000000016,
+    "price": 0.00015123279828777912,
+    "route": "jupiter-ultra",
+    "sig": "2vi6K8WCC42tqWBvm4vfUmdR3mKWJ4mBNP1pFsFWXdDLcXdDahfsmoYYSigULuatcyn1bvwvXV9HGjxA4JGRVfao",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.00017403750458021898,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 2.4685580000000016,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 23494.907989619005,
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T21:21:07+01:00",
-  "last_price": 0.00015141696969199857
+  "last_price": 0.00015141696969199857,
+  "closed_at": "2026-11-17T21:21:13+01:00",
+  "exit_reason": "time stop (4.0h, 1.24x < 1.3x)",
+  "pnl_usd": 0.4685580000000016,
+  "pnl_x": 1.2342790000000008
  },
  "b3c3cc3a7c": {
   "id": "b3c3cc3a7c",
