@@ -1,9 +1,9 @@
 {
- "ts": "2026-11-17T21:36:43+01:00",
- "unix": 1794947803,
+ "ts": "2026-11-17T21:49:04+01:00",
+ "unix": 1794948544,
  "live": true,
- "monitor_ok": true,
- "guard_ok": true,
+ "monitor_ok": false,
+ "guard_ok": false,
  "scheduler_ok": true,
  "open_positions": 1,
  "last_scan": "2026-11-17T21:02:02+01:00",
