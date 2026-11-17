@@ -588,7 +588,7 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T20:24:38+01:00",
+  "last_check": "2026-11-17T20:24:54+01:00",
   "last_price": 0.0001434552919805268
  },
  "e0954a77bd": {
@@ -998,107 +998,6 @@
   "pnl_usd": -0.6049459999999982,
   "pnl_x": 0.6975270000000009
  },
- "bf7f096a79": {
-  "id": "bf7f096a79",
-  "mint": "9a13W5HdqE95g3YE8Dk9wCHPucrCH33h6BTfdFvRpump",
-  "symbol": "plumber",
-  "opened_at": "2026-11-14T22:25:51+01:00",
-  "entry_price": 7.715963871856248e-05,
-  "qty_orig": 25920.287254,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
-  "score": {
-   "score": 72.5,
-   "parts": {
-    "momentum": 21.4,
-    "socials": 6,
-    "organic": 9.1,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
-   "creator_note": "creator 1/4 graduated (25%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-14T22:25:51+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 25920.287254,
-    "price": 7.715963871856248e-05,
-    "route": "jupiter-ultra",
-    "sig": "64SjhXTSivHwqBAxgzwfpmzeo1WrKbqjYo5twNqM5C4E78swRGLS2euCngG4MNF4xWzJBRSUmv8wFSW2oPAPkpvs"
-   },
-   {
-    "ts": "2026-11-15T00:42:13+01:00",
-    "side": "sell",
-    "qty": 25920.287254,
-    "usd": 1.5076059999999956,
-    "price": 5.822138409238171e-05,
-    "route": "jupiter-ultra",
-    "sig": "4P7kK7AggGPw1QheESFGJmFVyXiJrvk9a1YueFZNoeKGAAWTDowHPjEnjQ1WFagi34o2gpnYr7zHbyxv17s2Ri41",
-    "usd_journal_old": 1.509115,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 9.008663449244535e-05,
-  "tp_done": [],
-  "realized_usd": 1.5076059999999956,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 13195.98831104843,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "last_price": 5.949000001302419e-05,
-  "last_check": "2026-11-15T00:42:13+01:00",
-  "closed_at": "2026-11-15T00:42:13+01:00",
-  "exit_reason": "stop 0.78x (now 0.77x)",
-  "pnl_usd": -0.49239400000000444,
-  "pnl_x": 0.7538029999999978,
-  "sell_failures": 0
- },
  "c38b7374cc": {
   "id": "c38b7374cc",
   "mint": "3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
@@ -1200,33 +1099,31 @@
   "pnl_usd": -0.3324539999999985,
   "pnl_x": 0.8337730000000008
  },
- "e5a8663892": {
-  "id": "e5a8663892",
-  "mint": "DmNiVcg3mgQGRccEAEEmuBdhRuCiF4i9dciUWdRfLoat",
-  "symbol": "GTA6",
-  "opened_at": "2026-11-15T16:16:25+01:00",
-  "entry_price": 3.574828667961158e-05,
-  "qty_orig": 55946.737194,
+ "bf7f096a79": {
+  "id": "bf7f096a79",
+  "mint": "9a13W5HdqE95g3YE8Dk9wCHPucrCH33h6BTfdFvRpump",
+  "symbol": "plumber",
+  "opened_at": "2026-11-14T22:25:51+01:00",
+  "entry_price": 7.715963871856248e-05,
+  "qty_orig": 25920.287254,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
+  "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
   "score": {
-   "score": 76.6,
+   "score": 72.5,
    "parts": {
-    "momentum": 22.4,
-    "socials": 11,
-    "organic": 10.2,
-    "story": 25,
+    "momentum": 21.4,
+    "socials": 6,
+    "organic": 9.1,
+    "story": 18,
     "base": 10
    },
    "adj": {
-    "copycat": -10,
-    "creator": 0,
-    "gta": 8
+    "creator": 8
    },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
-   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
+   "creator_note": "creator 1/4 graduated (25%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -1243,9 +1140,9 @@
      0.15
     ]
    ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
    "profit_lock": true,
@@ -1262,45 +1159,45 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "curve"
+   "profile": "insider_grad"
   },
   "fills": [
    {
-    "ts": "2026-11-15T16:16:25+01:00",
+    "ts": "2026-11-14T22:25:51+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 55946.737194,
-    "price": 3.574828667961158e-05,
+    "qty": 25920.287254,
+    "price": 7.715963871856248e-05,
     "route": "jupiter-ultra",
-    "sig": "5DfDxAUmXeWiBdq5cax9TywTUmMdNPTZA2ECbPAddKius1EPK2sX9Gwi7nwxgD9HufbcdybayT4P6WTK4LznXMbk"
+    "sig": "64SjhXTSivHwqBAxgzwfpmzeo1WrKbqjYo5twNqM5C4E78swRGLS2euCngG4MNF4xWzJBRSUmv8wFSW2oPAPkpvs"
    },
    {
-    "ts": "2026-11-15T17:45:24+01:00",
+    "ts": "2026-11-15T00:42:13+01:00",
     "side": "sell",
-    "qty": 55946.737194,
-    "usd": 1.408738999999997,
-    "price": 2.5180002814374618e-05,
+    "qty": 25920.287254,
+    "usd": 1.5076059999999956,
+    "price": 5.822138409238171e-05,
     "route": "jupiter-ultra",
-    "sig": "iPFKYVD2uVqJUZoMK2Sm2WNiY2Qb8vt2CAtJ88W6b1aQ4UgijuQDPQobq8YMUbdV3YQJ8yow3cNaPY9e7X27VBT",
-    "full": true,
+    "sig": "4P7kK7AggGPw1QheESFGJmFVyXiJrvk9a1YueFZNoeKGAAWTDowHPjEnjQ1WFagi34o2gpnYr7zHbyxv17s2Ri41",
+    "usd_journal_old": 1.509115,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 3.574828667961158e-05,
+  "peak_price": 9.008663449244535e-05,
   "tp_done": [],
-  "realized_usd": 1.408738999999997,
+  "realized_usd": 1.5076059999999956,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 6921.404747900172,
+  "entry_liq": 13195.98831104843,
   "entry_dev_pct": null,
-  "graduated": false,
-  "last_price": 2.520809957306154e-05,
-  "last_check": "2026-11-15T17:45:26+01:00",
-  "closed_at": "2026-11-15T17:45:24+01:00",
-  "exit_reason": "failed entry (0.71x after 89m, never >1.2x)",
-  "pnl_usd": -0.5912610000000029,
-  "pnl_x": 0.7043694999999985,
+  "graduated": true,
+  "last_price": 5.949000001302419e-05,
+  "last_check": "2026-11-15T00:42:13+01:00",
+  "closed_at": "2026-11-15T00:42:13+01:00",
+  "exit_reason": "stop 0.78x (now 0.77x)",
+  "pnl_usd": -0.49239400000000444,
+  "pnl_x": 0.7538029999999978,
   "sell_failures": 0
  },
  "b28390f51a": {
@@ -1403,6 +1300,109 @@
   "pnl_x": 0.27284199999999714,
   "last_price": 3.6636963615151443e-06,
   "last_check": "2026-11-15T18:50:34+01:00",
+  "sell_failures": 0
+ },
+ "e5a8663892": {
+  "id": "e5a8663892",
+  "mint": "DmNiVcg3mgQGRccEAEEmuBdhRuCiF4i9dciUWdRfLoat",
+  "symbol": "GTA6",
+  "opened_at": "2026-11-15T16:16:25+01:00",
+  "entry_price": 3.574828667961158e-05,
+  "qty_orig": 55946.737194,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
+  "score": {
+   "score": 76.6,
+   "parts": {
+    "momentum": 22.4,
+    "socials": 11,
+    "organic": 10.2,
+    "story": 25,
+    "base": 10
+   },
+   "adj": {
+    "copycat": -10,
+    "creator": 0,
+    "gta": 8
+   },
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
+   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T16:16:25+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 55946.737194,
+    "price": 3.574828667961158e-05,
+    "route": "jupiter-ultra",
+    "sig": "5DfDxAUmXeWiBdq5cax9TywTUmMdNPTZA2ECbPAddKius1EPK2sX9Gwi7nwxgD9HufbcdybayT4P6WTK4LznXMbk"
+   },
+   {
+    "ts": "2026-11-15T17:45:24+01:00",
+    "side": "sell",
+    "qty": 55946.737194,
+    "usd": 1.408738999999997,
+    "price": 2.5180002814374618e-05,
+    "route": "jupiter-ultra",
+    "sig": "iPFKYVD2uVqJUZoMK2Sm2WNiY2Qb8vt2CAtJ88W6b1aQ4UgijuQDPQobq8YMUbdV3YQJ8yow3cNaPY9e7X27VBT",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 3.574828667961158e-05,
+  "tp_done": [],
+  "realized_usd": 1.408738999999997,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 6921.404747900172,
+  "entry_dev_pct": null,
+  "graduated": false,
+  "last_price": 2.520809957306154e-05,
+  "last_check": "2026-11-15T17:45:26+01:00",
+  "closed_at": "2026-11-15T17:45:24+01:00",
+  "exit_reason": "failed entry (0.71x after 89m, never >1.2x)",
+  "pnl_usd": -0.5912610000000029,
+  "pnl_x": 0.7043694999999985,
   "sell_failures": 0
  },
  "2035081599": {
@@ -1997,7 +1997,7 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T20:24:38+01:00",
+  "last_check": "2026-11-17T20:24:54+01:00",
   "last_price": 7.344217778439667e-05
  },
  "2682a3fec9": {
