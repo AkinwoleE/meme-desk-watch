@@ -311,7 +311,7 @@
   "opened_at": "2026-11-17T23:49:55+01:00",
   "entry_price": 2.6044688534888037e-05,
   "qty_orig": 76791.089182,
-  "qty": 76791.089182,
+  "qty": 38395.544591,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
   "score": {
@@ -376,11 +376,24 @@
     "price": 2.6044688534888037e-05,
     "route": "jupiter-ultra",
     "sig": "3tDc7rgxzPKGv5qZNernNF8n71xWQrCtjCCp1n2p4wtTowfkB7MBf8aDR1nc2YdrZiRaUhpxjiKB1Rmod7DMad7m"
+   },
+   {
+    "ts": "2026-11-18T00:45:35+01:00",
+    "side": "sell",
+    "qty": 38395.544591,
+    "usd": 2.281374999999997,
+    "price": 5.9417701306280115e-05,
+    "route": "jupiter-ultra",
+    "sig": "51eGs1RKwxZHdL4s87gaPc1V5X22B2jG67sofoNohcb4vL2ERgETVaf73Xkd1gi7V8pZDBWBLBnqZY6o8AqpWdfX",
+    "full": false,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 5.861414589611623e-05,
-  "tp_done": [],
-  "realized_usd": 0.0,
+  "tp_done": [
+   2
+  ],
+  "realized_usd": 2.281374999999997,
   "paper": false,
   "status": "open",
   "decimals": 6,
