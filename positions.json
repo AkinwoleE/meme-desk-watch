@@ -800,8 +800,8 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T21:15:05+01:00",
-  "last_price": 0.0006155744427837424
+  "last_check": "2026-11-17T21:15:19+01:00",
+  "last_price": 0.0006380615743551244
  },
  "374cccde73": {
   "id": "374cccde73",
@@ -1801,8 +1801,8 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T21:15:05+01:00",
-  "last_price": 0.00015251241176832212
+  "last_check": "2026-11-17T21:15:19+01:00",
+  "last_price": 0.0001499434331096299
  },
  "1a043ba302": {
   "id": "1a043ba302",
