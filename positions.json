@@ -1926,7 +1926,7 @@
   "opened_at": "2026-11-17T23:49:55+01:00",
   "entry_price": 2.6044688534888037e-05,
   "qty_orig": 76791.089182,
-  "qty": 38395.544591,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
   "score": {
@@ -2002,22 +2002,37 @@
     "sig": "51eGs1RKwxZHdL4s87gaPc1V5X22B2jG67sofoNohcb4vL2ERgETVaf73Xkd1gi7V8pZDBWBLBnqZY6o8AqpWdfX",
     "full": false,
     "actual_from_chain": true
+   },
+   {
+    "ts": "2026-11-18T00:49:41+01:00",
+    "side": "sell",
+    "qty": 38395.544591,
+    "usd": 1.477637999999999,
+    "price": 3.848462147731486e-05,
+    "route": "jupiter-ultra",
+    "sig": "64FXPqSgqVbfpNts5SsHrHWaYbjkqrw7XAMVE3auZfJYoN2foEsEtnMaR1BXWPtrrjXuSc7UmKFo5tUsD5qsrLod",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 5.861414589611623e-05,
   "tp_done": [
    2
   ],
-  "realized_usd": 2.281374999999997,
+  "realized_usd": 3.759012999999996,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 12228.33418431918,
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
   "last_check": "2026-11-18T00:49:36+01:00",
-  "last_price": 4.3735575251477347e-05
+  "last_price": 4.3735575251477347e-05,
+  "closed_at": "2026-11-18T00:49:41+01:00",
+  "exit_reason": "trailing stop 25% off peak 2.25x (now 1.68x)",
+  "pnl_usd": 1.759012999999996,
+  "pnl_x": 1.879506499999998
  },
  "1e9f76baa1": {
   "id": "1e9f76baa1",
