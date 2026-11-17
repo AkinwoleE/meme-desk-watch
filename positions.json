@@ -1610,8 +1610,8 @@
   "entry_dev_pct": 0.0035944728817996654,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:36:54+01:00",
-  "last_price": 0.00010653565484924255
+  "last_check": "2026-11-17T19:37:09+01:00",
+  "last_price": 0.0001101331087220768
  },
  "fe8695cceb": {
   "id": "fe8695cceb",
@@ -2101,8 +2101,8 @@
   "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T19:36:54+01:00",
-  "last_price": 0.0001564034701223847
+  "last_check": "2026-11-17T19:37:09+01:00",
+  "last_price": 0.00015203668203858206
  },
  "cf4367db21": {
   "id": "cf4367db21",
