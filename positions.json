@@ -1330,7 +1330,7 @@
   "opened_at": "2026-11-17T01:45:25+01:00",
   "entry_price": 2.9133092509633052e-05,
   "qty_orig": 68650.453066,
-  "qty": 68650.453066,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/useAgentPaid/status/2122475225803559395",
   "score": {
@@ -1394,20 +1394,35 @@
     "price": 2.9133092509633052e-05,
     "route": "jupiter-ultra",
     "sig": "EdihJZzEVJhyQ7d3uFQfo3G9qsrju7syuNxMyith9BMtFS6rhNWjQYKBpbbX41ksUiLofswQYoG24mzNh7g2npv"
+   },
+   {
+    "ts": "2026-11-17T01:52:42+01:00",
+    "side": "sell",
+    "qty": 68650.453066,
+    "usd": 1.3950540000000018,
+    "price": 2.032111861896684e-05,
+    "route": "jupiter-ultra",
+    "sig": "375ddfeo6TTJUPZDE1JavQpGSgjgpHSa8k14kvcfoCbgqcEHWV1zVek8po31fcyy6D4TTKWRz8hoUmwCrtbkHSDT",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 3.248893522270634e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.3950540000000018,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 20624.461023202988,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T01:52:36+01:00",
-  "last_price": 2.034467297099648e-05
+  "last_price": 2.034467297099648e-05,
+  "closed_at": "2026-11-17T01:52:42+01:00",
+  "exit_reason": "stop 0.7x (now 0.70x)",
+  "pnl_usd": -0.6049459999999982,
+  "pnl_x": 0.6975270000000009
  },
  "46c2baca2a": {
   "id": "46c2baca2a",
