@@ -602,7 +602,7 @@
   "opened_at": "2026-11-17T00:44:19+01:00",
   "entry_price": 6.247980258571925e-05,
   "qty_orig": 32010.344419,
-  "qty": 32010.344419,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://twitter.com/discord/status/2122389583778193560",
   "score": {
@@ -667,20 +667,35 @@
     "price": 6.247980258571925e-05,
     "route": "jupiter-ultra",
     "sig": "4x4BfyD8ieyJktSdUSYZHkwgfZNyJDxXusGMDi9rwH1LVCEZVNbmBZbnrvDQoEWC4mNGcysKMu5qz8tgc2xXXPUa"
+   },
+   {
+    "ts": "2026-11-17T01:04:44+01:00",
+    "side": "sell",
+    "qty": 32010.344419,
+    "usd": 1.4187909999999988,
+    "price": 4.432289079519756e-05,
+    "route": "jupiter-ultra",
+    "sig": "5Afiui426HS4CAwnCeJbZSsBhmxQ2C12mgQWirjAjcCMMWP9Kv8TEDdVHikU5cv2gcEp8FJ8F8xsSfJvPd4rAHe8",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 6.287371153743189e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.4187909999999988,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 23090.5710159281,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-17T01:04:37+01:00",
-  "last_price": 4.6159779354071346e-05
+  "last_price": 4.6159779354071346e-05,
+  "closed_at": "2026-11-17T01:04:44+01:00",
+  "exit_reason": "failed entry (0.74x after 20m, never >1.2x)",
+  "pnl_usd": -0.5812090000000012,
+  "pnl_x": 0.7093954999999994
  },
  "c68a215f04": {
   "id": "c68a215f04",
