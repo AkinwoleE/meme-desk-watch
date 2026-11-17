@@ -983,7 +983,7 @@
     "sig": "EdihJZzEVJhyQ7d3uFQfo3G9qsrju7syuNxMyith9BMtFS6rhNWjQYKBpbbX41ksUiLofswQYoG24mzNh7g2npv"
    }
   ],
-  "peak_price": 2.9133092509633052e-05,
+  "peak_price": 2.948057480953239e-05,
   "tp_done": [],
   "realized_usd": 0.0,
   "paper": false,
@@ -993,8 +993,8 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T01:45:42+01:00",
-  "last_price": 2.8176955431180494e-05
+  "last_check": "2026-11-17T01:45:56+01:00",
+  "last_price": 2.948057480953239e-05
  },
  "c68a215f04": {
   "id": "c68a215f04",
