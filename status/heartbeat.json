@@ -1,17 +1,13 @@
 {
- "ts": "2026-11-17T02:49:54+01:00",
- "unix": 1794880194,
+ "ts": "2026-11-17T03:47:14+01:00",
+ "unix": 1794883634,
  "live": true,
  "monitor_ok": true,
  "guard_ok": true,
  "scheduler_ok": true,
- "open_positions": 1,
+ "open_positions": 0,
  "last_scan": "2026-11-17T02:48:12+01:00",
  "alerts": [
-  {
-   "ts": "2026-11-16T22:48:11+01:00",
-   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
-  },
   {
    "ts": "2026-11-16T22:49:21+01:00",
    "msg": "GITHUB exit-monitor run cancelled"
@@ -47,6 +43,10 @@
   {
    "ts": "2026-11-17T02:48:42+01:00",
    "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
+  },
+  {
+   "ts": "2026-11-17T03:45:51+01:00",
+   "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
   }
  ]
 }
