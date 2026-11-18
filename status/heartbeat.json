@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-18T14:01:50+01:00",
- "unix": 1795006910,
+ "ts": "2026-11-18T14:15:36+01:00",
+ "unix": 1795007736,
  "live": true,
  "monitor_ok": true,
  "guard_ok": true,
@@ -8,14 +8,6 @@
  "open_positions": 0,
  "last_scan": "2026-11-18T03:48:31+01:00",
  "alerts": [
-  {
-   "ts": "2026-11-18T11:41:20+01:00",
-   "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
-  },
-  {
-   "ts": "2026-11-18T11:41:30+01:00",
-   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
-  },
   {
    "ts": "2026-11-18T11:56:27+01:00",
    "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
@@ -46,6 +38,14 @@
   },
   {
    "ts": "2026-11-18T13:59:54+01:00",
+   "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
+  },
+  {
+   "ts": "2026-11-18T14:14:22+01:00",
+   "msg": "BOX FROZEN/SUSPENDED: monitor loop gap"
+  },
+  {
+   "ts": "2026-11-18T14:14:25+01:00",
    "msg": "BOX FROZEN/SUSPENDED: guard loop gap"
   }
  ]
