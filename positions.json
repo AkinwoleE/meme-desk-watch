@@ -501,8 +501,8 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T04:30:26+01:00",
-  "last_price": 8.279178931915022e-05
+  "last_check": "2026-11-18T04:30:40+01:00",
+  "last_price": 8.46810463939257e-05
  },
  "46c2baca2a": {
   "id": "46c2baca2a",
@@ -2824,8 +2824,8 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T04:30:27+01:00",
-  "last_price": 0.0004763406218698694
+  "last_check": "2026-11-18T04:30:40+01:00",
+  "last_price": 0.0004778793310239958
  },
  "e0954a77bd": {
   "id": "e0954a77bd",
