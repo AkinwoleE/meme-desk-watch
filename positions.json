@@ -2854,7 +2854,7 @@
   "opened_at": "2026-11-18T02:52:02+01:00",
   "entry_price": 0.0003177460570579197,
   "qty_orig": 6294.334597,
-  "qty": 6294.334597,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/humanevolvd/status/2114193847748374802?s=46",
   "score": {
@@ -2918,20 +2918,35 @@
     "price": 0.0003177460570579197,
     "route": "jupiter-ultra",
     "sig": "2KXVLGuLqqgamRiVRtgPmeCQUJBts1BUTM8Cwb8s5i8hgsBjkec8yuBS9MqWQfriRhnYHGTCh5LDbLhKsM22NegD"
+   },
+   {
+    "ts": "2026-11-18T03:33:13+01:00",
+    "side": "sell",
+    "qty": 6294.334597,
+    "usd": 1.5116119999999995,
+    "price": 0.00024015437640071799,
+    "route": "jupiter-ultra",
+    "sig": "5Wuo1q9fe68dkqhU2gjrBVqvJNGtxKkDGLJQVz8h5ceVi1LXaV9uHFxfgMxGx4PSR7VZFpMJocA1g1bA6E4P1b2B",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.0004411687922672974,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.5116119999999995,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 58941.15673466009,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-18T03:33:08+01:00",
-  "last_price": 0.00024004367879056657
+  "last_price": 0.00024004367879056657,
+  "closed_at": "2026-11-18T03:33:13+01:00",
+  "exit_reason": "stop 0.78x (now 0.76x)",
+  "pnl_usd": -0.4883880000000005,
+  "pnl_x": 0.7558059999999998
  },
  "c38b7374cc": {
   "id": "c38b7374cc",
