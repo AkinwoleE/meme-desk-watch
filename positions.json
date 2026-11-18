@@ -914,107 +914,6 @@
   "pnl_usd": -0.6049459999999982,
   "pnl_x": 0.6975270000000009
  },
- "bc26ec7e42": {
-  "id": "bc26ec7e42",
-  "mint": "4GGiCw2FkwjWdJyGzQLiwrrGAtaPtqwTmatnHfHkpump",
-  "symbol": "KIM",
-  "opened_at": "2026-11-17T16:34:06+01:00",
-  "entry_price": 0.0001317405472487222,
-  "qty_orig": 15181.354881,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/Polymarket/status/2122700787511947561",
-  "score": {
-   "score": 68.3,
-   "parts": {
-    "momentum": 25,
-    "socials": 6,
-    "organic": 9.3,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/Polymarket/status/2122700787511947561",
-   "creator_note": "creator 1/1 graduated (100%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T16:34:06+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 15181.354881,
-    "price": 0.0001317405472487222,
-    "route": "jupiter-ultra",
-    "sig": "GWNdmV4KabLN1Nn6grA8Qf9TdrNyxopEpmdBYLXizpkXxsZonuWqW1rEY7vepprzEQawgyEwFQMbmRVWfU3S864"
-   },
-   {
-    "ts": "2026-11-17T16:36:47+01:00",
-    "side": "sell",
-    "qty": 15181.354881,
-    "usd": 1.3470259999999996,
-    "price": 8.872897119912861e-05,
-    "route": "jupiter-ultra",
-    "sig": "4ndtu7PhoEmV1SxXAucB99Gkc5KvKYu3qUExh93xfecdhSNaxnxC6u1zUabexTvxu9wU2bVCi5rX9HtTMPiJFSYT",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.0001317405472487222,
-  "tp_done": [],
-  "realized_usd": 1.3470259999999996,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 13188.507664629793,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T16:36:39+01:00",
-  "last_price": 9.013091605835549e-05,
-  "closed_at": "2026-11-17T16:36:47+01:00",
-  "exit_reason": "stop 0.78x (now 0.68x)",
-  "pnl_usd": -0.6529740000000004,
-  "pnl_x": 0.6735129999999998
- },
  "75ad3b6a31": {
   "id": "75ad3b6a31",
   "mint": "BrfXnjagWYqfv5kGEArWEWL4xcfz3KHMzEBchJ95pump",
@@ -2538,6 +2437,107 @@
   "pnl_usd": -0.3260779999999954,
   "pnl_x": 0.8369610000000023
  },
+ "28ec5c7259": {
+  "id": "28ec5c7259",
+  "mint": "CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump",
+  "symbol": "DOUG",
+  "opened_at": "2026-11-17T20:10:08+01:00",
+  "entry_price": 7.163280254531703e-05,
+  "qty_orig": 27920.169656,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
+  "score": {
+   "score": 78.8,
+   "parts": {
+    "momentum": 17.8,
+    "socials": 11,
+    "organic": 17.0,
+    "story": 23,
+    "base": 10
+   },
+   "adj": {
+    "creator": 0
+   },
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
+   "creator_note": "creator 1/1 graduated (100%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T20:10:08+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 27920.169656,
+    "price": 7.163280254531703e-05,
+    "route": "jupiter-ultra",
+    "sig": "4GQK1PnddVzqtrdYX8uDiTUe3LHrm2grsDr8F8A3kcty5ZwNLLsuhkrggU47mRpuQ6onnsN5KJonXq8a4oGRkc3J"
+   },
+   {
+    "ts": "2026-11-17T20:41:16+01:00",
+    "side": "sell",
+    "qty": 27920.169656,
+    "usd": 1.6777789999999868,
+    "price": 6.009200591083926e-05,
+    "route": "jupiter-ultra",
+    "sig": "iMED8kpFDbUDAuaBVTihSccRqLdoeEjZXPY8jcNhVE5i5CEJ2XV23VxtGKCEC21AWLSwLL5dRLMZRhyt2qDwWER",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 7.560325063873033e-05,
+  "tp_done": [],
+  "realized_usd": 1.6777789999999868,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 10001.249945304438,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T20:41:08+01:00",
+  "last_price": 6.055782437418302e-05,
+  "closed_at": "2026-11-17T20:41:16+01:00",
+  "exit_reason": "failed entry (0.85x after 31m, never >1.2x)",
+  "pnl_usd": -0.3222210000000132,
+  "pnl_x": 0.8388894999999934
+ },
  "4c8f94c769": {
   "id": "4c8f94c769",
   "mint": "HyLnt315TPdhXL3BSdBqWXXxfwzNMa9Q2FkxcLpApump",
@@ -2727,8 +2727,8 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T10:15:59+01:00",
-  "last_price": 0.0006322876296197688
+  "last_check": "2026-11-18T10:16:14+01:00",
+  "last_price": 0.0006334954700082169
  },
  "9a6662c65b": {
   "id": "9a6662c65b",
@@ -3048,30 +3048,30 @@
   "pnl_usd": 1.759012999999996,
   "pnl_x": 1.879506499999998
  },
- "28ec5c7259": {
-  "id": "28ec5c7259",
-  "mint": "CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump",
-  "symbol": "DOUG",
-  "opened_at": "2026-11-17T20:10:08+01:00",
-  "entry_price": 7.163280254531703e-05,
-  "qty_orig": 27920.169656,
+ "bc26ec7e42": {
+  "id": "bc26ec7e42",
+  "mint": "4GGiCw2FkwjWdJyGzQLiwrrGAtaPtqwTmatnHfHkpump",
+  "symbol": "KIM",
+  "opened_at": "2026-11-17T16:34:06+01:00",
+  "entry_price": 0.0001317405472487222,
+  "qty_orig": 15181.354881,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
+  "thesis": "tied to a tweet/news source https://x.com/Polymarket/status/2122700787511947561",
   "score": {
-   "score": 78.8,
+   "score": 68.3,
    "parts": {
-    "momentum": 17.8,
-    "socials": 11,
-    "organic": 17.0,
-    "story": 23,
+    "momentum": 25,
+    "socials": 6,
+    "organic": 9.3,
+    "story": 18,
     "base": 10
    },
    "adj": {
     "creator": 0
    },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/Polymarket/status/2122700787511947561",
    "creator_note": "creator 1/1 graduated (100%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
@@ -3089,8 +3089,8 @@
      0.15
     ]
    ],
-   "stop": 0.7,
-   "trail": 0.4,
+   "stop": 0.78,
+   "trail": 0.3,
    "expected_hold_min": 240,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
@@ -3108,46 +3108,46 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "graduated"
+   "profile": "insider_grad"
   },
   "fills": [
    {
-    "ts": "2026-11-17T20:10:08+01:00",
+    "ts": "2026-11-17T16:34:06+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 27920.169656,
-    "price": 7.163280254531703e-05,
+    "qty": 15181.354881,
+    "price": 0.0001317405472487222,
     "route": "jupiter-ultra",
-    "sig": "4GQK1PnddVzqtrdYX8uDiTUe3LHrm2grsDr8F8A3kcty5ZwNLLsuhkrggU47mRpuQ6onnsN5KJonXq8a4oGRkc3J"
+    "sig": "GWNdmV4KabLN1Nn6grA8Qf9TdrNyxopEpmdBYLXizpkXxsZonuWqW1rEY7vepprzEQawgyEwFQMbmRVWfU3S864"
    },
    {
-    "ts": "2026-11-17T20:41:16+01:00",
+    "ts": "2026-11-17T16:36:47+01:00",
     "side": "sell",
-    "qty": 27920.169656,
-    "usd": 1.6777789999999868,
-    "price": 6.009200591083926e-05,
+    "qty": 15181.354881,
+    "usd": 1.3470259999999996,
+    "price": 8.872897119912861e-05,
     "route": "jupiter-ultra",
-    "sig": "iMED8kpFDbUDAuaBVTihSccRqLdoeEjZXPY8jcNhVE5i5CEJ2XV23VxtGKCEC21AWLSwLL5dRLMZRhyt2qDwWER",
+    "sig": "4ndtu7PhoEmV1SxXAucB99Gkc5KvKYu3qUExh93xfecdhSNaxnxC6u1zUabexTvxu9wU2bVCi5rX9HtTMPiJFSYT",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 7.560325063873033e-05,
+  "peak_price": 0.0001317405472487222,
   "tp_done": [],
-  "realized_usd": 1.6777789999999868,
+  "realized_usd": 1.3470259999999996,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 10001.249945304438,
+  "entry_liq": 13188.507664629793,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T20:41:08+01:00",
-  "last_price": 6.055782437418302e-05,
-  "closed_at": "2026-11-17T20:41:16+01:00",
-  "exit_reason": "failed entry (0.85x after 31m, never >1.2x)",
-  "pnl_usd": -0.3222210000000132,
-  "pnl_x": 0.8388894999999934
+  "last_check": "2026-11-17T16:36:39+01:00",
+  "last_price": 9.013091605835549e-05,
+  "closed_at": "2026-11-17T16:36:47+01:00",
+  "exit_reason": "stop 0.78x (now 0.68x)",
+  "pnl_usd": -0.6529740000000004,
+  "pnl_x": 0.6735129999999998
  },
  "6199998e53": {
   "id": "6199998e53",
