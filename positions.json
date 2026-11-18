@@ -3273,7 +3273,7 @@
   "opened_at": "2026-11-18T23:51:03+01:00",
   "entry_price": 3.431239236906208e-05,
   "qty_orig": 58286.81307,
-  "qty": 58286.81307,
+  "qty": 0.0,
   "cost_usd": 1.9999600000000157,
   "thesis": "tied to a tweet/news source https://x.com/BelmontWhale/status/2123099814259048464",
   "score": {
@@ -3337,20 +3337,35 @@
     "price": 3.431239236906208e-05,
     "route": "jupiter-ultra",
     "sig": "3se2BWcrc9n1bvRXM5BtXsRRaewAUTEYBfhQrrLXc9schYhLeG3BqAusNS2khFZH1rkAhoZhY2apbGfVzW62HyD3"
+   },
+   {
+    "ts": "2026-11-18T23:53:41+01:00",
+    "side": "sell",
+    "qty": 58286.81307,
+    "usd": 1.402247000000017,
+    "price": 2.4057705785285904e-05,
+    "route": "jupiter-ultra",
+    "sig": "47Mok7HVJm7GgwhAwZT7nd3uKYFg5QsajN2SNzHEtJUaNdh3QkFXdV5MzENgBLx9N7J6n4FxEtebkGP6huQMmts1",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 3.431239236906208e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.402247000000017,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 19253.33148584051,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-18T23:53:36+01:00",
-  "last_price": 2.341489004080177e-05
+  "last_price": 2.341489004080177e-05,
+  "closed_at": "2026-11-18T23:53:41+01:00",
+  "exit_reason": "stop 0.7x (now 0.68x)",
+  "pnl_usd": -0.5977129999999988,
+  "pnl_x": 0.7011375227504579
  },
  "e0954a77bd": {
   "id": "e0954a77bd",
