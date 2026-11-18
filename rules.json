@@ -1,5 +1,5 @@
 {
- "version": 58,
+ "version": 59,
  "size_usd": 2.0,
  "max_size_usd": 2.0,
  "pay_with": [
@@ -24,13 +24,13 @@
  "monitor_interval_s": 15,
  "guard_interval_s": 300,
  "review_interval_h": 6,
- "min_score": 68,
+ "min_score": 75,
  "hard": {
-  "min_age_min": 10,
+  "min_age_min": 60,
   "max_age_days": 7,
-  "min_mcap": 8000,
+  "min_mcap": 15000,
   "max_mcap": 50000000,
-  "min_holders": 75,
+  "min_holders": 150,
   "min_grad_liq": 10000,
   "top10_max_pct": 35,
   "single_wallet_max_pct": 12,
@@ -44,12 +44,14 @@
   },
   "wash": {
    "vol24_over_mcap_x": 10
-  }
+  },
+  "min_liq": 10000,
+  "min_organic": 40
  },
  "penalties": {
   "copycat": -10,
   "late_leg": -15,
-  "chasing": -8,
+  "chasing": -15,
   "distribution": -8,
   "paid_boost": -5
  },
@@ -304,6 +306,7 @@
   "HYEBRpYSsNhTjdPZg7MP1rC2airpBUTnpHw2kewApump": {
    "symbol": "LUCIASS",
    "reason": "BABA's own launch via GTA Meme, 2026-11-17 21:22 WAT; never buy/sell/trade"
-  }
+  },
+  "3ARgpxu29Zsy674ktb4ixDKoms3Ekg1gEXJ1pnqkpump": "transferred_in, ignored (likely scam; never touch) first seen 2026-11-18T12:48:08+01:00"
  }
 }
