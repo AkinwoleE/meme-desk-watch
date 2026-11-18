@@ -1,131 +1,29 @@
 {
- "46c2baca2a": {
-  "id": "46c2baca2a",
-  "mint": "EvbSSzACWAxqFhXdiPypjv6jMhRfHU257x65oFrjpump",
-  "symbol": "AURA",
-  "opened_at": "2026-11-15T00:42:52+01:00",
-  "entry_price": 0.000303698652194037,
-  "qty_orig": 6585.47539,
+ "50e353bb74": {
+  "id": "50e353bb74",
+  "mint": "3EDLvS4PMWXmN5oj7aGWwR16yC3zgZSdWL2BeVK8sent",
+  "symbol": "SENT",
+  "opened_at": "2026-11-16T19:03:55+01:00",
+  "entry_price": 1.8036983304242167e-05,
+  "qty_orig": 110883.287203,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/captain__crunch/status/2121350465539428579",
+  "thesis": "live product claimed at https://trysent.app/ (verify it loads)",
   "score": {
-   "score": 75.9,
+   "score": 77.1,
    "parts": {
-    "momentum": 22.2,
+    "momentum": 20,
     "socials": 11,
-    "organic": 14.8,
-    "story": 18,
+    "organic": 8.1,
+    "story": 20,
     "base": 10
    },
    "adj": {
-    "creator": 0
+    "creator": 8
    },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/captain__crunch/status/2121350465539428579",
-   "creator_note": "creator 32/1325 graduated (2%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-15T00:42:52+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 6585.47539,
-    "price": 0.000303698652194037,
-    "route": "jupiter-ultra",
-    "sig": "4NAgyNDwwp8Gfniucga1tcyDTeNkQPa51EA8994E41bmNVojSGS5YJEvy69UipuaM2RiyhqfW3BcPhwhrmZmNRAN"
-   },
-   {
-    "ts": "2026-11-15T06:43:48+01:00",
-    "side": "sell",
-    "qty": 6585.47539,
-    "usd": 2.0628460000000075,
-    "price": 0.0003135551919509944,
-    "route": "jupiter-ultra",
-    "sig": "5C72qnduU9L3Avw8cKp8TkAehvGVZLSM5cE4Cm86LtoonveQUaw1sznE5fpAwKpnZM6WuctWtgu9vDUUL5gYkayr",
-    "usd_journal_old": 2.06491,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.0003140878206615014,
-  "tp_done": [],
-  "realized_usd": 2.0628460000000075,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 56519.64261848784,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "last_price": 0.0003140878206615014,
-  "last_check": "2026-11-15T06:43:48+01:00",
-  "closed_at": "2026-11-15T06:43:48+01:00",
-  "exit_reason": "time stop (6.0h, 1.03x < 1.3x)",
-  "pnl_usd": 0.06284600000000751,
-  "pnl_x": 1.0314230000000038,
-  "sell_failures": 0
- },
- "64929a4060": {
-  "id": "64929a4060",
-  "mint": "2ChuZVeETepzUiimNZLp9LrWwaHabq5pJ1S6tVkLpump",
-  "symbol": "BOWL",
-  "opened_at": "2026-11-17T23:49:55+01:00",
-  "entry_price": 2.6044688534888037e-05,
-  "qty_orig": 76791.089182,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
-  "score": {
-   "score": 70.0,
-   "parts": {
-    "momentum": 25,
-    "socials": 11,
-    "organic": 14.0,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "chasing": -8,
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
-   "creator_note": "creator 144/8446 graduated (2%) [peak data unavailable: pump.fun API blocked]"
+   "story_cat": "product",
+   "thesis": "live product claimed at https://trysent.app/ (verify it loads)",
+   "creator_note": "creator 2/3 graduated (67%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -165,349 +63,42 @@
   },
   "fills": [
    {
-    "ts": "2026-11-17T23:49:55+01:00",
+    "ts": "2026-11-16T19:03:55+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 76791.089182,
-    "price": 2.6044688534888037e-05,
+    "qty": 110883.287203,
+    "price": 1.8036983304242167e-05,
     "route": "jupiter-ultra",
-    "sig": "3tDc7rgxzPKGv5qZNernNF8n71xWQrCtjCCp1n2p4wtTowfkB7MBf8aDR1nc2YdrZiRaUhpxjiKB1Rmod7DMad7m"
+    "sig": "TX3s4C7DVJNHP9aqf4ofkguNPQaQhK3LWYh2iUMSgXoSsdFH1Ct2VrnFQTQ8ceHCvQFgRg8KiRvtxhKuP6LpLKZ"
    },
    {
-    "ts": "2026-11-18T00:45:35+01:00",
+    "ts": "2026-11-16T19:24:33+01:00",
     "side": "sell",
-    "qty": 38395.544591,
-    "usd": 2.281374999999997,
-    "price": 5.9417701306280115e-05,
+    "qty": 110883.287203,
+    "usd": 1.4116219999999942,
+    "price": 1.2730701222950415e-05,
     "route": "jupiter-ultra",
-    "sig": "51eGs1RKwxZHdL4s87gaPc1V5X22B2jG67sofoNohcb4vL2ERgETVaf73Xkd1gi7V8pZDBWBLBnqZY6o8AqpWdfX",
-    "full": false,
-    "actual_from_chain": true
-   },
-   {
-    "ts": "2026-11-18T00:49:41+01:00",
-    "side": "sell",
-    "qty": 38395.544591,
-    "usd": 1.477637999999999,
-    "price": 3.848462147731486e-05,
-    "route": "jupiter-ultra",
-    "sig": "64FXPqSgqVbfpNts5SsHrHWaYbjkqrw7XAMVE3auZfJYoN2foEsEtnMaR1BXWPtrrjXuSc7UmKFo5tUsD5qsrLod",
+    "sig": "4gADxoXQxjRThBVcBth2ThMTG2ScATexNYPnnV7zBhqF8HKN92ZKaBjjqzRikNpsKcbazFPTSYCNprWiNP2QPBAW",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 5.861414589611623e-05,
-  "tp_done": [
-   2
-  ],
-  "realized_usd": 3.759012999999996,
+  "peak_price": 1.8779597917117826e-05,
+  "tp_done": [],
+  "realized_usd": 1.4116219999999942,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 12228.33418431918,
-  "entry_dev_pct": null,
+  "entry_liq": 6253.482652782914,
+  "entry_dev_pct": 9.999999999999999e-14,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-18T00:49:36+01:00",
-  "last_price": 4.3735575251477347e-05,
-  "closed_at": "2026-11-18T00:49:41+01:00",
-  "exit_reason": "trailing stop 25% off peak 2.25x (now 1.68x)",
-  "pnl_usd": 1.759012999999996,
-  "pnl_x": 1.879506499999998
- },
- "c3594574cc": {
-  "id": "c3594574cc",
-  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
-  "symbol": "CHAR",
-  "opened_at": "2026-11-17T17:20:26+01:00",
-  "entry_price": 0.00013240123872814186,
-  "qty_orig": 15105.598854,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-  "score": {
-   "score": 72.4,
-   "parts": {
-    "momentum": 19.0,
-    "socials": 11,
-    "organic": 11.4,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "paid_boost": -5,
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T17:20:26+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 15105.598854,
-    "price": 0.00013240123872814186,
-    "route": "jupiter-ultra",
-    "sig": "35BNhS7HmXNQXsGpLHoZM6vMooXXpBRz8Cf1UyQaQ1QPPwMHFq1qht2RNSKvNoaKqut415z7mYmS6mp5YGi1wbgP"
-   },
-   {
-    "ts": "2026-11-17T17:24:55+01:00",
-    "side": "sell",
-    "qty": 15105.598854,
-    "usd": 1.483198999999999,
-    "price": 9.818869244017057e-05,
-    "route": "jupiter-ultra",
-    "sig": "2JouEfCaXVZrUoUz8NqTVfbA5RAJoSSabjhGEgeqLbMZdConpoK7D4LSP49ELxzxgdbqsq5pLHjBwz3d5iKc7F31",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.00013240123872814186,
-  "tp_done": [],
-  "realized_usd": 1.483198999999999,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 15109.505027739195,
-  "entry_dev_pct": 0.0035944728645664684,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T17:24:50+01:00",
-  "last_price": 0.00010017465856580415,
-  "closed_at": "2026-11-17T17:24:55+01:00",
-  "exit_reason": "stop 0.78x (now 0.76x)",
-  "pnl_usd": -0.516801000000001,
-  "pnl_x": 0.7415994999999995
- },
- "107594f1b1": {
-  "id": "107594f1b1",
-  "mint": "ELbCDkRuUTuzPCR6CarMVtR1CYh71AzGhuZTBPePpump",
-  "symbol": "GIGAPIG",
-  "opened_at": "2026-11-14T21:41:25+01:00",
-  "entry_price": 5.7422134323001717e-05,
-  "qty_orig": 34829.774678,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/sxlmononigiri/status/2120844964359737447",
-  "score": {
-   "score": 68.7,
-   "parts": {
-    "momentum": 14.0,
-    "socials": 11,
-    "organic": 10.8,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 5
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/sxlmononigiri/status/2120844964359737447",
-   "creator_note": "creator 4/21 graduated (19%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-14T21:41:25+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 34834.992478,
-    "price": 5.741353328160176e-05,
-    "route": "jupiter-swap+jito",
-    "sig": "5icp9N1osYE6DmbHz92avB3ACicMjfuUaQauSxpTu84Eyiv4Y4EsLzUzCPsCNdLkcYwmWuuwoBbEpo4PethXfidJ"
-   },
-   {
-    "ts": "2026-11-15T06:43:46+01:00",
-    "side": "sell",
-    "qty": 34829.774678,
-    "usd": 2.27144899999999,
-    "price": 6.528098504858205e-05,
-    "route": "jupiter-ultra",
-    "sig": "4xY16FQXg4TmZSkKEnkhzshjcQHuA2tWYUWEfM33xdKoA4E4d7BfLrJkCjgywwQgz1fVqjLdTunsHvQKvJkGunuv",
-    "usd_journal_old": 2.273722,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 7.501e-05,
-  "tp_done": [],
-  "realized_usd": 2.27144899999999,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 11497.483171204774,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "last_price": 6.600540315657676e-05,
-  "last_check": "2026-11-15T06:43:46+01:00",
-  "closed_at": "2026-11-15T06:43:46+01:00",
-  "exit_reason": "time stop (9.0h, 1.15x < 1.3x)",
-  "pnl_usd": 0.27144899999998984,
-  "pnl_x": 1.135724499999995,
-  "sell_failures": 0
- },
- "1e20853a1d": {
-  "id": "1e20853a1d",
-  "mint": "4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump",
-  "symbol": "BAWSAQ",
-  "opened_at": "2026-11-17T21:03:22+01:00",
-  "entry_price": 0.0007451619760711097,
-  "qty_orig": 2683.980214,
-  "qty": 2683.980214,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/bawsaqfund/status/2122440986513305969; live product claimed at https://bawsaq.fund/ (verify it loads)",
-  "score": {
-   "score": 76.8,
-   "parts": {
-    "momentum": 20,
-    "socials": 11,
-    "organic": 17.8,
-    "story": 23,
-    "base": 10
-   },
-   "adj": {
-    "late_leg": -15,
-    "creator": 2,
-    "gta": 8
-   },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/bawsaqfund/status/2122440986513305969; live product claimed at https://bawsaq.fund/ (verify it loads)",
-   "creator_note": "creator 1/13 graduated (8%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.3
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.55,
-   "trail": 0.45,
-   "trail_after_x": 2,
-   "lock_from_x": 2,
-   "lock_floor_x": 1.1,
-   "max_hold_h": 72,
-   "profit_lock": false,
-   "failed_entry": false,
-   "time_stop": false,
-   "emergency": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "launchpad_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T21:03:22+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 2683.980214,
-    "price": 0.0007451619760711097,
-    "route": "jupiter-ultra",
-    "sig": "396WzUSU7zqT2eS6tNu4RfpK9YL71SyTNpWRDREj2DzGCJg6eMmpSvKkrPLcjfmVTvb2ie3VpUhhgZYByEkhiank"
-   }
-  ],
-  "peak_price": 0.0007874546739569975,
-  "tp_done": [],
-  "realized_usd": 0.0,
-  "paper": false,
-  "status": "open",
-  "decimals": 6,
-  "entry_liq": 69596.34103117797,
-  "entry_dev_pct": 0.05460967078313966,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-18T02:17:48+01:00",
-  "last_price": 0.0006057462263393868
+  "last_check": "2026-11-16T19:24:27+01:00",
+  "last_price": 1.2898034089889326e-05,
+  "closed_at": "2026-11-16T19:24:33+01:00",
+  "exit_reason": "failed entry (0.72x after 20m, never >1.2x)",
+  "pnl_usd": -0.5883780000000058,
+  "pnl_x": 0.7058109999999971
  },
  "cf4367db21": {
   "id": "cf4367db21",
@@ -610,31 +201,133 @@
   "pnl_x": 0.6456739999999996,
   "sell_failures": 0
  },
- "9a6662c65b": {
-  "id": "9a6662c65b",
-  "mint": "9Fu2BFSu97a3dRcrQuWuJnF2h91XiZXqUsy3kntS3XLu",
-  "symbol": "BASIS",
-  "opened_at": "2026-11-16T18:47:27+01:00",
-  "entry_price": 1.2667443961650751e-05,
-  "qty_orig": 157885.048164,
+ "fe8695cceb": {
+  "id": "fe8695cceb",
+  "mint": "FxccyLE6GLyoyAiHn72apYHGzYKL96g93PHxUHmRXrdv",
+  "symbol": "VICE",
+  "opened_at": "2026-11-17T00:44:19+01:00",
+  "entry_price": 6.247980258571925e-05,
+  "qty_orig": 32010.344419,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "token of launchpad/app raydium-launchlab",
+  "thesis": "tied to a tweet/news source https://twitter.com/discord/status/2122389583778193560",
   "score": {
-   "score": 69.9,
+   "score": 71.3,
    "parts": {
-    "momentum": 25,
+    "momentum": 24.2,
     "socials": 11,
-    "organic": 9.9,
-    "story": 14,
+    "organic": 16.0,
+    "story": 18,
     "base": 10
    },
    "adj": {
+    "chasing": -8,
     "creator": 0
    },
-   "story_cat": "launchpad_token",
-   "thesis": "token of launchpad/app raydium-launchlab",
-   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://twitter.com/discord/status/2122389583778193560",
+   "creator_note": "creator 2013/185774 graduated (1%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T00:44:19+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 32010.344419,
+    "price": 6.247980258571925e-05,
+    "route": "jupiter-ultra",
+    "sig": "4x4BfyD8ieyJktSdUSYZHkwgfZNyJDxXusGMDi9rwH1LVCEZVNbmBZbnrvDQoEWC4mNGcysKMu5qz8tgc2xXXPUa"
+   },
+   {
+    "ts": "2026-11-17T01:04:44+01:00",
+    "side": "sell",
+    "qty": 32010.344419,
+    "usd": 1.4187909999999988,
+    "price": 4.432289079519756e-05,
+    "route": "jupiter-ultra",
+    "sig": "5Afiui426HS4CAwnCeJbZSsBhmxQ2C12mgQWirjAjcCMMWP9Kv8TEDdVHikU5cv2gcEp8FJ8F8xsSfJvPd4rAHe8",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 6.287371153743189e-05,
+  "tp_done": [],
+  "realized_usd": 1.4187909999999988,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 23090.5710159281,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T01:04:37+01:00",
+  "last_price": 4.6159779354071346e-05,
+  "closed_at": "2026-11-17T01:04:44+01:00",
+  "exit_reason": "failed entry (0.74x after 20m, never >1.2x)",
+  "pnl_usd": -0.5812090000000012,
+  "pnl_x": 0.7093954999999994
+ },
+ "4c8f94c769": {
+  "id": "4c8f94c769",
+  "mint": "HyLnt315TPdhXL3BSdBqWXXxfwzNMa9Q2FkxcLpApump",
+  "symbol": "Lettuce",
+  "opened_at": "2026-11-17T23:49:36+01:00",
+  "entry_price": 1.178705423133331e-05,
+  "qty_orig": 169677.678642,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/gampsito/status/2122817603668205709?a=7jLQ2lo1SJ0aJ1R1_3A&s=20",
+  "score": {
+   "score": 72.8,
+   "parts": {
+    "momentum": 25,
+    "socials": 6,
+    "organic": 8.8,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 5
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/gampsito/status/2122817603668205709?a=7jLQ2lo1SJ0aJ1R1_3A&s=20",
+   "creator_note": "creator 43/377 graduated (11%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -674,42 +367,42 @@
   },
   "fills": [
    {
-    "ts": "2026-11-16T18:47:27+01:00",
+    "ts": "2026-11-17T23:49:36+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 157885.048164,
-    "price": 1.2667443961650751e-05,
+    "qty": 169677.678642,
+    "price": 1.178705423133331e-05,
     "route": "jupiter-ultra",
-    "sig": "5NFnvMVvDbumRNGrSxswowyi8GYwUPirV4hYwfqXzTLUN5u5weEGDr2e7hT2yLRgiDr8XtgnPwUHRsNMiCATbEsN"
+    "sig": "4qqEbzQEfb8XLqBxJGhHBxhgVmmf3VQvtByNnZvQGvtD841BDtotgqBcy2V9vQBrzcLciPMRAQARLdytWRPpP4uo"
    },
    {
-    "ts": "2026-11-16T19:23:18+01:00",
+    "ts": "2026-11-17T23:56:16+01:00",
     "side": "sell",
-    "qty": 157885.048164,
-    "usd": 1.6907860000000028,
-    "price": 1.0708968453071831e-05,
+    "qty": 169677.678642,
+    "usd": 1.001819999999995,
+    "price": 5.90425333501714e-06,
     "route": "jupiter-ultra",
-    "sig": "4eWN8ZcAWJsdVrBk6DtqzkDLg7jDo6VQdPNZ733mZPWB1M2WKoLcX2Z43A8wGWSHN4KCGqcVuQUxakrUuNkHCLGb",
+    "sig": "4aQGwDv4rRN2C22Pt6DTLLnY7WLv89Puhzz2u3XaGVefvjkPtJebE1Gb7F6FNYKjsESxR9w7yTTPDz8wwiWRYaMZ",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 1.4041329395070425e-05,
+  "peak_price": 1.178705423133331e-05,
   "tp_done": [],
-  "realized_usd": 1.6907860000000028,
+  "realized_usd": 1.001819999999995,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 3198.2691570113884,
-  "entry_dev_pct": 9.999999999999999e-14,
+  "entry_liq": 5860.348779022147,
+  "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-16T19:23:11+01:00",
-  "last_price": 1.0749679447304788e-05,
-  "closed_at": "2026-11-16T19:23:18+01:00",
-  "exit_reason": "failed entry (0.85x after 36m, never >1.2x)",
-  "pnl_usd": -0.3092139999999972,
-  "pnl_x": 0.8453930000000014
+  "last_check": "2026-11-17T23:56:04+01:00",
+  "last_price": 5.803305472631112e-06,
+  "closed_at": "2026-11-17T23:56:16+01:00",
+  "exit_reason": "stop 0.65x (now 0.49x)",
+  "pnl_usd": -0.998180000000005,
+  "pnl_x": 0.5009099999999975
  },
  "2035081599": {
   "id": "2035081599",
@@ -811,208 +504,6 @@
   "exit_reason": "stop 0.78x (now 0.76x)",
   "pnl_usd": -0.5080910000000074,
   "pnl_x": 0.7459544999999963
- },
- "e0954a77bd": {
-  "id": "e0954a77bd",
-  "mint": "DqYRxLot453B12UUnGLm2zeSWsTzj2p2rFZdS482pump",
-  "symbol": "Bottom",
-  "opened_at": "2026-11-15T18:06:02+01:00",
-  "entry_price": 2.799954454675261e-05,
-  "qty_orig": 71429.733318,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/fwogzz/status/2121840408015823164",
-  "score": {
-   "score": 70.5,
-   "parts": {
-    "momentum": 20.4,
-    "socials": 6,
-    "organic": 16.1,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/fwogzz/status/2121840408015823164",
-   "creator_note": "creator 221/15782 graduated (1%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "curve"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-15T18:06:02+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 71429.733318,
-    "price": 2.799954454675261e-05,
-    "route": "jupiter-ultra",
-    "sig": "5H3BcfnFG6yHF8TpkPMwZdTq1gdf1peXuYjwCc31xFGwsDw3tYXRtmm5r3NFcCHaasE3G43zaVKrEnwsJf2mDfeJ"
-   },
-   {
-    "ts": "2026-11-15T18:45:54+01:00",
-    "side": "sell",
-    "qty": 71429.733318,
-    "usd": 1.8332210000000089,
-    "price": 2.5664676526771307e-05,
-    "route": "jupiter-ultra",
-    "sig": "5H453fsSAXJ2GeN63Zj1TpnLfoAPTmHys7JVmj4WFyUXdFQnu3mp3cufUVhC6CbPf7QPCR4P7QsnvhuPU6DQ6C19",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 4.386754011807224e-05,
-  "tp_done": [],
-  "realized_usd": 1.8332210000000089,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 7790.739996905344,
-  "entry_dev_pct": null,
-  "graduated": false,
-  "last_price": 2.6007970720235873e-05,
-  "last_check": "2026-11-15T18:45:56+01:00",
-  "closed_at": "2026-11-15T18:45:54+01:00",
-  "exit_reason": "profit lock (peak 1.57x, now 0.93x)",
-  "pnl_usd": -0.16677899999999113,
-  "pnl_x": 0.9166105000000044,
-  "sell_failures": 0
- },
- "50e353bb74": {
-  "id": "50e353bb74",
-  "mint": "3EDLvS4PMWXmN5oj7aGWwR16yC3zgZSdWL2BeVK8sent",
-  "symbol": "SENT",
-  "opened_at": "2026-11-16T19:03:55+01:00",
-  "entry_price": 1.8036983304242167e-05,
-  "qty_orig": 110883.287203,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "live product claimed at https://trysent.app/ (verify it loads)",
-  "score": {
-   "score": 77.1,
-   "parts": {
-    "momentum": 20,
-    "socials": 11,
-    "organic": 8.1,
-    "story": 20,
-    "base": 10
-   },
-   "adj": {
-    "creator": 8
-   },
-   "story_cat": "product",
-   "thesis": "live product claimed at https://trysent.app/ (verify it loads)",
-   "creator_note": "creator 2/3 graduated (67%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "curve"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-16T19:03:55+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 110883.287203,
-    "price": 1.8036983304242167e-05,
-    "route": "jupiter-ultra",
-    "sig": "TX3s4C7DVJNHP9aqf4ofkguNPQaQhK3LWYh2iUMSgXoSsdFH1Ct2VrnFQTQ8ceHCvQFgRg8KiRvtxhKuP6LpLKZ"
-   },
-   {
-    "ts": "2026-11-16T19:24:33+01:00",
-    "side": "sell",
-    "qty": 110883.287203,
-    "usd": 1.4116219999999942,
-    "price": 1.2730701222950415e-05,
-    "route": "jupiter-ultra",
-    "sig": "4gADxoXQxjRThBVcBth2ThMTG2ScATexNYPnnV7zBhqF8HKN92ZKaBjjqzRikNpsKcbazFPTSYCNprWiNP2QPBAW",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 1.8779597917117826e-05,
-  "tp_done": [],
-  "realized_usd": 1.4116219999999942,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 6253.482652782914,
-  "entry_dev_pct": 9.999999999999999e-14,
-  "graduated": false,
-  "sell_failures": 0,
-  "last_check": "2026-11-16T19:24:27+01:00",
-  "last_price": 1.2898034089889326e-05,
-  "closed_at": "2026-11-16T19:24:33+01:00",
-  "exit_reason": "failed entry (0.72x after 20m, never >1.2x)",
-  "pnl_usd": -0.5883780000000058,
-  "pnl_x": 0.7058109999999971
  },
  "1e9f76baa1": {
   "id": "1e9f76baa1",
@@ -1116,6 +607,107 @@
   "pnl_usd": -0.6694150000000008,
   "pnl_x": 0.6652924999999996
  },
+ "46c2baca2a": {
+  "id": "46c2baca2a",
+  "mint": "EvbSSzACWAxqFhXdiPypjv6jMhRfHU257x65oFrjpump",
+  "symbol": "AURA",
+  "opened_at": "2026-11-15T00:42:52+01:00",
+  "entry_price": 0.000303698652194037,
+  "qty_orig": 6585.47539,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/captain__crunch/status/2121350465539428579",
+  "score": {
+   "score": 75.9,
+   "parts": {
+    "momentum": 22.2,
+    "socials": 11,
+    "organic": 14.8,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 0
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/captain__crunch/status/2121350465539428579",
+   "creator_note": "creator 32/1325 graduated (2%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T00:42:52+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 6585.47539,
+    "price": 0.000303698652194037,
+    "route": "jupiter-ultra",
+    "sig": "4NAgyNDwwp8Gfniucga1tcyDTeNkQPa51EA8994E41bmNVojSGS5YJEvy69UipuaM2RiyhqfW3BcPhwhrmZmNRAN"
+   },
+   {
+    "ts": "2026-11-15T06:43:48+01:00",
+    "side": "sell",
+    "qty": 6585.47539,
+    "usd": 2.0628460000000075,
+    "price": 0.0003135551919509944,
+    "route": "jupiter-ultra",
+    "sig": "5C72qnduU9L3Avw8cKp8TkAehvGVZLSM5cE4Cm86LtoonveQUaw1sznE5fpAwKpnZM6WuctWtgu9vDUUL5gYkayr",
+    "usd_journal_old": 2.06491,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.0003140878206615014,
+  "tp_done": [],
+  "realized_usd": 2.0628460000000075,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 56519.64261848784,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "last_price": 0.0003140878206615014,
+  "last_check": "2026-11-15T06:43:48+01:00",
+  "closed_at": "2026-11-15T06:43:48+01:00",
+  "exit_reason": "time stop (6.0h, 1.03x < 1.3x)",
+  "pnl_usd": 0.06284600000000751,
+  "pnl_x": 1.0314230000000038,
+  "sell_failures": 0
+ },
  "2682a3fec9": {
   "id": "2682a3fec9",
   "mint": "BTSkBxZhJnZpV1fsnMbEHrXxWDMzwfEGs3RLNmNfpump",
@@ -1217,134 +809,31 @@
   "pnl_usd": -0.5628909999999934,
   "pnl_x": 0.7185545000000033
  },
- "bf7f096a79": {
-  "id": "bf7f096a79",
-  "mint": "9a13W5HdqE95g3YE8Dk9wCHPucrCH33h6BTfdFvRpump",
-  "symbol": "plumber",
-  "opened_at": "2026-11-14T22:25:51+01:00",
-  "entry_price": 7.715963871856248e-05,
-  "qty_orig": 25920.287254,
+ "28ec5c7259": {
+  "id": "28ec5c7259",
+  "mint": "CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump",
+  "symbol": "DOUG",
+  "opened_at": "2026-11-17T20:10:08+01:00",
+  "entry_price": 7.163280254531703e-05,
+  "qty_orig": 27920.169656,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
+  "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
   "score": {
-   "score": 72.5,
+   "score": 78.8,
    "parts": {
-    "momentum": 21.4,
-    "socials": 6,
-    "organic": 9.1,
-    "story": 18,
+    "momentum": 17.8,
+    "socials": 11,
+    "organic": 17.0,
+    "story": 23,
     "base": 10
    },
    "adj": {
-    "creator": 8
+    "creator": 0
    },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
-   "creator_note": "creator 1/4 graduated (25%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-14T22:25:51+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 25920.287254,
-    "price": 7.715963871856248e-05,
-    "route": "jupiter-ultra",
-    "sig": "64SjhXTSivHwqBAxgzwfpmzeo1WrKbqjYo5twNqM5C4E78swRGLS2euCngG4MNF4xWzJBRSUmv8wFSW2oPAPkpvs"
-   },
-   {
-    "ts": "2026-11-15T00:42:13+01:00",
-    "side": "sell",
-    "qty": 25920.287254,
-    "usd": 1.5076059999999956,
-    "price": 5.822138409238171e-05,
-    "route": "jupiter-ultra",
-    "sig": "4P7kK7AggGPw1QheESFGJmFVyXiJrvk9a1YueFZNoeKGAAWTDowHPjEnjQ1WFagi34o2gpnYr7zHbyxv17s2Ri41",
-    "usd_journal_old": 1.509115,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 9.008663449244535e-05,
-  "tp_done": [],
-  "realized_usd": 1.5076059999999956,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 13195.98831104843,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "last_price": 5.949000001302419e-05,
-  "last_check": "2026-11-15T00:42:13+01:00",
-  "closed_at": "2026-11-15T00:42:13+01:00",
-  "exit_reason": "stop 0.78x (now 0.77x)",
-  "pnl_usd": -0.49239400000000444,
-  "pnl_x": 0.7538029999999978,
-  "sell_failures": 0
- },
- "14d2cfb828": {
-  "id": "14d2cfb828",
-  "mint": "3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump",
-  "symbol": "BEAR",
-  "opened_at": "2026-11-15T19:04:12+01:00",
-  "entry_price": 0.00011379053428696606,
-  "qty_orig": 17576.154401,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/omegatrades_sol/status/2122018257255415861?a=vBJLpYz_bsvbX5ERf_w&s=46",
-  "score": {
-   "score": 70.2,
-   "parts": {
-    "momentum": 25,
-    "socials": 6,
-    "organic": 16.2,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "chasing": -8,
-    "paid_boost": -5,
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/omegatrades_sol/status/2122018257255415861?a=vBJLpYz_bsvbX5ERf_w&s=46",
-   "creator_note": "creator 15/17 graduated (88%) [peak data unavailable: pump.fun API blocked]"
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
+   "creator_note": "creator 1/1 graduated (100%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -1384,42 +873,642 @@
   },
   "fills": [
    {
-    "ts": "2026-11-15T19:04:12+01:00",
+    "ts": "2026-11-17T20:10:08+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 17576.154401,
-    "price": 0.00011379053428696606,
+    "qty": 27920.169656,
+    "price": 7.163280254531703e-05,
     "route": "jupiter-ultra",
-    "sig": "eNsRAojwUNVCsrBVTrvejpw5RzsPmbZbMKvRumQuFyBP1bqBRBSDmE7CwZA5MDcDHw1q9JyxnF7RkzXXtyddArC"
+    "sig": "4GQK1PnddVzqtrdYX8uDiTUe3LHrm2grsDr8F8A3kcty5ZwNLLsuhkrggU47mRpuQ6onnsN5KJonXq8a4oGRkc3J"
    },
    {
-    "ts": "2026-11-15T20:48:27+01:00",
+    "ts": "2026-11-17T20:41:16+01:00",
     "side": "sell",
-    "qty": 17576.154401,
-    "usd": 0.07144399999999962,
-    "price": 4.06482546579898e-06,
+    "qty": 27920.169656,
+    "usd": 1.6777789999999868,
+    "price": 6.009200591083926e-05,
     "route": "jupiter-ultra",
-    "sig": "3kx79JeUuo3BmGJPvffHTrdme3c4TFVNQFQrnEWL9G98hSK5Xkdbep43VQTZu5GF1VH2AFGBAPYwgC1UiDDBGKaJ",
+    "sig": "iMED8kpFDbUDAuaBVTihSccRqLdoeEjZXPY8jcNhVE5i5CEJ2XV23VxtGKCEC21AWLSwLL5dRLMZRhyt2qDwWER",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 0.00014576824804780116,
+  "peak_price": 7.560325063873033e-05,
   "tp_done": [],
-  "realized_usd": 0.07144399999999962,
+  "realized_usd": 1.6777789999999868,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 14571.885321510088,
+  "entry_liq": 10001.249945304438,
   "entry_dev_pct": null,
   "graduated": true,
-  "last_price": 4.511853733925849e-06,
-  "last_check": "2026-11-15T20:48:20+01:00",
   "sell_failures": 0,
-  "closed_at": "2026-11-15T20:48:27+01:00",
-  "exit_reason": "stop 0.7x (now 0.04x)",
-  "pnl_usd": -1.9285560000000004,
-  "pnl_x": 0.03572199999999981
+  "last_check": "2026-11-17T20:41:08+01:00",
+  "last_price": 6.055782437418302e-05,
+  "closed_at": "2026-11-17T20:41:16+01:00",
+  "exit_reason": "failed entry (0.85x after 31m, never >1.2x)",
+  "pnl_usd": -0.3222210000000132,
+  "pnl_x": 0.8388894999999934
+ },
+ "107594f1b1": {
+  "id": "107594f1b1",
+  "mint": "ELbCDkRuUTuzPCR6CarMVtR1CYh71AzGhuZTBPePpump",
+  "symbol": "GIGAPIG",
+  "opened_at": "2026-11-14T21:41:25+01:00",
+  "entry_price": 5.7422134323001717e-05,
+  "qty_orig": 34829.774678,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/sxlmononigiri/status/2120844964359737447",
+  "score": {
+   "score": 68.7,
+   "parts": {
+    "momentum": 14.0,
+    "socials": 11,
+    "organic": 10.8,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 5
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/sxlmononigiri/status/2120844964359737447",
+   "creator_note": "creator 4/21 graduated (19%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "insider_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-14T21:41:25+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 34834.992478,
+    "price": 5.741353328160176e-05,
+    "route": "jupiter-swap+jito",
+    "sig": "5icp9N1osYE6DmbHz92avB3ACicMjfuUaQauSxpTu84Eyiv4Y4EsLzUzCPsCNdLkcYwmWuuwoBbEpo4PethXfidJ"
+   },
+   {
+    "ts": "2026-11-15T06:43:46+01:00",
+    "side": "sell",
+    "qty": 34829.774678,
+    "usd": 2.27144899999999,
+    "price": 6.528098504858205e-05,
+    "route": "jupiter-ultra",
+    "sig": "4xY16FQXg4TmZSkKEnkhzshjcQHuA2tWYUWEfM33xdKoA4E4d7BfLrJkCjgywwQgz1fVqjLdTunsHvQKvJkGunuv",
+    "usd_journal_old": 2.273722,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 7.501e-05,
+  "tp_done": [],
+  "realized_usd": 2.27144899999999,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 11497.483171204774,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "last_price": 6.600540315657676e-05,
+  "last_check": "2026-11-15T06:43:46+01:00",
+  "closed_at": "2026-11-15T06:43:46+01:00",
+  "exit_reason": "time stop (9.0h, 1.15x < 1.3x)",
+  "pnl_usd": 0.27144899999998984,
+  "pnl_x": 1.135724499999995,
+  "sell_failures": 0
+ },
+ "2b7fd6e81f": {
+  "id": "2b7fd6e81f",
+  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
+  "symbol": "CHAR",
+  "opened_at": "2026-11-17T16:33:50+01:00",
+  "entry_price": 0.0001377808445727067,
+  "qty_orig": 14515.805925,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+  "score": {
+   "score": 69.2,
+   "parts": {
+    "momentum": 12.9,
+    "socials": 11,
+    "organic": 14.4,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "paid_boost": -5,
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "insider_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T16:33:50+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 14515.805925,
+    "price": 0.0001377808445727067,
+    "route": "jupiter-ultra",
+    "sig": "UD3G7DGcTxqmD11RK4fy6Bu1a2wtqjaHFf6GYmoQof5LTrsMQDfdGPS2GSp86pHFQdKJ5XELUfRupXfRV9f7vro"
+   },
+   {
+    "ts": "2026-11-17T17:12:41+01:00",
+    "side": "sell",
+    "qty": 14515.805925,
+    "usd": 1.6739220000000046,
+    "price": 0.00011531719345441748,
+    "route": "jupiter-ultra",
+    "sig": "fWnAPgZCVjjhUmkbSc3PRKNqtjR3vt28LuPqkTPSZtWYuWw8Mk3qSk4J9qajMz4vUhdSW4PpCGLnpgeaKdCcKg2",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00014803367955391178,
+  "tp_done": [],
+  "realized_usd": 1.6739220000000046,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 14628.42271942735,
+  "entry_dev_pct": 0.0035944716933484443,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T17:12:35+01:00",
+  "last_price": 0.00011546605330286049,
+  "closed_at": "2026-11-17T17:12:41+01:00",
+  "exit_reason": "failed entry (0.84x after 39m, never >1.2x)",
+  "pnl_usd": -0.3260779999999954,
+  "pnl_x": 0.8369610000000023
+ },
+ "1e20853a1d": {
+  "id": "1e20853a1d",
+  "mint": "4La95NEVJdYK9kr375SfKPXnLA8ef8GtsjfVfW27pump",
+  "symbol": "BAWSAQ",
+  "opened_at": "2026-11-17T21:03:22+01:00",
+  "entry_price": 0.0007451619760711097,
+  "qty_orig": 2683.980214,
+  "qty": 2683.980214,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/bawsaqfund/status/2122440986513305969; live product claimed at https://bawsaq.fund/ (verify it loads)",
+  "score": {
+   "score": 76.8,
+   "parts": {
+    "momentum": 20,
+    "socials": 11,
+    "organic": 17.8,
+    "story": 23,
+    "base": 10
+   },
+   "adj": {
+    "late_leg": -15,
+    "creator": 2,
+    "gta": 8
+   },
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/bawsaqfund/status/2122440986513305969; live product claimed at https://bawsaq.fund/ (verify it loads)",
+   "creator_note": "creator 1/13 graduated (8%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.3
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.55,
+   "trail": 0.45,
+   "trail_after_x": 2,
+   "lock_from_x": 2,
+   "lock_floor_x": 1.1,
+   "max_hold_h": 72,
+   "profit_lock": false,
+   "failed_entry": false,
+   "time_stop": false,
+   "emergency": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "launchpad_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T21:03:22+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 2683.980214,
+    "price": 0.0007451619760711097,
+    "route": "jupiter-ultra",
+    "sig": "396WzUSU7zqT2eS6tNu4RfpK9YL71SyTNpWRDREj2DzGCJg6eMmpSvKkrPLcjfmVTvb2ie3VpUhhgZYByEkhiank"
+   }
+  ],
+  "peak_price": 0.0007874546739569975,
+  "tp_done": [],
+  "realized_usd": 0.0,
+  "paper": false,
+  "status": "open",
+  "decimals": 6,
+  "entry_liq": 69596.34103117797,
+  "entry_dev_pct": 0.05460967078313966,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-18T02:18:27+01:00",
+  "last_price": 0.0006094057334594231
+ },
+ "1a043ba302": {
+  "id": "1a043ba302",
+  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
+  "symbol": "CHAR",
+  "opened_at": "2026-11-17T19:26:39+01:00",
+  "entry_price": 0.00012594011503148957,
+  "qty_orig": 15880.563548,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+  "score": {
+   "score": 76.1,
+   "parts": {
+    "momentum": 21.9,
+    "socials": 11,
+    "organic": 12.2,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "paid_boost": -5,
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "insider_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T19:26:39+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 15880.563548,
+    "price": 0.00012594011503148957,
+    "route": "jupiter-ultra",
+    "sig": "TxGrwSsUGEFScgxee4PTi3uqoNFWtaD7yajodkooCpumBxVsGPfZTfDwaNh81mBSuPLxWQfkmBqyLJqaR9bbsmP"
+   },
+   {
+    "ts": "2026-11-17T19:46:59+01:00",
+    "side": "sell",
+    "qty": 15880.563548,
+    "usd": 1.6181520000000091,
+    "price": 0.00010189512450921803,
+    "route": "jupiter-ultra",
+    "sig": "5AbaA659VBJFovD4VsGenQ7bRiqkCcBUkqsaAfSDKEGcQLqL16hroZ5Kf5YGYxPZnr1262s9TkT28YpEkrfPPjSj",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00012594011503148957,
+  "tp_done": [],
+  "realized_usd": 1.6181520000000091,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 14917.509629644397,
+  "entry_dev_pct": 0.0035944728817996654,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T19:46:52+01:00",
+  "last_price": 0.00010460008208259569,
+  "closed_at": "2026-11-17T19:46:59+01:00",
+  "exit_reason": "failed entry (0.83x after 20m, never >1.2x)",
+  "pnl_usd": -0.38184799999999086,
+  "pnl_x": 0.8090760000000046
+ },
+ "e5a8663892": {
+  "id": "e5a8663892",
+  "mint": "DmNiVcg3mgQGRccEAEEmuBdhRuCiF4i9dciUWdRfLoat",
+  "symbol": "GTA6",
+  "opened_at": "2026-11-15T16:16:25+01:00",
+  "entry_price": 3.574828667961158e-05,
+  "qty_orig": 55946.737194,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
+  "score": {
+   "score": 76.6,
+   "parts": {
+    "momentum": 22.4,
+    "socials": 11,
+    "organic": 10.2,
+    "story": 25,
+    "base": 10
+   },
+   "adj": {
+    "copycat": -10,
+    "creator": 0,
+    "gta": 8
+   },
+   "story_cat": "product",
+   "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
+   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T16:16:25+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 55946.737194,
+    "price": 3.574828667961158e-05,
+    "route": "jupiter-ultra",
+    "sig": "5DfDxAUmXeWiBdq5cax9TywTUmMdNPTZA2ECbPAddKius1EPK2sX9Gwi7nwxgD9HufbcdybayT4P6WTK4LznXMbk"
+   },
+   {
+    "ts": "2026-11-15T17:45:24+01:00",
+    "side": "sell",
+    "qty": 55946.737194,
+    "usd": 1.408738999999997,
+    "price": 2.5180002814374618e-05,
+    "route": "jupiter-ultra",
+    "sig": "iPFKYVD2uVqJUZoMK2Sm2WNiY2Qb8vt2CAtJ88W6b1aQ4UgijuQDPQobq8YMUbdV3YQJ8yow3cNaPY9e7X27VBT",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 3.574828667961158e-05,
+  "tp_done": [],
+  "realized_usd": 1.408738999999997,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 6921.404747900172,
+  "entry_dev_pct": null,
+  "graduated": false,
+  "last_price": 2.520809957306154e-05,
+  "last_check": "2026-11-15T17:45:26+01:00",
+  "closed_at": "2026-11-15T17:45:24+01:00",
+  "exit_reason": "failed entry (0.71x after 89m, never >1.2x)",
+  "pnl_usd": -0.5912610000000029,
+  "pnl_x": 0.7043694999999985,
+  "sell_failures": 0
+ },
+ "9a6662c65b": {
+  "id": "9a6662c65b",
+  "mint": "9Fu2BFSu97a3dRcrQuWuJnF2h91XiZXqUsy3kntS3XLu",
+  "symbol": "BASIS",
+  "opened_at": "2026-11-16T18:47:27+01:00",
+  "entry_price": 1.2667443961650751e-05,
+  "qty_orig": 157885.048164,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "token of launchpad/app raydium-launchlab",
+  "score": {
+   "score": 69.9,
+   "parts": {
+    "momentum": 25,
+    "socials": 11,
+    "organic": 9.9,
+    "story": 14,
+    "base": 10
+   },
+   "adj": {
+    "creator": 0
+   },
+   "story_cat": "launchpad_token",
+   "thesis": "token of launchpad/app raydium-launchlab",
+   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-16T18:47:27+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 157885.048164,
+    "price": 1.2667443961650751e-05,
+    "route": "jupiter-ultra",
+    "sig": "5NFnvMVvDbumRNGrSxswowyi8GYwUPirV4hYwfqXzTLUN5u5weEGDr2e7hT2yLRgiDr8XtgnPwUHRsNMiCATbEsN"
+   },
+   {
+    "ts": "2026-11-16T19:23:18+01:00",
+    "side": "sell",
+    "qty": 157885.048164,
+    "usd": 1.6907860000000028,
+    "price": 1.0708968453071831e-05,
+    "route": "jupiter-ultra",
+    "sig": "4eWN8ZcAWJsdVrBk6DtqzkDLg7jDo6VQdPNZ733mZPWB1M2WKoLcX2Z43A8wGWSHN4KCGqcVuQUxakrUuNkHCLGb",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 1.4041329395070425e-05,
+  "tp_done": [],
+  "realized_usd": 1.6907860000000028,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 3198.2691570113884,
+  "entry_dev_pct": 9.999999999999999e-14,
+  "graduated": false,
+  "sell_failures": 0,
+  "last_check": "2026-11-16T19:23:11+01:00",
+  "last_price": 1.0749679447304788e-05,
+  "closed_at": "2026-11-16T19:23:18+01:00",
+  "exit_reason": "failed entry (0.85x after 36m, never >1.2x)",
+  "pnl_usd": -0.3092139999999972,
+  "pnl_x": 0.8453930000000014
  },
  "374cccde73": {
   "id": "374cccde73",
@@ -1522,31 +1611,31 @@
   "pnl_usd": -0.6049459999999982,
   "pnl_x": 0.6975270000000009
  },
- "c38b7374cc": {
-  "id": "c38b7374cc",
-  "mint": "3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
-  "symbol": "tinfoil",
-  "opened_at": "2026-11-17T00:44:36+01:00",
-  "entry_price": 3.160727464138859e-05,
-  "qty_orig": 63276.57233,
+ "24198dd3c2": {
+  "id": "24198dd3c2",
+  "mint": "85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump",
+  "symbol": "bill",
+  "opened_at": "2026-11-17T17:20:49+01:00",
+  "entry_price": 0.00012252723921234908,
+  "qty_orig": 16322.901037,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
+  "thesis": "tied to a tweet/news source https://x.com/billtobillion/status/2121690189508608362",
   "score": {
-   "score": 69.0,
+   "score": 71.4,
    "parts": {
-    "momentum": 15.4,
-    "socials": 6,
-    "organic": 11.7,
+    "momentum": 20,
+    "socials": 11,
+    "organic": 12.4,
     "story": 18,
     "base": 10
    },
    "adj": {
-    "creator": 8
+    "creator": 0
    },
    "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
-   "creator_note": "creator 3/12 graduated (25%) [peak data unavailable: pump.fun API blocked]"
+   "thesis": "tied to a tweet/news source https://x.com/billtobillion/status/2121690189508608362",
+   "creator_note": "creator 2/2 graduated (100%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -1563,8 +1652,8 @@
      0.15
     ]
    ],
-   "stop": 0.7,
-   "trail": 0.4,
+   "stop": 0.78,
+   "trail": 0.3,
    "expected_hold_min": 240,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
@@ -1582,46 +1671,147 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "graduated"
+   "profile": "insider_grad"
   },
   "fills": [
    {
-    "ts": "2026-11-17T00:44:36+01:00",
+    "ts": "2026-11-17T17:20:49+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 63276.57233,
-    "price": 3.160727464138859e-05,
+    "qty": 16322.901037,
+    "price": 0.00012252723921234908,
     "route": "jupiter-ultra",
-    "sig": "3t3EbFTToWFRAzQFduXd7tfrZrQF4nCEiHz3AETmcE6AJLPp3v4SMd6HXGDLZpzJMZSxJ5xUbc66hvRZj178uDqm"
+    "sig": "2oUP9mDdaxhuVQZjhyWvpNq1HGKM2UV689e6uaBUu1dwBt86ao7e7otME6Bv6xLfSFqFsLxPM5LsKoryt8aaJFRC"
    },
    {
-    "ts": "2026-11-17T01:05:15+01:00",
+    "ts": "2026-11-17T21:21:13+01:00",
     "side": "sell",
-    "qty": 63276.57233,
-    "usd": 1.6675460000000015,
-    "price": 2.6353292199574514e-05,
+    "qty": 16322.901037,
+    "usd": 2.4685580000000016,
+    "price": 0.00015123279828777912,
     "route": "jupiter-ultra",
-    "sig": "5DnDAbuDd5xND9QcmrvKwfnWyNxNKeVRqgTNnucZcjpyW7Cu9AkJaBHyFBVBrWxg2kiyzY1BAhKuchUGzsnQa63o",
+    "sig": "2vi6K8WCC42tqWBvm4vfUmdR3mKWJ4mBNP1pFsFWXdDLcXdDahfsmoYYSigULuatcyn1bvwvXV9HGjxA4JGRVfao",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 3.205781740313821e-05,
+  "peak_price": 0.00017403750458021898,
   "tp_done": [],
-  "realized_usd": 1.6675460000000015,
+  "realized_usd": 2.4685580000000016,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 10675.381376813053,
-  "entry_dev_pct": null,
+  "entry_liq": 23494.907989619005,
+  "entry_dev_pct": 0.0019687589994583678,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-17T01:05:09+01:00",
-  "last_price": 2.6488442516667028e-05,
-  "closed_at": "2026-11-17T01:05:15+01:00",
-  "exit_reason": "failed entry (0.84x after 20m, never >1.2x)",
-  "pnl_usd": -0.3324539999999985,
-  "pnl_x": 0.8337730000000008
+  "last_check": "2026-11-17T21:21:07+01:00",
+  "last_price": 0.00015141696969199857,
+  "closed_at": "2026-11-17T21:21:13+01:00",
+  "exit_reason": "time stop (4.0h, 1.24x < 1.3x)",
+  "pnl_usd": 0.4685580000000016,
+  "pnl_x": 1.2342790000000008
+ },
+ "6199998e53": {
+  "id": "6199998e53",
+  "mint": "3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump",
+  "symbol": "XXX",
+  "opened_at": "2026-11-15T16:16:16+01:00",
+  "entry_price": 1.4733892516804874e-05,
+  "qty_orig": 135741.454454,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/xxxdotfun/status/2121961593860714795",
+  "score": {
+   "score": 78.8,
+   "parts": {
+    "momentum": 17.5,
+    "socials": 11,
+    "organic": 14.3,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/xxxdotfun/status/2121961593860714795",
+   "creator_note": "creator 1/4 graduated (25%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T16:16:16+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 135741.454454,
+    "price": 1.4733892516804874e-05,
+    "route": "jupiter-ultra",
+    "sig": "4xdC4G4cqhwgAHNDYhEEPatru7PrxroGmSh5XwPzbcU6xSPuDAERWBUYdZEXoW2c6JQP57VALc8T9bQHY8vBVw1F"
+   },
+   {
+    "ts": "2026-11-15T17:45:17+01:00",
+    "side": "sell",
+    "qty": 135741.454454,
+    "usd": 0.744372999999996,
+    "price": 5.483755887205767e-06,
+    "route": "jupiter-ultra",
+    "sig": "ZuH1KoDw5V3GFU7gfWmzC8VidT7i2XTKTnaAfzTy8j1wTPxssmf5C5kXZWNefFxDuNcKZefR6vBGnfdeGE7dJ6c",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 1.4733892516804874e-05,
+  "tp_done": [],
+  "realized_usd": 0.744372999999996,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 5760.947637480278,
+  "entry_dev_pct": null,
+  "graduated": false,
+  "last_price": 5.534008249414143e-06,
+  "last_check": "2026-11-15T17:45:20+01:00",
+  "closed_at": "2026-11-15T17:45:17+01:00",
+  "exit_reason": "stop 0.65x (now 0.38x)",
+  "pnl_usd": -1.255627000000004,
+  "pnl_x": 0.372186499999998,
+  "sell_failures": 0
  },
  "492fe89720": {
   "id": "492fe89720",
@@ -1927,6 +2117,210 @@
   "pnl_usd": -0.6529740000000004,
   "pnl_x": 0.6735129999999998
  },
+ "14d2cfb828": {
+  "id": "14d2cfb828",
+  "mint": "3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump",
+  "symbol": "BEAR",
+  "opened_at": "2026-11-15T19:04:12+01:00",
+  "entry_price": 0.00011379053428696606,
+  "qty_orig": 17576.154401,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/omegatrades_sol/status/2122018257255415861?a=vBJLpYz_bsvbX5ERf_w&s=46",
+  "score": {
+   "score": 70.2,
+   "parts": {
+    "momentum": 25,
+    "socials": 6,
+    "organic": 16.2,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "chasing": -8,
+    "paid_boost": -5,
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/omegatrades_sol/status/2122018257255415861?a=vBJLpYz_bsvbX5ERf_w&s=46",
+   "creator_note": "creator 15/17 graduated (88%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T19:04:12+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 17576.154401,
+    "price": 0.00011379053428696606,
+    "route": "jupiter-ultra",
+    "sig": "eNsRAojwUNVCsrBVTrvejpw5RzsPmbZbMKvRumQuFyBP1bqBRBSDmE7CwZA5MDcDHw1q9JyxnF7RkzXXtyddArC"
+   },
+   {
+    "ts": "2026-11-15T20:48:27+01:00",
+    "side": "sell",
+    "qty": 17576.154401,
+    "usd": 0.07144399999999962,
+    "price": 4.06482546579898e-06,
+    "route": "jupiter-ultra",
+    "sig": "3kx79JeUuo3BmGJPvffHTrdme3c4TFVNQFQrnEWL9G98hSK5Xkdbep43VQTZu5GF1VH2AFGBAPYwgC1UiDDBGKaJ",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00014576824804780116,
+  "tp_done": [],
+  "realized_usd": 0.07144399999999962,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 14571.885321510088,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "last_price": 4.511853733925849e-06,
+  "last_check": "2026-11-15T20:48:20+01:00",
+  "sell_failures": 0,
+  "closed_at": "2026-11-15T20:48:27+01:00",
+  "exit_reason": "stop 0.7x (now 0.04x)",
+  "pnl_usd": -1.9285560000000004,
+  "pnl_x": 0.03572199999999981
+ },
+ "e0046829e6": {
+  "id": "e0046829e6",
+  "mint": "B7ncNzYdp71UxqmMQZFL8o2idEZdC1ix9W79J1t8pump",
+  "symbol": "Fiona",
+  "opened_at": "2026-11-17T23:50:15+01:00",
+  "entry_price": 2.013946503834807e-05,
+  "qty_orig": 99307.503759,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/saam0nchain/status/2122729104982126794",
+  "score": {
+   "score": 68.2,
+   "parts": {
+    "momentum": 20,
+    "socials": 11,
+    "organic": 9.2,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 0
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/saam0nchain/status/2122729104982126794",
+   "creator_note": "creator 1/71 graduated (1%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T23:50:15+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 99307.503759,
+    "price": 2.013946503834807e-05,
+    "route": "jupiter-ultra",
+    "sig": "63KhEtx5FK7WSaS7yhjgaUL5oP4RmDirDeDsSNsXXRkeXPUr9mfS4ZaPAZvqwaccEVr1E3zsUZCmYTAWwqL4Jiem"
+   },
+   {
+    "ts": "2026-11-17T23:57:28+01:00",
+    "side": "sell",
+    "qty": 99307.503759,
+    "usd": 1.3039720000000017,
+    "price": 1.3130649252492422e-05,
+    "route": "jupiter-ultra",
+    "sig": "2dRWjSvfWTJJEubR8vcWHhaM724GXo6JyEhL3py4PJPJe1TwPUq9XTvuaca2gUDFWkr42apfSo6D5CYNrmwEDkJv",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 2.013946503834807e-05,
+  "tp_done": [],
+  "realized_usd": 1.3039720000000017,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 11549.786857664247,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T23:57:22+01:00",
+  "last_price": 1.3416424585101403e-05,
+  "closed_at": "2026-11-17T23:57:28+01:00",
+  "exit_reason": "stop 0.7x (now 0.67x)",
+  "pnl_usd": -0.6960279999999983,
+  "pnl_x": 0.6519860000000008
+ },
  "75ad3b6a31": {
   "id": "75ad3b6a31",
   "mint": "BrfXnjagWYqfv5kGEArWEWL4xcfz3KHMzEBchJ95pump",
@@ -2028,6 +2422,412 @@
   "exit_reason": "stop 0.65x (now 0.59x)",
   "pnl_usd": -0.8318610000000035,
   "pnl_x": 0.5840694999999982
+ },
+ "c68a215f04": {
+  "id": "c68a215f04",
+  "mint": "GTmcN7QJTRx8vjbPHJKgyv5bASQ2HVEqghmQcMLsGUms",
+  "symbol": "Zelleinu",
+  "opened_at": "2026-11-16T19:04:17+01:00",
+  "entry_price": 8.015634865807463e-05,
+  "qty_orig": 24951.236346,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/jirachi0x19/status/2122355355472593203",
+  "score": {
+   "score": 72.4,
+   "parts": {
+    "momentum": 25,
+    "socials": 11,
+    "organic": 16.4,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "chasing": -8,
+    "creator": 0
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/jirachi0x19/status/2122355355472593203",
+   "creator_note": "creator 12/321 graduated (4%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-16T19:04:17+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 24951.236346,
+    "price": 8.015634865807463e-05,
+    "route": "jupiter-ultra",
+    "sig": "48ncy8WBCKKPuxJbErPFgiXmraYbJRrmDBdC1uUtftWRdfKkww8GYYP4XBqDMKymbNwYDXtq5G5FngxSqfBPdTRx"
+   },
+   {
+    "ts": "2026-11-16T19:38:43+01:00",
+    "side": "sell",
+    "qty": 24951.236346,
+    "usd": 1.352203000000003,
+    "price": 5.4193827562247355e-05,
+    "route": "jupiter-ultra",
+    "sig": "2U8dMLRNgZB4eFHox3pWm2LvLYUZNr3tUQJosacLBRXLxK4KcR6NFdENoBNgqgiEsvh6iogmDtdCNKkMhLd7jEqk",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.0001062082080860469,
+  "tp_done": [],
+  "realized_usd": 1.352203000000003,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 18988.802982754052,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-16T19:38:37+01:00",
+  "last_price": 5.2380048814583414e-05,
+  "closed_at": "2026-11-16T19:38:43+01:00",
+  "exit_reason": "stop 0.7x (now 0.65x)",
+  "pnl_usd": -0.6477969999999971,
+  "pnl_x": 0.6761015000000015
+ },
+ "e0954a77bd": {
+  "id": "e0954a77bd",
+  "mint": "DqYRxLot453B12UUnGLm2zeSWsTzj2p2rFZdS482pump",
+  "symbol": "Bottom",
+  "opened_at": "2026-11-15T18:06:02+01:00",
+  "entry_price": 2.799954454675261e-05,
+  "qty_orig": 71429.733318,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/fwogzz/status/2121840408015823164",
+  "score": {
+   "score": 70.5,
+   "parts": {
+    "momentum": 20.4,
+    "socials": 6,
+    "organic": 16.1,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 0
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/fwogzz/status/2121840408015823164",
+   "creator_note": "creator 221/15782 graduated (1%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "curve"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T18:06:02+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 71429.733318,
+    "price": 2.799954454675261e-05,
+    "route": "jupiter-ultra",
+    "sig": "5H3BcfnFG6yHF8TpkPMwZdTq1gdf1peXuYjwCc31xFGwsDw3tYXRtmm5r3NFcCHaasE3G43zaVKrEnwsJf2mDfeJ"
+   },
+   {
+    "ts": "2026-11-15T18:45:54+01:00",
+    "side": "sell",
+    "qty": 71429.733318,
+    "usd": 1.8332210000000089,
+    "price": 2.5664676526771307e-05,
+    "route": "jupiter-ultra",
+    "sig": "5H453fsSAXJ2GeN63Zj1TpnLfoAPTmHys7JVmj4WFyUXdFQnu3mp3cufUVhC6CbPf7QPCR4P7QsnvhuPU6DQ6C19",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 4.386754011807224e-05,
+  "tp_done": [],
+  "realized_usd": 1.8332210000000089,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 7790.739996905344,
+  "entry_dev_pct": null,
+  "graduated": false,
+  "last_price": 2.6007970720235873e-05,
+  "last_check": "2026-11-15T18:45:56+01:00",
+  "closed_at": "2026-11-15T18:45:54+01:00",
+  "exit_reason": "profit lock (peak 1.57x, now 0.93x)",
+  "pnl_usd": -0.16677899999999113,
+  "pnl_x": 0.9166105000000044,
+  "sell_failures": 0
+ },
+ "c38b7374cc": {
+  "id": "c38b7374cc",
+  "mint": "3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
+  "symbol": "tinfoil",
+  "opened_at": "2026-11-17T00:44:36+01:00",
+  "entry_price": 3.160727464138859e-05,
+  "qty_orig": 63276.57233,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
+  "score": {
+   "score": 69.0,
+   "parts": {
+    "momentum": 15.4,
+    "socials": 6,
+    "organic": 11.7,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/TalkingBenLLM/status/2121444891611820295",
+   "creator_note": "creator 3/12 graduated (25%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T00:44:36+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 63276.57233,
+    "price": 3.160727464138859e-05,
+    "route": "jupiter-ultra",
+    "sig": "3t3EbFTToWFRAzQFduXd7tfrZrQF4nCEiHz3AETmcE6AJLPp3v4SMd6HXGDLZpzJMZSxJ5xUbc66hvRZj178uDqm"
+   },
+   {
+    "ts": "2026-11-17T01:05:15+01:00",
+    "side": "sell",
+    "qty": 63276.57233,
+    "usd": 1.6675460000000015,
+    "price": 2.6353292199574514e-05,
+    "route": "jupiter-ultra",
+    "sig": "5DnDAbuDd5xND9QcmrvKwfnWyNxNKeVRqgTNnucZcjpyW7Cu9AkJaBHyFBVBrWxg2kiyzY1BAhKuchUGzsnQa63o",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 3.205781740313821e-05,
+  "tp_done": [],
+  "realized_usd": 1.6675460000000015,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 10675.381376813053,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T01:05:09+01:00",
+  "last_price": 2.6488442516667028e-05,
+  "closed_at": "2026-11-17T01:05:15+01:00",
+  "exit_reason": "failed entry (0.84x after 20m, never >1.2x)",
+  "pnl_usd": -0.3324539999999985,
+  "pnl_x": 0.8337730000000008
+ },
+ "c3594574cc": {
+  "id": "c3594574cc",
+  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
+  "symbol": "CHAR",
+  "opened_at": "2026-11-17T17:20:26+01:00",
+  "entry_price": 0.00013240123872814186,
+  "qty_orig": 15105.598854,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+  "score": {
+   "score": 72.4,
+   "parts": {
+    "momentum": 19.0,
+    "socials": 11,
+    "organic": 11.4,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "paid_boost": -5,
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "insider_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T17:20:26+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 15105.598854,
+    "price": 0.00013240123872814186,
+    "route": "jupiter-ultra",
+    "sig": "35BNhS7HmXNQXsGpLHoZM6vMooXXpBRz8Cf1UyQaQ1QPPwMHFq1qht2RNSKvNoaKqut415z7mYmS6mp5YGi1wbgP"
+   },
+   {
+    "ts": "2026-11-17T17:24:55+01:00",
+    "side": "sell",
+    "qty": 15105.598854,
+    "usd": 1.483198999999999,
+    "price": 9.818869244017057e-05,
+    "route": "jupiter-ultra",
+    "sig": "2JouEfCaXVZrUoUz8NqTVfbA5RAJoSSabjhGEgeqLbMZdConpoK7D4LSP49ELxzxgdbqsq5pLHjBwz3d5iKc7F31",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00013240123872814186,
+  "tp_done": [],
+  "realized_usd": 1.483198999999999,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 15109.505027739195,
+  "entry_dev_pct": 0.0035944728645664684,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T17:24:50+01:00",
+  "last_price": 0.00010017465856580415,
+  "closed_at": "2026-11-17T17:24:55+01:00",
+  "exit_reason": "stop 0.78x (now 0.76x)",
+  "pnl_usd": -0.516801000000001,
+  "pnl_x": 0.7415994999999995
  },
  "b3c3cc3a7c": {
   "id": "b3c3cc3a7c",
@@ -2131,22 +2931,22 @@
   "pnl_usd": -0.7831949999999921,
   "pnl_x": 0.608402500000004
  },
- "6199998e53": {
-  "id": "6199998e53",
-  "mint": "3JCcs5NAJ1VCuULokp7foUTJ9FaPUJW6PGQZAx5tpump",
-  "symbol": "XXX",
-  "opened_at": "2026-11-15T16:16:16+01:00",
-  "entry_price": 1.4733892516804874e-05,
-  "qty_orig": 135741.454454,
+ "bf7f096a79": {
+  "id": "bf7f096a79",
+  "mint": "9a13W5HdqE95g3YE8Dk9wCHPucrCH33h6BTfdFvRpump",
+  "symbol": "plumber",
+  "opened_at": "2026-11-14T22:25:51+01:00",
+  "entry_price": 7.715963871856248e-05,
+  "qty_orig": 25920.287254,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/xxxdotfun/status/2121961593860714795",
+  "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
   "score": {
-   "score": 78.8,
+   "score": 72.5,
    "parts": {
-    "momentum": 17.5,
-    "socials": 11,
-    "organic": 14.3,
+    "momentum": 21.4,
+    "socials": 6,
+    "organic": 9.1,
     "story": 18,
     "base": 10
    },
@@ -2154,7 +2954,7 @@
     "creator": 8
    },
    "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/xxxdotfun/status/2121961593860714795",
+   "thesis": "tied to a tweet/news source https://x.com/Pumpfun/status/2120998470886846751",
    "creator_note": "creator 1/4 graduated (25%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
@@ -2172,9 +2972,9 @@
      0.15
     ]
    ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
    "profit_lock": true,
@@ -2191,45 +2991,45 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "curve"
+   "profile": "insider_grad"
   },
   "fills": [
    {
-    "ts": "2026-11-15T16:16:16+01:00",
+    "ts": "2026-11-14T22:25:51+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 135741.454454,
-    "price": 1.4733892516804874e-05,
+    "qty": 25920.287254,
+    "price": 7.715963871856248e-05,
     "route": "jupiter-ultra",
-    "sig": "4xdC4G4cqhwgAHNDYhEEPatru7PrxroGmSh5XwPzbcU6xSPuDAERWBUYdZEXoW2c6JQP57VALc8T9bQHY8vBVw1F"
+    "sig": "64SjhXTSivHwqBAxgzwfpmzeo1WrKbqjYo5twNqM5C4E78swRGLS2euCngG4MNF4xWzJBRSUmv8wFSW2oPAPkpvs"
    },
    {
-    "ts": "2026-11-15T17:45:17+01:00",
+    "ts": "2026-11-15T00:42:13+01:00",
     "side": "sell",
-    "qty": 135741.454454,
-    "usd": 0.744372999999996,
-    "price": 5.483755887205767e-06,
+    "qty": 25920.287254,
+    "usd": 1.5076059999999956,
+    "price": 5.822138409238171e-05,
     "route": "jupiter-ultra",
-    "sig": "ZuH1KoDw5V3GFU7gfWmzC8VidT7i2XTKTnaAfzTy8j1wTPxssmf5C5kXZWNefFxDuNcKZefR6vBGnfdeGE7dJ6c",
-    "full": true,
+    "sig": "4P7kK7AggGPw1QheESFGJmFVyXiJrvk9a1YueFZNoeKGAAWTDowHPjEnjQ1WFagi34o2gpnYr7zHbyxv17s2Ri41",
+    "usd_journal_old": 1.509115,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 1.4733892516804874e-05,
+  "peak_price": 9.008663449244535e-05,
   "tp_done": [],
-  "realized_usd": 0.744372999999996,
+  "realized_usd": 1.5076059999999956,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 5760.947637480278,
+  "entry_liq": 13195.98831104843,
   "entry_dev_pct": null,
-  "graduated": false,
-  "last_price": 5.534008249414143e-06,
-  "last_check": "2026-11-15T17:45:20+01:00",
-  "closed_at": "2026-11-15T17:45:17+01:00",
-  "exit_reason": "stop 0.65x (now 0.38x)",
-  "pnl_usd": -1.255627000000004,
-  "pnl_x": 0.372186499999998,
+  "graduated": true,
+  "last_price": 5.949000001302419e-05,
+  "last_check": "2026-11-15T00:42:13+01:00",
+  "closed_at": "2026-11-15T00:42:13+01:00",
+  "exit_reason": "stop 0.78x (now 0.77x)",
+  "pnl_usd": -0.49239400000000444,
+  "pnl_x": 0.7538029999999978,
   "sell_failures": 0
  },
  "117c7fc3df": {
@@ -2336,134 +3136,32 @@
   "pnl_x": 0.3450155,
   "sell_failures": 0
  },
- "e0046829e6": {
-  "id": "e0046829e6",
-  "mint": "B7ncNzYdp71UxqmMQZFL8o2idEZdC1ix9W79J1t8pump",
-  "symbol": "Fiona",
-  "opened_at": "2026-11-17T23:50:15+01:00",
-  "entry_price": 2.013946503834807e-05,
-  "qty_orig": 99307.503759,
+ "64929a4060": {
+  "id": "64929a4060",
+  "mint": "2ChuZVeETepzUiimNZLp9LrWwaHabq5pJ1S6tVkLpump",
+  "symbol": "BOWL",
+  "opened_at": "2026-11-17T23:49:55+01:00",
+  "entry_price": 2.6044688534888037e-05,
+  "qty_orig": 76791.089182,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/saam0nchain/status/2122729104982126794",
+  "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
   "score": {
-   "score": 68.2,
+   "score": 70.0,
    "parts": {
-    "momentum": 20,
+    "momentum": 25,
     "socials": 11,
-    "organic": 9.2,
+    "organic": 14.0,
     "story": 18,
     "base": 10
    },
    "adj": {
+    "chasing": -8,
     "creator": 0
    },
    "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/saam0nchain/status/2122729104982126794",
-   "creator_note": "creator 1/71 graduated (1%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T23:50:15+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 99307.503759,
-    "price": 2.013946503834807e-05,
-    "route": "jupiter-ultra",
-    "sig": "63KhEtx5FK7WSaS7yhjgaUL5oP4RmDirDeDsSNsXXRkeXPUr9mfS4ZaPAZvqwaccEVr1E3zsUZCmYTAWwqL4Jiem"
-   },
-   {
-    "ts": "2026-11-17T23:57:28+01:00",
-    "side": "sell",
-    "qty": 99307.503759,
-    "usd": 1.3039720000000017,
-    "price": 1.3130649252492422e-05,
-    "route": "jupiter-ultra",
-    "sig": "2dRWjSvfWTJJEubR8vcWHhaM724GXo6JyEhL3py4PJPJe1TwPUq9XTvuaca2gUDFWkr42apfSo6D5CYNrmwEDkJv",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 2.013946503834807e-05,
-  "tp_done": [],
-  "realized_usd": 1.3039720000000017,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 11549.786857664247,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T23:57:22+01:00",
-  "last_price": 1.3416424585101403e-05,
-  "closed_at": "2026-11-17T23:57:28+01:00",
-  "exit_reason": "stop 0.7x (now 0.67x)",
-  "pnl_usd": -0.6960279999999983,
-  "pnl_x": 0.6519860000000008
- },
- "e5a8663892": {
-  "id": "e5a8663892",
-  "mint": "DmNiVcg3mgQGRccEAEEmuBdhRuCiF4i9dciUWdRfLoat",
-  "symbol": "GTA6",
-  "opened_at": "2026-11-15T16:16:25+01:00",
-  "entry_price": 3.574828667961158e-05,
-  "qty_orig": 55946.737194,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
-  "score": {
-   "score": 76.6,
-   "parts": {
-    "momentum": 22.4,
-    "socials": 11,
-    "organic": 10.2,
-    "story": 25,
-    "base": 10
-   },
-   "adj": {
-    "copycat": -10,
-    "creator": 0,
-    "gta": 8
-   },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/GTA6MemesHQ/status/2121970751049703856; live product claimed at https://www.rockstargames.com/VI (verify it loads); token of launchpad/app raydium-launchlab",
-   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
+   "thesis": "tied to a tweet/news source https://x.com/chillfindooor/status/2122782352883503288",
+   "creator_note": "creator 144/8446 graduated (2%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -2503,752 +3201,54 @@
   },
   "fills": [
    {
-    "ts": "2026-11-15T16:16:25+01:00",
+    "ts": "2026-11-17T23:49:55+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 55946.737194,
-    "price": 3.574828667961158e-05,
+    "qty": 76791.089182,
+    "price": 2.6044688534888037e-05,
     "route": "jupiter-ultra",
-    "sig": "5DfDxAUmXeWiBdq5cax9TywTUmMdNPTZA2ECbPAddKius1EPK2sX9Gwi7nwxgD9HufbcdybayT4P6WTK4LznXMbk"
+    "sig": "3tDc7rgxzPKGv5qZNernNF8n71xWQrCtjCCp1n2p4wtTowfkB7MBf8aDR1nc2YdrZiRaUhpxjiKB1Rmod7DMad7m"
    },
    {
-    "ts": "2026-11-15T17:45:24+01:00",
+    "ts": "2026-11-18T00:45:35+01:00",
     "side": "sell",
-    "qty": 55946.737194,
-    "usd": 1.408738999999997,
-    "price": 2.5180002814374618e-05,
+    "qty": 38395.544591,
+    "usd": 2.281374999999997,
+    "price": 5.9417701306280115e-05,
     "route": "jupiter-ultra",
-    "sig": "iPFKYVD2uVqJUZoMK2Sm2WNiY2Qb8vt2CAtJ88W6b1aQ4UgijuQDPQobq8YMUbdV3YQJ8yow3cNaPY9e7X27VBT",
+    "sig": "51eGs1RKwxZHdL4s87gaPc1V5X22B2jG67sofoNohcb4vL2ERgETVaf73Xkd1gi7V8pZDBWBLBnqZY6o8AqpWdfX",
+    "full": false,
+    "actual_from_chain": true
+   },
+   {
+    "ts": "2026-11-18T00:49:41+01:00",
+    "side": "sell",
+    "qty": 38395.544591,
+    "usd": 1.477637999999999,
+    "price": 3.848462147731486e-05,
+    "route": "jupiter-ultra",
+    "sig": "64FXPqSgqVbfpNts5SsHrHWaYbjkqrw7XAMVE3auZfJYoN2foEsEtnMaR1BXWPtrrjXuSc7UmKFo5tUsD5qsrLod",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 3.574828667961158e-05,
-  "tp_done": [],
-  "realized_usd": 1.408738999999997,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 6921.404747900172,
-  "entry_dev_pct": null,
-  "graduated": false,
-  "last_price": 2.520809957306154e-05,
-  "last_check": "2026-11-15T17:45:26+01:00",
-  "closed_at": "2026-11-15T17:45:24+01:00",
-  "exit_reason": "failed entry (0.71x after 89m, never >1.2x)",
-  "pnl_usd": -0.5912610000000029,
-  "pnl_x": 0.7043694999999985,
-  "sell_failures": 0
- },
- "fe8695cceb": {
-  "id": "fe8695cceb",
-  "mint": "FxccyLE6GLyoyAiHn72apYHGzYKL96g93PHxUHmRXrdv",
-  "symbol": "VICE",
-  "opened_at": "2026-11-17T00:44:19+01:00",
-  "entry_price": 6.247980258571925e-05,
-  "qty_orig": 32010.344419,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://twitter.com/discord/status/2122389583778193560",
-  "score": {
-   "score": 71.3,
-   "parts": {
-    "momentum": 24.2,
-    "socials": 11,
-    "organic": 16.0,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "chasing": -8,
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://twitter.com/discord/status/2122389583778193560",
-   "creator_note": "creator 2013/185774 graduated (1%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T00:44:19+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 32010.344419,
-    "price": 6.247980258571925e-05,
-    "route": "jupiter-ultra",
-    "sig": "4x4BfyD8ieyJktSdUSYZHkwgfZNyJDxXusGMDi9rwH1LVCEZVNbmBZbnrvDQoEWC4mNGcysKMu5qz8tgc2xXXPUa"
-   },
-   {
-    "ts": "2026-11-17T01:04:44+01:00",
-    "side": "sell",
-    "qty": 32010.344419,
-    "usd": 1.4187909999999988,
-    "price": 4.432289079519756e-05,
-    "route": "jupiter-ultra",
-    "sig": "5Afiui426HS4CAwnCeJbZSsBhmxQ2C12mgQWirjAjcCMMWP9Kv8TEDdVHikU5cv2gcEp8FJ8F8xsSfJvPd4rAHe8",
-    "full": true,
-    "actual_from_chain": true
-   }
+  "peak_price": 5.861414589611623e-05,
+  "tp_done": [
+   2
   ],
-  "peak_price": 6.287371153743189e-05,
-  "tp_done": [],
-  "realized_usd": 1.4187909999999988,
+  "realized_usd": 3.759012999999996,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 23090.5710159281,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T01:04:37+01:00",
-  "last_price": 4.6159779354071346e-05,
-  "closed_at": "2026-11-17T01:04:44+01:00",
-  "exit_reason": "failed entry (0.74x after 20m, never >1.2x)",
-  "pnl_usd": -0.5812090000000012,
-  "pnl_x": 0.7093954999999994
- },
- "24198dd3c2": {
-  "id": "24198dd3c2",
-  "mint": "85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump",
-  "symbol": "bill",
-  "opened_at": "2026-11-17T17:20:49+01:00",
-  "entry_price": 0.00012252723921234908,
-  "qty_orig": 16322.901037,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/billtobillion/status/2121690189508608362",
-  "score": {
-   "score": 71.4,
-   "parts": {
-    "momentum": 20,
-    "socials": 11,
-    "organic": 12.4,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/billtobillion/status/2121690189508608362",
-   "creator_note": "creator 2/2 graduated (100%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T17:20:49+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 16322.901037,
-    "price": 0.00012252723921234908,
-    "route": "jupiter-ultra",
-    "sig": "2oUP9mDdaxhuVQZjhyWvpNq1HGKM2UV689e6uaBUu1dwBt86ao7e7otME6Bv6xLfSFqFsLxPM5LsKoryt8aaJFRC"
-   },
-   {
-    "ts": "2026-11-17T21:21:13+01:00",
-    "side": "sell",
-    "qty": 16322.901037,
-    "usd": 2.4685580000000016,
-    "price": 0.00015123279828777912,
-    "route": "jupiter-ultra",
-    "sig": "2vi6K8WCC42tqWBvm4vfUmdR3mKWJ4mBNP1pFsFWXdDLcXdDahfsmoYYSigULuatcyn1bvwvXV9HGjxA4JGRVfao",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.00017403750458021898,
-  "tp_done": [],
-  "realized_usd": 2.4685580000000016,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 23494.907989619005,
-  "entry_dev_pct": 0.0019687589994583678,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T21:21:07+01:00",
-  "last_price": 0.00015141696969199857,
-  "closed_at": "2026-11-17T21:21:13+01:00",
-  "exit_reason": "time stop (4.0h, 1.24x < 1.3x)",
-  "pnl_usd": 0.4685580000000016,
-  "pnl_x": 1.2342790000000008
- },
- "1a043ba302": {
-  "id": "1a043ba302",
-  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
-  "symbol": "CHAR",
-  "opened_at": "2026-11-17T19:26:39+01:00",
-  "entry_price": 0.00012594011503148957,
-  "qty_orig": 15880.563548,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-  "score": {
-   "score": 76.1,
-   "parts": {
-    "momentum": 21.9,
-    "socials": 11,
-    "organic": 12.2,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "paid_boost": -5,
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T19:26:39+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 15880.563548,
-    "price": 0.00012594011503148957,
-    "route": "jupiter-ultra",
-    "sig": "TxGrwSsUGEFScgxee4PTi3uqoNFWtaD7yajodkooCpumBxVsGPfZTfDwaNh81mBSuPLxWQfkmBqyLJqaR9bbsmP"
-   },
-   {
-    "ts": "2026-11-17T19:46:59+01:00",
-    "side": "sell",
-    "qty": 15880.563548,
-    "usd": 1.6181520000000091,
-    "price": 0.00010189512450921803,
-    "route": "jupiter-ultra",
-    "sig": "5AbaA659VBJFovD4VsGenQ7bRiqkCcBUkqsaAfSDKEGcQLqL16hroZ5Kf5YGYxPZnr1262s9TkT28YpEkrfPPjSj",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.00012594011503148957,
-  "tp_done": [],
-  "realized_usd": 1.6181520000000091,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 14917.509629644397,
-  "entry_dev_pct": 0.0035944728817996654,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T19:46:52+01:00",
-  "last_price": 0.00010460008208259569,
-  "closed_at": "2026-11-17T19:46:59+01:00",
-  "exit_reason": "failed entry (0.83x after 20m, never >1.2x)",
-  "pnl_usd": -0.38184799999999086,
-  "pnl_x": 0.8090760000000046
- },
- "2b7fd6e81f": {
-  "id": "2b7fd6e81f",
-  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
-  "symbol": "CHAR",
-  "opened_at": "2026-11-17T16:33:50+01:00",
-  "entry_price": 0.0001377808445727067,
-  "qty_orig": 14515.805925,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-  "score": {
-   "score": 69.2,
-   "parts": {
-    "momentum": 12.9,
-    "socials": 11,
-    "organic": 14.4,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "paid_boost": -5,
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T16:33:50+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 14515.805925,
-    "price": 0.0001377808445727067,
-    "route": "jupiter-ultra",
-    "sig": "UD3G7DGcTxqmD11RK4fy6Bu1a2wtqjaHFf6GYmoQof5LTrsMQDfdGPS2GSp86pHFQdKJ5XELUfRupXfRV9f7vro"
-   },
-   {
-    "ts": "2026-11-17T17:12:41+01:00",
-    "side": "sell",
-    "qty": 14515.805925,
-    "usd": 1.6739220000000046,
-    "price": 0.00011531719345441748,
-    "route": "jupiter-ultra",
-    "sig": "fWnAPgZCVjjhUmkbSc3PRKNqtjR3vt28LuPqkTPSZtWYuWw8Mk3qSk4J9qajMz4vUhdSW4PpCGLnpgeaKdCcKg2",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.00014803367955391178,
-  "tp_done": [],
-  "realized_usd": 1.6739220000000046,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 14628.42271942735,
-  "entry_dev_pct": 0.0035944716933484443,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T17:12:35+01:00",
-  "last_price": 0.00011546605330286049,
-  "closed_at": "2026-11-17T17:12:41+01:00",
-  "exit_reason": "failed entry (0.84x after 39m, never >1.2x)",
-  "pnl_usd": -0.3260779999999954,
-  "pnl_x": 0.8369610000000023
- },
- "c68a215f04": {
-  "id": "c68a215f04",
-  "mint": "GTmcN7QJTRx8vjbPHJKgyv5bASQ2HVEqghmQcMLsGUms",
-  "symbol": "Zelleinu",
-  "opened_at": "2026-11-16T19:04:17+01:00",
-  "entry_price": 8.015634865807463e-05,
-  "qty_orig": 24951.236346,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/jirachi0x19/status/2122355355472593203",
-  "score": {
-   "score": 72.4,
-   "parts": {
-    "momentum": 25,
-    "socials": 11,
-    "organic": 16.4,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "chasing": -8,
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/jirachi0x19/status/2122355355472593203",
-   "creator_note": "creator 12/321 graduated (4%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-16T19:04:17+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 24951.236346,
-    "price": 8.015634865807463e-05,
-    "route": "jupiter-ultra",
-    "sig": "48ncy8WBCKKPuxJbErPFgiXmraYbJRrmDBdC1uUtftWRdfKkww8GYYP4XBqDMKymbNwYDXtq5G5FngxSqfBPdTRx"
-   },
-   {
-    "ts": "2026-11-16T19:38:43+01:00",
-    "side": "sell",
-    "qty": 24951.236346,
-    "usd": 1.352203000000003,
-    "price": 5.4193827562247355e-05,
-    "route": "jupiter-ultra",
-    "sig": "2U8dMLRNgZB4eFHox3pWm2LvLYUZNr3tUQJosacLBRXLxK4KcR6NFdENoBNgqgiEsvh6iogmDtdCNKkMhLd7jEqk",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.0001062082080860469,
-  "tp_done": [],
-  "realized_usd": 1.352203000000003,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 18988.802982754052,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-16T19:38:37+01:00",
-  "last_price": 5.2380048814583414e-05,
-  "closed_at": "2026-11-16T19:38:43+01:00",
-  "exit_reason": "stop 0.7x (now 0.65x)",
-  "pnl_usd": -0.6477969999999971,
-  "pnl_x": 0.6761015000000015
- },
- "28ec5c7259": {
-  "id": "28ec5c7259",
-  "mint": "CRKqYn9bnEZaXK6K2uk627szTFjait52RXeY6CEnpump",
-  "symbol": "DOUG",
-  "opened_at": "2026-11-17T20:10:08+01:00",
-  "entry_price": 7.163280254531703e-05,
-  "qty_orig": 27920.169656,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
-  "score": {
-   "score": 78.8,
-   "parts": {
-    "momentum": 17.8,
-    "socials": 11,
-    "organic": 17.0,
-    "story": 23,
-    "base": 10
-   },
-   "adj": {
-    "creator": 0
-   },
-   "story_cat": "product",
-   "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
-   "creator_note": "creator 1/1 graduated (100%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "graduated"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T20:10:08+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 27920.169656,
-    "price": 7.163280254531703e-05,
-    "route": "jupiter-ultra",
-    "sig": "4GQK1PnddVzqtrdYX8uDiTUe3LHrm2grsDr8F8A3kcty5ZwNLLsuhkrggU47mRpuQ6onnsN5KJonXq8a4oGRkc3J"
-   },
-   {
-    "ts": "2026-11-17T20:41:16+01:00",
-    "side": "sell",
-    "qty": 27920.169656,
-    "usd": 1.6777789999999868,
-    "price": 6.009200591083926e-05,
-    "route": "jupiter-ultra",
-    "sig": "iMED8kpFDbUDAuaBVTihSccRqLdoeEjZXPY8jcNhVE5i5CEJ2XV23VxtGKCEC21AWLSwLL5dRLMZRhyt2qDwWER",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 7.560325063873033e-05,
-  "tp_done": [],
-  "realized_usd": 1.6777789999999868,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 10001.249945304438,
-  "entry_dev_pct": null,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T20:41:08+01:00",
-  "last_price": 6.055782437418302e-05,
-  "closed_at": "2026-11-17T20:41:16+01:00",
-  "exit_reason": "failed entry (0.85x after 31m, never >1.2x)",
-  "pnl_usd": -0.3222210000000132,
-  "pnl_x": 0.8388894999999934
- },
- "4c8f94c769": {
-  "id": "4c8f94c769",
-  "mint": "HyLnt315TPdhXL3BSdBqWXXxfwzNMa9Q2FkxcLpApump",
-  "symbol": "Lettuce",
-  "opened_at": "2026-11-17T23:49:36+01:00",
-  "entry_price": 1.178705423133331e-05,
-  "qty_orig": 169677.678642,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/gampsito/status/2122817603668205709?a=7jLQ2lo1SJ0aJ1R1_3A&s=20",
-  "score": {
-   "score": 72.8,
-   "parts": {
-    "momentum": 25,
-    "socials": 6,
-    "organic": 8.8,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "creator": 5
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/gampsito/status/2122817603668205709?a=7jLQ2lo1SJ0aJ1R1_3A&s=20",
-   "creator_note": "creator 43/377 graduated (11%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "curve"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T23:49:36+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 169677.678642,
-    "price": 1.178705423133331e-05,
-    "route": "jupiter-ultra",
-    "sig": "4qqEbzQEfb8XLqBxJGhHBxhgVmmf3VQvtByNnZvQGvtD841BDtotgqBcy2V9vQBrzcLciPMRAQARLdytWRPpP4uo"
-   },
-   {
-    "ts": "2026-11-17T23:56:16+01:00",
-    "side": "sell",
-    "qty": 169677.678642,
-    "usd": 1.001819999999995,
-    "price": 5.90425333501714e-06,
-    "route": "jupiter-ultra",
-    "sig": "4aQGwDv4rRN2C22Pt6DTLLnY7WLv89Puhzz2u3XaGVefvjkPtJebE1Gb7F6FNYKjsESxR9w7yTTPDz8wwiWRYaMZ",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 1.178705423133331e-05,
-  "tp_done": [],
-  "realized_usd": 1.001819999999995,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 5860.348779022147,
+  "entry_liq": 12228.33418431918,
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-17T23:56:04+01:00",
-  "last_price": 5.803305472631112e-06,
-  "closed_at": "2026-11-17T23:56:16+01:00",
-  "exit_reason": "stop 0.65x (now 0.49x)",
-  "pnl_usd": -0.998180000000005,
-  "pnl_x": 0.5009099999999975
+  "last_check": "2026-11-18T00:49:36+01:00",
+  "last_price": 4.3735575251477347e-05,
+  "closed_at": "2026-11-18T00:49:41+01:00",
+  "exit_reason": "trailing stop 25% off peak 2.25x (now 1.68x)",
+  "pnl_usd": 1.759012999999996,
+  "pnl_x": 1.879506499999998
  }
 }
