@@ -2,8 +2,6 @@
  "missing_alerted": false,
  "last_sig": "5jo3BSLeQsMtHWoQi3sCsGH6WKVnymbyLSg91RUfZBLzXJzDgXpQsQaSvWgpZ6zr9gYVMAB5D1xGmtmPa39NCw7K",
  "seen_alerts": [
-  "2026-11-16T09:00:58+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-16T09:28:22+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
   "2026-11-16T09:28:27+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-16T09:39:35+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
   "2026-11-16T09:39:35+01:00BOX FROZEN/SUSPENDED: guard loop gap",
@@ -201,8 +199,10 @@
   "2026-11-18T18:17:05+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
   "2026-11-18T18:17:41+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-18T18:45:16+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-18T18:45:22+01:00BOX FROZEN/SUSPENDED: guard loop gap"
+  "2026-11-18T18:45:22+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-18T19:48:14+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
+  "2026-11-18T19:48:19+01:00BOX FROZEN/SUSPENDED: guard loop gap"
  ],
  "down_flags": [],
- "stale_alerted": true
+ "stale_alerted": false
 }
