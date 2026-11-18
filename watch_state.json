@@ -176,5 +176,5 @@
   "2026-11-18T06:44:11+01:00BOX FROZEN/SUSPENDED: guard loop gap"
  ],
  "down_flags": [],
- "stale_alerted": false
+ "stale_alerted": true
 }
