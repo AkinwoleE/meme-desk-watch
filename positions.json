@@ -1413,8 +1413,8 @@
   "entry_dev_pct": null,
   "graduated": false,
   "sell_failures": 0,
-  "last_check": "2026-11-18T01:49:10+01:00",
-  "last_price": 1.0262568621639784e-05
+  "last_check": "2026-11-18T01:49:24+01:00",
+  "last_price": 1.0463516289347459e-05
  },
  "1e20853a1d": {
   "id": "1e20853a1d",
@@ -1504,8 +1504,8 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T01:49:10+01:00",
-  "last_price": 0.0005660562762986662
+  "last_check": "2026-11-18T01:49:24+01:00",
+  "last_price": 0.0005677543841493636
  },
  "24198dd3c2": {
   "id": "24198dd3c2",
@@ -2015,108 +2015,6 @@
   "exit_reason": "failed entry (0.85x after 36m, never >1.2x)",
   "pnl_usd": -0.3092139999999972,
   "pnl_x": 0.8453930000000014
- },
- "2b7fd6e81f": {
-  "id": "2b7fd6e81f",
-  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
-  "symbol": "CHAR",
-  "opened_at": "2026-11-17T16:33:50+01:00",
-  "entry_price": 0.0001377808445727067,
-  "qty_orig": 14515.805925,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-  "score": {
-   "score": 69.2,
-   "parts": {
-    "momentum": 12.9,
-    "socials": 11,
-    "organic": 14.4,
-    "story": 18,
-    "base": 10
-   },
-   "adj": {
-    "paid_boost": -5,
-    "creator": 8
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
-   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.78,
-   "trail": 0.3,
-   "expected_hold_min": 240,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "insider_grad"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-17T16:33:50+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 14515.805925,
-    "price": 0.0001377808445727067,
-    "route": "jupiter-ultra",
-    "sig": "UD3G7DGcTxqmD11RK4fy6Bu1a2wtqjaHFf6GYmoQof5LTrsMQDfdGPS2GSp86pHFQdKJ5XELUfRupXfRV9f7vro"
-   },
-   {
-    "ts": "2026-11-17T17:12:41+01:00",
-    "side": "sell",
-    "qty": 14515.805925,
-    "usd": 1.6739220000000046,
-    "price": 0.00011531719345441748,
-    "route": "jupiter-ultra",
-    "sig": "fWnAPgZCVjjhUmkbSc3PRKNqtjR3vt28LuPqkTPSZtWYuWw8Mk3qSk4J9qajMz4vUhdSW4PpCGLnpgeaKdCcKg2",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 0.00014803367955391178,
-  "tp_done": [],
-  "realized_usd": 1.6739220000000046,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 14628.42271942735,
-  "entry_dev_pct": 0.0035944716933484443,
-  "graduated": true,
-  "sell_failures": 0,
-  "last_check": "2026-11-17T17:12:35+01:00",
-  "last_price": 0.00011546605330286049,
-  "closed_at": "2026-11-17T17:12:41+01:00",
-  "exit_reason": "failed entry (0.84x after 39m, never >1.2x)",
-  "pnl_usd": -0.3260779999999954,
-  "pnl_x": 0.8369610000000023
  },
  "fe8695cceb": {
   "id": "fe8695cceb",
@@ -3134,6 +3032,108 @@
   "exit_reason": "stop 0.7x (now 0.65x)",
   "pnl_usd": -0.6477969999999971,
   "pnl_x": 0.6761015000000015
+ },
+ "2b7fd6e81f": {
+  "id": "2b7fd6e81f",
+  "mint": "9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump",
+  "symbol": "CHAR",
+  "opened_at": "2026-11-17T16:33:50+01:00",
+  "entry_price": 0.0001377808445727067,
+  "qty_orig": 14515.805925,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+  "score": {
+   "score": 69.2,
+   "parts": {
+    "momentum": 12.9,
+    "socials": 11,
+    "organic": 14.4,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "paid_boost": -5,
+    "creator": 8
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/corpdevv/status/2122509144577941983",
+   "creator_note": "creator 8/13 graduated (62%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.78,
+   "trail": 0.3,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "insider_grad"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-17T16:33:50+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 14515.805925,
+    "price": 0.0001377808445727067,
+    "route": "jupiter-ultra",
+    "sig": "UD3G7DGcTxqmD11RK4fy6Bu1a2wtqjaHFf6GYmoQof5LTrsMQDfdGPS2GSp86pHFQdKJ5XELUfRupXfRV9f7vro"
+   },
+   {
+    "ts": "2026-11-17T17:12:41+01:00",
+    "side": "sell",
+    "qty": 14515.805925,
+    "usd": 1.6739220000000046,
+    "price": 0.00011531719345441748,
+    "route": "jupiter-ultra",
+    "sig": "fWnAPgZCVjjhUmkbSc3PRKNqtjR3vt28LuPqkTPSZtWYuWw8Mk3qSk4J9qajMz4vUhdSW4PpCGLnpgeaKdCcKg2",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00014803367955391178,
+  "tp_done": [],
+  "realized_usd": 1.6739220000000046,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 14628.42271942735,
+  "entry_dev_pct": 0.0035944716933484443,
+  "graduated": true,
+  "sell_failures": 0,
+  "last_check": "2026-11-17T17:12:35+01:00",
+  "last_price": 0.00011546605330286049,
+  "closed_at": "2026-11-17T17:12:41+01:00",
+  "exit_reason": "failed entry (0.84x after 39m, never >1.2x)",
+  "pnl_usd": -0.3260779999999954,
+  "pnl_x": 0.8369610000000023
  },
  "4c8f94c769": {
   "id": "4c8f94c769",
