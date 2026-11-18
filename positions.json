@@ -425,7 +425,7 @@
   "opened_at": "2026-11-18T03:50:01+01:00",
   "entry_price": 9.437609365966584e-05,
   "qty_orig": 21191.8074,
-  "qty": 21191.8074,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/SnoSolana/status/2122299329603903822; live product claimed at https://www.rockstargames.com/VI (verify it loads)",
   "score": {
@@ -489,20 +489,35 @@
     "price": 9.437609365966584e-05,
     "route": "jupiter-ultra",
     "sig": "61RkstX1hxqVskRSQvYeMBsK6UPpZ8GuH22mdQuVaFwUuMQRr68AondDSCKXUUwsGzDNFLS5tXbrtQ8LPr6nPwbM"
+   },
+   {
+    "ts": "2026-11-18T04:32:57+01:00",
+    "side": "sell",
+    "qty": 21191.8074,
+    "usd": 1.6353250000000088,
+    "price": 7.716779268199695e-05,
+    "route": "jupiter-ultra",
+    "sig": "4s5AkoEeYf8GhQSeDehnBy79gb8i5qXeg7tVriv3eRzDqouaWqww1n5eYmxqFG6e7aZH7zUmPUyCjZVmA7zvi4B1",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 9.437609365966584e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.6353250000000088,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 11434.66067363945,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-18T04:32:52+01:00",
-  "last_price": 7.981585954661854e-05
+  "last_price": 7.981585954661854e-05,
+  "closed_at": "2026-11-18T04:32:57+01:00",
+  "exit_reason": "failed entry (0.85x after 43m, never >1.2x)",
+  "pnl_usd": -0.3646749999999912,
+  "pnl_x": 0.8176625000000044
  },
  "46c2baca2a": {
   "id": "46c2baca2a",
