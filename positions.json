@@ -591,7 +591,7 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T02:57:21+01:00",
+  "last_check": "2026-11-18T02:57:36+01:00",
   "last_price": 0.000302555780694964
  },
  "fe8695cceb": {
@@ -1913,7 +1913,7 @@
   "entry_dev_pct": 0.05460967078313966,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-18T02:57:21+01:00",
+  "last_check": "2026-11-18T02:57:36+01:00",
   "last_price": 0.0005375635398854705
  },
  "c68a215f04": {
