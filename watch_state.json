@@ -2,8 +2,6 @@
  "missing_alerted": false,
  "last_sig": "4YE8xHtQTTSdgFmzhfGTgcBtcftwpNqzFb1RxjdcM6KJRgDvcygD7GEQtFYmbPwJeSGVB6vQJCGBRKrS942NP19U",
  "seen_alerts": [
-  "2026-11-16T17:07:47+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-16T17:52:28+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-16T18:47:22+01:00GITHUB exit-monitor run failure",
   "2026-11-16T18:48:30+01:00GITHUB exit-monitor run failure",
   "2026-11-16T18:51:10+01:00GITHUB exit-monitor run failure",
@@ -201,7 +199,9 @@
   "2026-11-19T13:49:25+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
   "2026-11-19T13:49:48+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-19T14:27:48+01:00BOX FROZEN/SUSPENDED: monitor loop gap",
-  "2026-11-19T14:27:57+01:00BOX FROZEN/SUSPENDED: guard loop gap"
+  "2026-11-19T14:27:57+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-19T14:34:49+01:00BOX FROZEN/SUSPENDED: guard loop gap",
+  "2026-11-19T14:35:23+01:00BOX FROZEN/SUSPENDED: monitor loop gap"
  ],
  "down_flags": [],
  "stale_alerted": false
