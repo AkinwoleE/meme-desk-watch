@@ -406,107 +406,6 @@
   "pnl_x": 0.7043694999999985,
   "sell_failures": 0
  },
- "cf4367db21": {
-  "id": "cf4367db21",
-  "mint": "Dmu3V57XrEGbVAQScf56SVVQrXgQTsEkgD1SbNwfLoat",
-  "symbol": "Ascend",
-  "opened_at": "2026-11-15T18:05:53+01:00",
-  "entry_price": 2.7024628998764008e-05,
-  "qty_orig": 74006.566384,
-  "qty": 0.0,
-  "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/AscendFloat/status/2122007729770287361; token of launchpad/app raydium-launchlab",
-  "score": {
-   "score": 73.0,
-   "parts": {
-    "momentum": 21.6,
-    "socials": 11,
-    "organic": 9.4,
-    "story": 21,
-    "base": 10
-   },
-   "adj": {
-    "creator": 0
-   },
-   "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/AscendFloat/status/2122007729770287361; token of launchpad/app raydium-launchlab",
-   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
-  },
-  "exit_plan": {
-   "tp": [
-    [
-     2,
-     0.5
-    ],
-    [
-     4,
-     0.2
-    ],
-    [
-     8,
-     0.15
-    ]
-   ],
-   "stop": 0.65,
-   "trail": 0.25,
-   "expected_hold_min": 90,
-   "time_stop_x": 1.3,
-   "max_hold_h": 24,
-   "profit_lock": true,
-   "failed_entry": true,
-   "common": {
-    "lock_trigger_x": 1.5,
-    "lock_drop": 0.25,
-    "lock_floor_x": 1.15,
-    "failed_after_min": 20,
-    "failed_never_above_x": 1.2,
-    "failed_at_or_below_x": 0.85,
-    "winner_keep_x": 1.3,
-    "winner_ext_mult": 1.5,
-    "winner_drop": 0.25,
-    "catalyst_extra_h": 12
-   },
-   "profile": "curve"
-  },
-  "fills": [
-   {
-    "ts": "2026-11-15T18:05:53+01:00",
-    "side": "buy",
-    "usd": 2.0,
-    "qty": 74006.566384,
-    "price": 2.7024628998764008e-05,
-    "route": "jupiter-ultra",
-    "sig": "5s5GZSnXqdxn1SvgQgfLwpD5xtVwz2qeAQoGXzcjKgcFLDrqrPNxdjcPd3SnZkeGV4N73xFu5d9nvVMB1jiYoh65"
-   },
-   {
-    "ts": "2026-11-15T18:25:58+01:00",
-    "side": "sell",
-    "qty": 74006.566384,
-    "usd": 1.2913479999999993,
-    "price": 1.744910030414794e-05,
-    "route": "jupiter-ultra",
-    "sig": "5kAoLsm9Bo3UKSGdMncAGJN2VPPmrCqnX2vtDfuEgLTxMfRBoreBFdpkV8zTEf5p3w3sLQPimc5LjapUTtdemSK7",
-    "full": true,
-    "actual_from_chain": true
-   }
-  ],
-  "peak_price": 2.7024628998764008e-05,
-  "tp_done": [],
-  "realized_usd": 1.2913479999999993,
-  "paper": false,
-  "status": "closed",
-  "decimals": 6,
-  "entry_liq": 6349.730864271847,
-  "entry_dev_pct": null,
-  "graduated": false,
-  "last_price": 1.744070647105824e-05,
-  "last_check": "2026-11-15T18:26:06+01:00",
-  "closed_at": "2026-11-15T18:25:58+01:00",
-  "exit_reason": "stop 0.65x (now 0.65x)",
-  "pnl_usd": -0.7086520000000007,
-  "pnl_x": 0.6456739999999996,
-  "sell_failures": 0
- },
  "e0046829e6": {
   "id": "e0046829e6",
   "mint": "B7ncNzYdp71UxqmMQZFL8o2idEZdC1ix9W79J1t8pump",
@@ -1017,6 +916,108 @@
   "pnl_usd": -0.3092139999999972,
   "pnl_x": 0.8453930000000014
  },
+ "1e9f76baa1": {
+  "id": "1e9f76baa1",
+  "mint": "G8Yp5m5VmBTh1myNUyoy1Gb7uY6ek3jkcTkYGxE8jQLN",
+  "symbol": "poorcat",
+  "opened_at": "2026-11-15T17:46:44+01:00",
+  "entry_price": 0.00011857223285721676,
+  "qty_orig": 16867.355466,
+  "qty": 0.0,
+  "cost_usd": 2.0,
+  "thesis": "tied to a tweet/news source https://x.com/Turbodev1x/status/2121631748844835028",
+  "score": {
+   "score": 73.2,
+   "parts": {
+    "momentum": 25,
+    "socials": 11,
+    "organic": 17.2,
+    "story": 18,
+    "base": 10
+   },
+   "adj": {
+    "chasing": -8,
+    "creator": 0
+   },
+   "story_cat": "news",
+   "thesis": "tied to a tweet/news source https://x.com/Turbodev1x/status/2121631748844835028",
+   "creator_note": "creator 36/1772 graduated (2%) [peak data unavailable: pump.fun API blocked]"
+  },
+  "exit_plan": {
+   "tp": [
+    [
+     2,
+     0.5
+    ],
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.15
+    ]
+   ],
+   "stop": 0.7,
+   "trail": 0.4,
+   "expected_hold_min": 240,
+   "time_stop_x": 1.3,
+   "max_hold_h": 24,
+   "profit_lock": true,
+   "failed_entry": true,
+   "common": {
+    "lock_trigger_x": 1.5,
+    "lock_drop": 0.25,
+    "lock_floor_x": 1.15,
+    "failed_after_min": 20,
+    "failed_never_above_x": 1.2,
+    "failed_at_or_below_x": 0.85,
+    "winner_keep_x": 1.3,
+    "winner_ext_mult": 1.5,
+    "winner_drop": 0.25,
+    "catalyst_extra_h": 12
+   },
+   "profile": "graduated"
+  },
+  "fills": [
+   {
+    "ts": "2026-11-15T17:46:44+01:00",
+    "side": "buy",
+    "usd": 2.0,
+    "qty": 16867.355466,
+    "price": 0.00011857223285721676,
+    "route": "jupiter-ultra",
+    "sig": "qPUSi5wSN2dPAJkMLFDx6p6iapYZLERrntRHxYfeN8asUAgTNMLdzg5rHajkGg5oxgTqRQpMJUjL522eHcw1n59"
+   },
+   {
+    "ts": "2026-11-15T19:13:51+01:00",
+    "side": "sell",
+    "qty": 16867.355466,
+    "usd": 1.3305849999999992,
+    "price": 7.888521722815983e-05,
+    "route": "jupiter-ultra",
+    "sig": "3rakRixSvbJ4aCxnYcfcRK27SJAn1R4Jcf4Z6yKTX8reUULSbJbEeBYLzUk46SJi8WgEaKAHrMZaq4CpF5zoqgLw",
+    "full": true,
+    "actual_from_chain": true
+   }
+  ],
+  "peak_price": 0.00015277754452890603,
+  "tp_done": [],
+  "realized_usd": 1.3305849999999992,
+  "paper": false,
+  "status": "closed",
+  "decimals": 6,
+  "entry_liq": 23337.062296839853,
+  "entry_dev_pct": null,
+  "graduated": true,
+  "last_price": 8.00580564879404e-05,
+  "last_check": "2026-11-15T19:13:48+01:00",
+  "sell_failures": 0,
+  "closed_at": "2026-11-15T19:13:51+01:00",
+  "exit_reason": "stop 0.7x (now 0.68x)",
+  "pnl_usd": -0.6694150000000008,
+  "pnl_x": 0.6652924999999996
+ },
  "46c2baca2a": {
   "id": "46c2baca2a",
   "mint": "EvbSSzACWAxqFhXdiPypjv6jMhRfHU257x65oFrjpump",
@@ -1431,7 +1432,7 @@
   "opened_at": "2026-11-21T22:52:03+01:00",
   "entry_price": 8.125175508107474e-05,
   "qty_orig": 24614.85291,
-  "qty": 24614.85291,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/sheponpf/status/2123886334632943742",
   "score": {
@@ -1495,20 +1496,35 @@
     "price": 8.125175508107474e-05,
     "route": "jupiter-ultra",
     "sig": "538rzqTDdwkB6aoedUt8vxReya5up5uq9qBRmGXRqqsZPyuT146iCmJcFv35RZcuVDyzcLHtMhh1tVg2diEv1hWf"
+   },
+   {
+    "ts": "2026-11-21T23:13:28+01:00",
+    "side": "sell",
+    "qty": 24614.85291,
+    "usd": 1.6094610000000102,
+    "price": 6.538576549227124e-05,
+    "route": "jupiter-ultra",
+    "sig": "3ByPjYuLp2RaGzgasJZeioPyQvjExuoAWEEn5R2zEeG1y7E9vmMzc3ycz75APyoELGWaXr9UPVXcKfELc36nVaPT",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 8.543757296530213e-05,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.6094610000000102,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 10897.199368136093,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-21T23:13:24+01:00",
-  "last_price": 6.651876754113233e-05
+  "last_price": 6.651876754113233e-05,
+  "closed_at": "2026-11-21T23:13:28+01:00",
+  "exit_reason": "failed entry (0.82x after 21m, never >1.2x)",
+  "pnl_usd": -0.39053899999998976,
+  "pnl_x": 0.8047305000000051
  },
  "fe8695cceb": {
   "id": "fe8695cceb",
@@ -3654,32 +3670,31 @@
   "last_check": "2026-11-15T18:50:34+01:00",
   "sell_failures": 0
  },
- "1e9f76baa1": {
-  "id": "1e9f76baa1",
-  "mint": "G8Yp5m5VmBTh1myNUyoy1Gb7uY6ek3jkcTkYGxE8jQLN",
-  "symbol": "poorcat",
-  "opened_at": "2026-11-15T17:46:44+01:00",
-  "entry_price": 0.00011857223285721676,
-  "qty_orig": 16867.355466,
+ "cf4367db21": {
+  "id": "cf4367db21",
+  "mint": "Dmu3V57XrEGbVAQScf56SVVQrXgQTsEkgD1SbNwfLoat",
+  "symbol": "Ascend",
+  "opened_at": "2026-11-15T18:05:53+01:00",
+  "entry_price": 2.7024628998764008e-05,
+  "qty_orig": 74006.566384,
   "qty": 0.0,
   "cost_usd": 2.0,
-  "thesis": "tied to a tweet/news source https://x.com/Turbodev1x/status/2121631748844835028",
+  "thesis": "tied to a tweet/news source https://x.com/AscendFloat/status/2122007729770287361; token of launchpad/app raydium-launchlab",
   "score": {
-   "score": 73.2,
+   "score": 73.0,
    "parts": {
-    "momentum": 25,
+    "momentum": 21.6,
     "socials": 11,
-    "organic": 17.2,
-    "story": 18,
+    "organic": 9.4,
+    "story": 21,
     "base": 10
    },
    "adj": {
-    "chasing": -8,
     "creator": 0
    },
    "story_cat": "news",
-   "thesis": "tied to a tweet/news source https://x.com/Turbodev1x/status/2121631748844835028",
-   "creator_note": "creator 36/1772 graduated (2%) [peak data unavailable: pump.fun API blocked]"
+   "thesis": "tied to a tweet/news source https://x.com/AscendFloat/status/2122007729770287361; token of launchpad/app raydium-launchlab",
+   "creator_note": "creator 0/1 graduated (0%) [peak data unavailable: pump.fun API blocked]"
   },
   "exit_plan": {
    "tp": [
@@ -3696,9 +3711,9 @@
      0.15
     ]
    ],
-   "stop": 0.7,
-   "trail": 0.4,
-   "expected_hold_min": 240,
+   "stop": 0.65,
+   "trail": 0.25,
+   "expected_hold_min": 90,
    "time_stop_x": 1.3,
    "max_hold_h": 24,
    "profit_lock": true,
@@ -3715,45 +3730,45 @@
     "winner_drop": 0.25,
     "catalyst_extra_h": 12
    },
-   "profile": "graduated"
+   "profile": "curve"
   },
   "fills": [
    {
-    "ts": "2026-11-15T17:46:44+01:00",
+    "ts": "2026-11-15T18:05:53+01:00",
     "side": "buy",
     "usd": 2.0,
-    "qty": 16867.355466,
-    "price": 0.00011857223285721676,
+    "qty": 74006.566384,
+    "price": 2.7024628998764008e-05,
     "route": "jupiter-ultra",
-    "sig": "qPUSi5wSN2dPAJkMLFDx6p6iapYZLERrntRHxYfeN8asUAgTNMLdzg5rHajkGg5oxgTqRQpMJUjL522eHcw1n59"
+    "sig": "5s5GZSnXqdxn1SvgQgfLwpD5xtVwz2qeAQoGXzcjKgcFLDrqrPNxdjcPd3SnZkeGV4N73xFu5d9nvVMB1jiYoh65"
    },
    {
-    "ts": "2026-11-15T19:13:51+01:00",
+    "ts": "2026-11-15T18:25:58+01:00",
     "side": "sell",
-    "qty": 16867.355466,
-    "usd": 1.3305849999999992,
-    "price": 7.888521722815983e-05,
+    "qty": 74006.566384,
+    "usd": 1.2913479999999993,
+    "price": 1.744910030414794e-05,
     "route": "jupiter-ultra",
-    "sig": "3rakRixSvbJ4aCxnYcfcRK27SJAn1R4Jcf4Z6yKTX8reUULSbJbEeBYLzUk46SJi8WgEaKAHrMZaq4CpF5zoqgLw",
+    "sig": "5kAoLsm9Bo3UKSGdMncAGJN2VPPmrCqnX2vtDfuEgLTxMfRBoreBFdpkV8zTEf5p3w3sLQPimc5LjapUTtdemSK7",
     "full": true,
     "actual_from_chain": true
    }
   ],
-  "peak_price": 0.00015277754452890603,
+  "peak_price": 2.7024628998764008e-05,
   "tp_done": [],
-  "realized_usd": 1.3305849999999992,
+  "realized_usd": 1.2913479999999993,
   "paper": false,
   "status": "closed",
   "decimals": 6,
-  "entry_liq": 23337.062296839853,
+  "entry_liq": 6349.730864271847,
   "entry_dev_pct": null,
-  "graduated": true,
-  "last_price": 8.00580564879404e-05,
-  "last_check": "2026-11-15T19:13:48+01:00",
-  "sell_failures": 0,
-  "closed_at": "2026-11-15T19:13:51+01:00",
-  "exit_reason": "stop 0.7x (now 0.68x)",
-  "pnl_usd": -0.6694150000000008,
-  "pnl_x": 0.6652924999999996
+  "graduated": false,
+  "last_price": 1.744070647105824e-05,
+  "last_check": "2026-11-15T18:26:06+01:00",
+  "closed_at": "2026-11-15T18:25:58+01:00",
+  "exit_reason": "stop 0.65x (now 0.65x)",
+  "pnl_usd": -0.7086520000000007,
+  "pnl_x": 0.6456739999999996,
+  "sell_failures": 0
  }
 }
