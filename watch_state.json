@@ -1,6 +1,6 @@
 {
  "missing_alerted": false,
- "last_sig": "5fnDr21XpQonQ5UCVteTjdkk5oh29712qwTQ1hS2mmdCSqEfxBmbfV6KiMrcysLruNouCqc6VLx8iMNzhAVRddh1",
+ "last_sig": "57tkrX8SntQpsvtthgEShezqxEQzpLmA6f959u8AuyBR7VDjLSgSGMHuGPjqTJZ4EdpFMtYwz1QSDnFao6VytyqM",
  "seen_alerts": [
   "2026-11-16T22:48:11+01:00BOX FROZEN/SUSPENDED: guard loop gap",
   "2026-11-16T22:49:21+01:00GITHUB exit-monitor run cancelled",
