@@ -3068,7 +3068,7 @@
   "opened_at": "2026-11-22T03:45:35+01:00",
   "entry_price": 0.00013361554104292199,
   "qty_orig": 14968.318688,
-  "qty": 14968.318688,
+  "qty": 0.0,
   "cost_usd": 2.0,
   "thesis": "tied to a tweet/news source https://x.com/sheponpf/status/2123886334632943742",
   "score": {
@@ -3132,20 +3132,35 @@
     "price": 0.00013361554104292199,
     "route": "jupiter-ultra",
     "sig": "5fnDr21XpQonQ5UCVteTjdkk5oh29712qwTQ1hS2mmdCSqEfxBmbfV6KiMrcysLruNouCqc6VLx8iMNzhAVRddh1"
+   },
+   {
+    "ts": "2026-11-22T04:05:51+01:00",
+    "side": "sell",
+    "qty": 14968.318688,
+    "usd": 1.5253969999999981,
+    "price": 0.00010190837273012491,
+    "route": "jupiter-ultra",
+    "sig": "4xM9aTy3YBqiGHx1RKDM1k7imzPw9H7NinK659i6kGgXFsUTZvkRKoXHuQny9Hh6aiH9TJw6iE1So54GsMiHULoL",
+    "full": true,
+    "actual_from_chain": true
    }
   ],
   "peak_price": 0.00014596743527510428,
   "tp_done": [],
-  "realized_usd": 0.0,
+  "realized_usd": 1.5253969999999981,
   "paper": false,
-  "status": "open",
+  "status": "closed",
   "decimals": 6,
   "entry_liq": 18448.136629626246,
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
   "last_check": "2026-11-22T04:05:45+01:00",
-  "last_price": 0.00010449866769080178
+  "last_price": 0.00010449866769080178,
+  "closed_at": "2026-11-22T04:05:51+01:00",
+  "exit_reason": "failed entry (0.78x after 20m, never >1.2x)",
+  "pnl_usd": -0.4746030000000019,
+  "pnl_x": 0.7626984999999991
  },
  "2682a3fec9": {
   "id": "2682a3fec9",
