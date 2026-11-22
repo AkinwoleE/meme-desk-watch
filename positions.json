@@ -1408,7 +1408,7 @@
     "sig": "5fnDr21XpQonQ5UCVteTjdkk5oh29712qwTQ1hS2mmdCSqEfxBmbfV6KiMrcysLruNouCqc6VLx8iMNzhAVRddh1"
    }
   ],
-  "peak_price": 0.00013798134430683965,
+  "peak_price": 0.00014596743527510428,
   "tp_done": [],
   "realized_usd": 0.0,
   "paper": false,
@@ -1418,8 +1418,8 @@
   "entry_dev_pct": null,
   "graduated": true,
   "sell_failures": 0,
-  "last_check": "2026-11-22T03:48:35+01:00",
-  "last_price": 0.0001346366698986257
+  "last_check": "2026-11-22T03:48:50+01:00",
+  "last_price": 0.00014596743527510428
  },
  "4c8f94c769": {
   "id": "4c8f94c769",
